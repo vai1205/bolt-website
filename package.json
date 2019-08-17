@@ -1,0 +1,25 @@
+{
+  "name": "bolt-web-app",
+  "version": "1.0.0",
+  "description": "This is the web app for an IT company Bolt Infotech Private Limited, Lucknow, India.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vai1205/bolt-website.git"
+  },
+  "author": "Vaibhav Srivastava",
+  "license": "BSD 3",
+  "bugs": {
+    "url": "https://github.com/vai1205/bolt-website/issues"
+  },
+  "homepage": "https://github.com/vai1205/bolt-website#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.0.0",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1"
+  }
+}
