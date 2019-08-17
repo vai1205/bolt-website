@@ -1,24 +1,14 @@
-/*!
- * pagepiling.js 1.5.6
- *
- * https://github.com/alvarotrigo/pagePiling.js
- * @license MIT licensed
- *
- * Copyright (C) 2016 alvarotrigo.com - A project by Alvaro Trigo
- */
 html, body {
     overflow:hidden;
     margin:0;
     padding:0;
-
     /*Avoid flicker on slides transitions for mobile phones #336 */
     -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 .pp-section {
     height:100%;
     position:absolute;
-    width:100%;
-    
+    width:100%;   
     /* fixes flickering in firefox*/
     backface-visibility: hidden; 
 }

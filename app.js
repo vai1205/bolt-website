@@ -1,5 +1,4 @@
 //========================================APP DEPENDENCIES===============================================
-
 const dotenv = require('dotenv')
 dotenv.config()
 const express = require('express')
@@ -19,8 +18,9 @@ app.use(
 app.get('/', function(req,res){
     res.render('home')
 })
+
 //==========================================SERVER CONNECTION============================================
 
-app.listen(process.env.PORT || 3000, function() {
+app.listen(3000, function() {
 	console.log('Server started at 3000')
 })
