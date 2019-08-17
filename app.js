@@ -13,6 +13,12 @@ app.use(
 		extended: true
 	})
 )
+//=============================================GET REQUESTS==============================================
+
+//Get request: HOME PAGE=============================================
+app.get('/', function(req,res){
+    res.render('home')
+})
 //==========================================SERVER CONNECTION============================================
 
 app.listen(process.env.PORT || 3000, function() {
