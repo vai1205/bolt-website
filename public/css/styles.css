@@ -1,0 +1,149 @@
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+p{
+  color: #7f7f7f;
+  text-align: justify;
+}
+h1{
+  text-align: center;
+}
+b, strong {
+  font-weight: 400 !important;
+}
+button{
+  border-radius: 3rem !important;
+}
+button:focus {
+  outline: 1px dotted;
+  outline: 0 auto #dc3545 !important;
+  border-radius: 0.5rem !important;
+}
+.navbar-nav{
+  background: #fff;
+}
+.navbar-nav>a {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.navbar-nav>a {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.navbar-nav>button {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.navbar-nav>button {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.nav-item::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: red;
+  transition: width .3s;
+}
+.nav-item:hover::after {
+  width: 100%;
+ /* transition: width .3s; */
+}
+.navbar-light{
+  color:red !important;
+}
+.nav-item:hover{
+  color: red !important;
+}
+.navbar-light .navbar-toggler {
+  border-color: #dc3545 !important;
+}
+.navbar-toggler:focus {
+  color: #dc3545
+}
+.content-wrap{
+  padding: 5rem 3rem;
+}
+.container-wrap{
+  margin-top:5rem;
+  text-align: center;
+}
+#menu{
+	position:fixed;
+	top:0;
+	left:0;
+	height: 5.5rem;
+	z-index: 70;
+	width: 100%;
+	padding: 2rem;
+	margin:0;
+}
+/* media queries */
+/* mobile */
+@media (max-width:500px){
+  h1{
+    font-size: 2rem !important;
+  }
+  b, strong {
+    font-weight: 400 !important;
+}
+  .nav-item:hover::after {
+    width: 25%;
+   /* transition: width .3s; */
+  }
+  .for-desktop{
+    display: none;
+  }
+  .content-wrap{
+    padding: 0.5rem 1.5rem;
+    text-align: center;
+  }
+  #menu{
+    height: 6rem;
+  } 
+}
+/* ipad pro */
+@media(max-width: 1284px) and (min-width: 992px) {
+  .navbar-nav>a {
+    margin-left: 0 !important;
+    margin-right: 6px !important;
+  }
+} 
+/* ipad landscape */
+@media(max-width:1025px)and (min-width:1023px){
+  b, strong {
+    font-weight: 400 !important;
+}
+.container-wrap{
+  margin-top: 8.5rem;
+}
+}
+/* ipad */
+@media(max-width: 991px) and (min-width: 500px) {
+  .for-desktop{
+    display: none;
+  }
+  .content-wrap{
+    padding: 0.5rem 1.5rem;
+    text-align: center;
+  }
+  .head-para{
+    text-align: center;
+  }
+  .container-wrap{
+    margin-top:0;
+  }
+}
+/* iphone SE */
+@media(max-width: 322px) and (min-width: 318px){
+  h1{
+    font-size: 1.5rem !important;
+  }
+} 
