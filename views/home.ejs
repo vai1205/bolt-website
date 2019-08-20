@@ -1,4 +1,40 @@
-<%- include("partials/header") -%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>We Code your Ideas!</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<!-- scroll css -->
+<link rel="stylesheet" href="css/vendor.css">
+<!-- custom css -->
+<link rel="stylesheet" href="css/styles.css">
+<!-- google fonts -->
+<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+<!-- bootstrap4.3.1 -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<!-- Navbar -->
+<nav id="menu" class="active navbar navbar-expand-lg navbar-light shadow-sm p-3 mb-5 bg-white rounded">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">
+        <img src="images/logo-nav.png" style="padding-left: 2rem;" alt="bolt-logo">
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">About Us <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#">What we do</a>
+                <a class="nav-item nav-link" href="#">We Work With</a>
+                <a class="nav-item nav-link" href="#">Our Work</a>
+                <a class="nav-item nav-link" href="#">Careers</a>
+                <button class="btn btn-danger my-2 my-sm-0" type="submit">Get Estimate</button>
+            </div>
+        </div>
+    </a>
+</nav>
 <div id="pagepiling">
     <!-- section1: mobile Development -->
     <div id="mobile-development" class="section">
@@ -193,4 +229,39 @@
             </div>
         </div>
     </div>
-<%- include("partials/footer") -%>
+<!-- jQuery google cdn -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+<!-- scroll js cdn -->
+<script src="js/jquery.vendor.js"></script> 
+<!-- ccustom scroll js -->
+<script>
+    $('#pagepiling').pagepiling({
+    menu: '#menu',
+    anchors: ['mobile-development', 'web-development', 'mobile-games', 'stuff-we-did','share-your-idea','this-is-us','get-in-touch'],
+    sectionsColor: ['#fff','#fff','#fff','#fff','#fff','#fff','#fff'],
+    navigation: {
+        'position': 'right',
+        'tooltips': ['Mobile Development', 'Web Development', 'Mobile Games', 'Stuff we did','Share your idea','This is us','Get in touch']
+    },
+    menu: '#menu',
+    afterRender: function(){
+        $('#pp-nav').addClass('custom');
+    },
+    afterLoad: function(anchorLink, index){
+        if(index>1){
+            $('#pp-nav').removeClass('custom');
+        }else{
+            $('#pp-nav').addClass('custom');
+        }
+    }
+    });
+</script>
+ <!-- custom js -->
+ <script src="js/myscript.js" charset="utf-8"></script>
+ <!-- bootstrap js -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>

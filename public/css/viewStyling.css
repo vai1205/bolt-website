@@ -1,0 +1,445 @@
+.top-banner{
+    position: relative;
+    z-index: -1;
+}
+.overlay-text > h1{
+    text-align: left;
+    font-size: 4rem;
+    font-weight: 400;
+    padding-bottom: 3%;
+}
+.overlay-text > p{
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 100;
+    width: 70%
+}
+.overlay-text{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    color: #fff;
+    text-align: left !important;
+}
+#navbar2-items > .nav-link.active {
+    color: red !important;
+}
+#navbar2-items > .nav-link.active::after {
+    background: red !important;
+    position: relative;
+    top: 1.7rem;
+    display: block;
+    width: 100%;
+}
+#navbar2-items > .nav-item::after {
+    content: '';
+    position: relative;
+    width: 0;
+    top: 1.7rem;
+    display: block;
+    height: 3px;
+    background: red;
+    transition: 0.5s;
+  }
+#navbar2-items >  .nav-item:hover::after {
+    content: '';
+    position: relative;
+    width: 100%;
+    top: 1.7rem;
+    height: 3px;
+    display: block;
+    transition: width 0.5s;
+  }
+.below-nav2-section{
+    position: relative;
+}  
+.text-nav2-section{
+    position: absolute;
+    top: 15%;
+    left: 0;
+    margin: 0 auto;
+}
+.text-nav2-section > p {
+    width: 30%;
+    margin: 0 auto;
+    text-align: center !important;
+} 
+.mobile-apps-for{
+    position: relative;
+}
+.mobile-apps-for-text{
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    margin: 1%;
+    padding: 9%;
+}
+.for-innerText > p {
+    color: #fff !important;
+    text-align: center !important;
+}
+.for-innerText{
+    padding-top: 10%;
+}
+.for-innerText > i {
+    font-size: 4rem !important;
+    padding-bottom: 5%;
+}
+.jumbotron-ios-apps{
+    border-radius: 0;
+    background-color: #fff;
+    margin-bottom: 0
+}
+.jumbotron-ios-apps > h1 {
+    padding-bottom: 10%;
+    text-align: left;
+}
+.jumbotron-ios-apps > hr {
+    width: 50%;
+    margin: 10% 50% 10% 0;
+    border: none;
+    height: 2px;
+    background-color: #c2c4c6;
+}
+.jumbotron-ios-apps > ul {
+    list-style-type: circle;
+    size: 2rem;
+  }
+.iOS-list > li {
+    font-size: 130%;
+}
+.li-iOS > a {
+    color: #7f7f7f !important;
+}
+.li-iOS > a:hover {
+    color: #000 !important;
+    text-decoration: none !important;
+}
+.jumbotron-ios-apps > button {
+    margin: 10% 50% 10% 3%;
+}
+.container-android{
+    width: 99%;
+}
+.col-android{
+    position: relative;
+    left: 0;
+}
+.col-android > #android-bg-img1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+.col-android > #android-bg-img2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: -1;
+}
+.jumbotron-android-apps{
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: transparent;
+    color: #fff;
+}
+.jumbotron-android-apps > h1 {
+    padding-bottom: 5%;
+}
+.jumbotron-android-apps > p {
+    color: #fff;
+    width: 70%;
+    margin: 0 auto;
+}
+.jumbotron-android-apps > hr {
+    width: 50%;
+    margin: 10% 50% 10% 15%;
+    border: none;
+    height: 2px;
+    background-color: #fff;
+}
+.jumbotron-android-apps > ul {
+    list-style-type: circle;
+    margin: 10% 50% 10% 12%;
+    width: 50%;
+    size: 2rem;
+  }
+.android-list > li {
+    font-size: 130%;
+}
+.li-android > a {
+    color: #fff !important;
+}
+.li-android > a:hover {
+    color: red !important;
+    text-decoration: none !important;
+}
+.jumbotron-android-apps > button {
+    margin: 5% 50% 5% 15%;
+}
+.jumbotron-cross-platform{
+    margin-bottom: 0;
+    background: #fff;
+    border-radius: 0;
+}
+.jumbotron-cross-platform > h1 {
+    padding-bottom: 2%;
+}
+.jumbotron-cross-platform > p {
+    width: 65%;
+    margin: 0 auto;
+    text-align: center;
+}
+.box-color-cross-platform{
+    background-color: #fbfbfb59;
+}
+.tech-box{
+    display: inline-block;
+    margin: 0 0.25%;
+}
+.box-color-cross-platform:hover {
+    box-shadow:1px 1px 10px #7f7f7f !important;
+    /* width: 4.3%; */
+    border-radius: 10%;
+}
+.box-color-cross-platform > .tech-type{
+    font-size: 250%; 
+    color: #bababa;   
+}
+.jumbotron-cross-platform > .tech-box-container{
+     position: absolute;
+     top:0;
+     left: 0;
+     margin: 20%;
+     padding: 0 21%;
+}
+.jumbotron-cross-platform > img{
+    margin: 10% auto 0;
+}
+.cloud-section > img {
+    width: 100%;
+    z-index: -1;
+}
+.cloud-section{
+    position: relative;
+}
+.cloud-selection-content{
+    position: absolute;
+    top: 0;
+    left: 5%;
+    width: 40%;
+    color: #fff;
+}
+.cloud-selection-content > h1 {
+    text-align: left !important;
+    margin-bottom: 5%;
+}
+.cloud-selection-content > p  {
+    color: #fff;
+    text-align: left;
+}
+.box-color-cloud-section {
+    background-color:transparent;
+}
+.box-color-cloud-section > .tech-type {
+    font-size: 250%;
+    color: rgb(219, 216, 216);
+}
+.box-color-cloud-section > .tech-type:hover {
+    color: #fff;
+}
+.box-color-cloud-section:hover {
+    box-shadow:1px 1px 10px #fff !important;
+    border-radius: 10%;
+}
+.cloud-selection-content > ul{
+    list-style-type: circle;
+    size: 2rem;
+    margin: 5% 0;
+}
+.cloud-section-list > li {
+    font-size: 130%;
+}
+.li-cloud > a {
+    color: #fff !important;
+}
+.li-cloud > a:hover {
+    color: #000 !important;
+    text-decoration: none;
+}
+.cloud-selection-content > button {
+    margin: 5% 2%;
+}
+.jumbotron-works{
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: transparent;
+}
+.box-color-worked-section > i {
+    font-size: 800%;
+    color: #cccaca;
+}
+.box-color-worked-section{
+    background-color: transparent
+}
+.box-color-worked-section:hover{
+    box-shadow:1px 1px 10px #7f7f7f !important;
+    /* width: 4.3%; */
+    border-radius: 10%;
+}
+.worked-box-container{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.jumbotron-portfolio{
+    margin-bottom: 0;
+    background-color: #323a45;
+    color: #fff;
+    text-align: left !important;
+    border-radius: 0;
+    position: relative;
+}
+.text-for-portfolio{
+    margin: 0 5%;
+}
+.text-for-portfolio > p {
+    color: #fff !important;
+    text-align: center;
+    width: 100%;
+}
+.text-for-portfolio > h1 {
+    text-align: center;
+    margin-bottom: 2%;
+}
+#portfolio-content{
+    position: relative;
+}
+.portfolio-wrapper{
+    /* position: absolute;
+    top: 10%;
+    left: 40%; */
+    width: 1200px;
+    height: 500px;
+    perspective: 900px;
+}
+.project-card-container {
+    /* position: absolute;
+    top: 0%; */
+    width: 100%;
+    height: 100%;
+    transition: .5s all ease;
+    transform: rotateX(60deg) scale(0.7);
+    perspective: 900px;
+    box-shadow: 0px 20px 50px #555;
+    animation: entry 1s linear 1;
+  }
+  #pc0 {
+    /* position: absolute;
+    top: 0%; */
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #b60000 30%, #e70e2d 100%);
+    z-index: 300;
+    box-shadow: 0px 20px 100px #555;
+  }
+.project-card{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 45%;
+    background: linear-gradient(to top, #b60000 30%, #e70e2d 100%);
+}
+.project-description{
+    position: absolute;
+    top: 134%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to top, #b60000 30%, #e70e2d 100%);
+    z-index: 30;
+}
+.project-info{
+    position: absolute;
+    top: 10%;
+}
+.project-card-container:hover{
+    cursor: pointer;
+    transform: rotate(0deg) scale(1) translateY(10px);
+    transition: .5s all ease;
+    z-index: 400;
+}
+#pc1 {
+    /* position: absolute;
+    top: 0%;
+    left: 20%; */
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #b60000 30%, #e70e2d 100%);
+    z-index: 300;
+    box-shadow: 0px 20px 100px #555;
+  }
+  #pc2 {
+    /* position: absolute;
+    top: 0%; */
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #b60000 30%, #e70e2d 100%);
+    z-index: 300;
+    box-shadow: 0px 20px 100px #555;
+  }
+.project-info > p {
+    text-align: center;
+    color: #fff;
+}
+.project-info > button {
+    text-align: center;
+    margin-left: 34%;
+}
+.jumbotron-contact{
+    margin-bottom: 0;
+    background-color: #fff;
+}
+.jumbotron-contact >h2{
+    text-align: center;
+}
+.testimonial-image{
+    border-radius: 50%;
+    width: 20%;
+    height: 20%;
+    padding: 2%;
+}
+.testimonial-text{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+    text-align: center;
+}
+.testimonial-client{
+    text-align: center;
+}
+.carousel-control-prev,.carousel-control-next{
+    background-color: #7f7f7f;
+    border-radius: 100%;
+    margin-top: 20%;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 5%;
+    height: 15%;
+}
+.contact-image{
+    text-align: center;
+}
+.form-container{
+    margin-top: 10%;
+    background-color: #eeeeee;
+    padding: 5%;
+    border-radius: 2%;
+}
+label > span {
+    color: red;
+} 

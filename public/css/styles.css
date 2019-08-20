@@ -50,11 +50,11 @@ button:focus {
   width: 0;
   height: 2px;
   background: red;
-  transition: width .3s;
+  transition: width .5s;
 }
 .nav-item:hover::after {
   width: 100%;
- /* transition: width .3s; */
+ transition: width .5s;
 }
 .navbar-light{
   color:red !important;
@@ -85,6 +85,26 @@ button:focus {
 	padding: 2rem;
 	margin:0;
 }
+.footer-social-content > hr{
+  border: none;
+  height: 2px;
+  color: #7f7f7f;
+  background-color: #7f7f7f;
+  margin: 1rem 10%;
+}
+.footer-social-text{
+  margin: 10% 0 ;
+}
+.footer-social-icon{
+  text-align: right;
+  margin: 10% 0 ;
+}
+.social-icon{
+  font-size: 150%;
+  color: #7f7f7f;
+  margin: auto 1%;
+}
+
 /* media queries */
 /* mobile */
 @media (max-width:500px){
