@@ -18,6 +18,9 @@ app.use(
 app.get('/', function(req,res){
     res.render('home')
 })
+app.get('/view', function(req,res){
+    res.render('viewDetails')
+})
 
 //==========================================SERVER CONNECTION============================================
 
