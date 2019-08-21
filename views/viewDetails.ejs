@@ -1,5 +1,6 @@
 <%- include("partials/header") -%>
 <link rel="stylesheet" href="css/viewStyling.css">
+<link rel="stylesheet" href="css/viewStylingResponsive.css">
 <div class="page-content">
     <!-- top-banner -->
     <div class="top-banner" style="margin-top: 5.7rem;">
@@ -15,13 +16,13 @@
     </div>
     <!-- below-banner -->
     <!-- navbar2 -->
-    <nav class="active navbar navbar-expand-lg navbar-light shadow-sm p-3 bg-white rounded">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm p-3 bg-white rounded" id="navbar2">
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar2-band" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-        </button>
+        </button> -->
         <a class="navbar-brand" href="#">
-            <!-- <img src="images/logo-nav.png" style="padding-left: 2rem;" alt="bolt-logo"> -->
-            <div class="collapse navbar-collapse" id="navbar2">
+            <img src="images/favicon.ico" style="padding-left: 2rem;" alt="bolt-logo-b" id="bolt-logo-b">
+            <div class="navbar-collapse" id="navbar2-band">
                 <div class="navbar-nav" id="navbar2-items">
                     <a class="nav-item nav-link active" href="#">Mobile Development<span class="sr-only">(current)</span></a>
                     <a class="nav-item nav-link" href="#">Web Development</a>
@@ -34,14 +35,15 @@
     </nav>
     <!-- page content for nav selection -->
     <div class="below-nav2-section" style="margin-top: 0.2rem;">
-    <img src="images/mobile-background-desktop.jpg" alt="mobile-img" style="width: 100%;">
+    <img src="images/mobile-background-desktop.jpg" alt="mobile-img" class="img-desktop">
+    <img src="images/mobile-background-mobile.jpg" alt="mobile-img" class="img-mobile">
         <div class="text-nav2-section">
             <h1>Lorem ipsum dolor, sit amet.</h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita laborum facere, impedit vitae reprehenderit porro voluptas? Vel ab laudantium dolorem suscipit officiis delectus sint? Fugiat reiciendis vitae impedit temporibus corrupti.</p>
         </div>
     </div>
     <div class="mobile-apps-for">
-        <img src="images/mobile-apps-for-bg.jpg" alt="mobile-img" style="width: 100%;">
+        <img src="images/mobile-apps-for-bg.jpg" alt="mobile-img">
         <div class="mobile-apps-for-text">
             <div class="container">
                 <div class="row">
@@ -69,9 +71,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
+                    <img src="images/ios-apps-desktop.jpg" alt="ios-img" class="ios-apps-img ios-img-desktop">
+                    <div class="ios-heading-mobile">
+                        <h1>iOS Apps Development</h1>
+                    </div>
+                    <img src="images/ios-apps-mobile.jpg" alt="ios-img" class="ios-apps-img ios-img-mobile">
+                </div>
+                <div class="col-lg-6">
                     <div class="jumbotron jumbotron-ios-apps" style="margin-bottom: 0" style="padding: 2.5%;"></div>
                     <div class="jumbotron jumbotron-ios-apps">
-                        <h1>iOS Apps Development</h1>
+                        <h1 class="ios-heading-desktop">iOS Apps Development</h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam molestias sit natus, sed ut iste ullam quod facilis debitis suscipit nemo officia perspiciatis, asperiores quae, quibusdam eius nisi! Repellendus, dolor! Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quisquam officiis ipsa hic voluptatem autem Lorem ipsum, </p>
                         <hr size="3rem">
                         <ul class="iOS-list">
@@ -83,9 +92,7 @@
                         <button class="btn btn-outline-danger btn-lg">Learn More</button>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <img src="images/ios-apps.jpg" alt="">
-                </div>
+                
             </div>
         </div>
     </div>
@@ -93,13 +100,15 @@
         <div class="container-android">
             <div class="row">
                 <div class="col-lg-6 col-android">
-                    <img src="images/android-apps-part-1.jpg" alt="" id="android-bg-img1" class="android-bg-img">
+                    <img src="images/android-apps-part-1-desktop.jpg" alt="" id="android-bg-img1" class="img-responsive android-bg-img android-apps-part-1-desktop">
+                    <img src="images/android-apps-part-1-mobile.jpg" alt="" id="android-bg-img1" class="img-responsive android-bg-img android-apps-part-1-mobile">
                 </div>
                 <div class="col-lg-6 col-android">
-                    <img src="images/android-apps-part-2.jpg" alt="" id="android-bg-img2" class="android-bg-img">
+                    <img src="images/android-apps-part-2-desktop.jpg" alt="" id="android-bg-img2" class="img-responsive android-bg-img android-apps-part-2-desktop">
+                    <img src="images/android-apps-part-2-mobile.jpg" alt="" id="android-bg-img2" class="img-responsive android-bg-img android-apps-part-2-mobile">
                     <div class="jumbotron jumbotron-android-apps"></div>
-                    <div class="jumbotron jumbotron-android-apps">
-                        <h1>Android App Development</h1>
+                    <div class="jumbotron jumbotron-android-apps jumbotron-android-apps2">
+                        <h1 class="android-heading">Android App Development</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, pariatur necessitatibus tempore, dolores vitae deserunt veritatis architecto quae, vel officiis iure magni hic iste explicabo itaque corrupti quisquam reprehenderit quidem!</p>
                         <hr size="3rem">
                         <ul class="android-list">

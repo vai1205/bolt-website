@@ -1,0 +1,136 @@
+/* for mobile only */
+@media (max-width:500px){
+    #navbar2-items > .nav-link.active::after {
+        top: 0.5rem;
+        display: block;
+        width: 100%;
+    }
+    #navbar2-items > .nav-item::after {
+        content: '';
+        position: relative;
+        width: 0;
+        top: 0.5rem;
+        display: block;
+        height: 3px;
+        background: red;
+        transition: 0.5s;
+      }
+    #navbar2-items >  .nav-item:hover::after {
+        content: '';
+        position: relative;
+        width: 100%;
+        top: 0.5rem;
+        height: 3px;
+        display: block;
+        transition: width 0.5s;
+      }
+    
+    .text-nav2-section > p {
+        width: 50%;
+        padding-top: 20%;
+        margin: 0 auto;
+        text-align: center !important;
+    } 
+    .below-nav2-section > .img-desktop {
+        display: none;
+    }
+    .mobile-apps-for > img {
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover; 
+     }
+     .mobile-apps-for-text{
+        padding-top: 5%;
+        padding-bottom: 2%;
+    }
+    .ios-apps-img{
+        max-width: 100%;
+        object-fit: cover;  
+    }
+    .ios-img-desktop{
+        display: none;
+    }
+    .ios-heading-desktop{
+        display: none;
+    }
+    .ios-heading-mobile{
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    .jumbotron-ios-apps{
+        padding-top: 0 !important;
+    }
+    .jumbotron-ios-apps > button {
+        margin: 10% 30% 10% 30%;
+    }
+    .jumbotron-ios-apps > hr {
+        text-align: center !important;
+        margin: 12% auto;
+    }
+    .jumbotron-ios-apps > ul {
+        margin-left: 7%;
+    }
+    .col-android > #android-bg-img2 {
+        max-width: 100%;
+        object-fit: cover;
+    }
+    .android-apps-part-1-desktop{
+        display: none;
+    }
+    .android-heading{
+        display: none;
+    }
+    .jumbotron-android-apps > button {
+        margin: 10% 30%;
+    }
+    .jumbotron-android-apps > ul {
+        width: 80%;
+        margin: 2% 13%;
+    }
+    .jumbotron-android-apps > hr {
+        width: 40%;
+        margin: 12% auto;
+    }
+    .android-apps-part-2-desktop{
+        display: none;
+    }
+}
+/* for desktop only  */
+@media(min-width:991px){
+    .below-nav2-section > .img-mobile {
+        display: none;
+    }
+    .mobile-apps-for > img {
+        max-width: 100%;
+        object-fit: cover;
+     }
+    .ios-img-mobile{
+        display: none;
+    }
+    .ios-img-desktop{
+        margin-left: -31%;
+    }
+    .ios-heading-mobile{
+        display: none;
+    }
+    .col-android{
+        padding: 0;
+    }
+    .col-android > #android-bg-img1 {
+        z-index: -1;
+        position: relative;
+        width: 150%;
+        object-fit: cover;
+    }
+    .col-android > #android-bg-img2 {
+        z-index: -1;
+        width: 150%;
+        object-fit: cover;
+    }
+    .android-apps-part-1-mobile{
+        display: none;
+    }
+    .android-apps-part-2-mobile{
+        display: none;
+    }
+}
