@@ -268,7 +268,8 @@
     color: #fff !important;
 }
 .li-cloud > a:hover {
-    color: #000 !important;
+    /* color: #000 !important; */
+    text-shadow: 1px 1px 5px #fff ;
     text-decoration: none;
 }
 .cloud-selection-content > button {
