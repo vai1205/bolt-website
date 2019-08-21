@@ -3,7 +3,7 @@ $('.btn').on('click', function(){
   alert('hi')
 })
 
-var target = $("#navbar2").offset().top,
+var target = $('#navbar2').offset().top,
     timeout = null;
 
 $(window).scroll(function () {
