@@ -444,3 +444,14 @@
 label > span {
     color: red;
 } 
+.nav2-on-top{
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    background-color: #fff !important;
+    z-index: 10000 !important;
+}
+.disappear{
+    display: none;
+}
