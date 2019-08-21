@@ -21,13 +21,16 @@
     color: #fff;
     text-align: left !important;
 }
+#bolt-logo-b{
+    /* margin-left: 4rem; */
+}
 #navbar2-items > .nav-link.active {
     color: red !important;
 }
 #navbar2-items > .nav-link.active::after {
     background: red !important;
     position: relative;
-    top: 1.7rem;
+    top: 2rem;
     display: block;
     width: 100%;
 }
@@ -35,7 +38,7 @@
     content: '';
     position: relative;
     width: 0;
-    top: 1.7rem;
+    top: 2rem;
     display: block;
     height: 3px;
     background: red;
@@ -45,7 +48,7 @@
     content: '';
     position: relative;
     width: 100%;
-    top: 1.7rem;
+    top: 2rem;
     height: 3px;
     display: block;
     transition: width 0.5s;
@@ -64,6 +67,11 @@
     margin: 0 auto;
     text-align: center !important;
 } 
+.below-nav2-section > img {
+    object-fit: cover;
+    max-width: 100%;
+    height: 100%;
+}
 .mobile-apps-for{
     position: relative;
 }
@@ -73,8 +81,8 @@
     top: 0;
     left: 0;
     text-align: center;
-    margin: 1%;
-    padding: 9%;
+    margin: 2%;
+    padding: 10%;
 }
 .for-innerText > p {
     color: #fff !important;
@@ -117,6 +125,7 @@
     color: #000 !important;
     text-decoration: none !important;
 }
+
 .jumbotron-ios-apps > button {
     margin: 10% 50% 10% 3%;
 }
@@ -128,24 +137,24 @@
     left: 0;
 }
 .col-android > #android-bg-img1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
     z-index: -1;
+    position: relative;
+    max-width: 100%;
 }
 .col-android > #android-bg-img2 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
     z-index: -1;
+    max-width: 100%;
 }
 .jumbotron-android-apps{
     margin-bottom: 0;
     border-radius: 0;
     background-color: transparent;
     color: #fff;
+}
+.jumbotron-android-apps2{
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .jumbotron-android-apps > h1 {
     padding-bottom: 5%;

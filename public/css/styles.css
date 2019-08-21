@@ -19,7 +19,7 @@ button{
 button:focus {
   outline: 1px dotted;
   outline: 0 auto #dc3545 !important;
-  border-radius: 0.5rem !important;
+  /* border-radius: 0.5rem !important; */
 }
 .navbar-nav{
   background: #fff;
