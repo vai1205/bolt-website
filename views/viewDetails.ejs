@@ -4,7 +4,7 @@
 <div class="page-content">
     <!-- top-banner -->
     <div class="top-banner" style="margin-top: 5.7rem;">
-        <img src="images/mobile-banner.jpg" alt="top-banner" style="width: 100%;">
+        <img src="<%= data.topBannerImage %>" alt="top-banner" style="width: 100%;">
         <div class="overlay-text">
             <h1>
             <!-- Mobile App Development -->
@@ -58,33 +58,33 @@
     </nav>
     <!-- page content for nav selection -->
     <div class="below-nav2-section" style="margin-top: 0.2rem;">
-    <img src="images/mobile-background-desktop.jpg" alt="mobile-img" class="img-desktop">
-    <img src="images/mobile-background-mobile.jpg" alt="mobile-img" class="img-mobile">
+    <img src="<%= data.imgDesktop %>" alt="desktop-img" class="img-desktop">
+    <img src="<%= data.imgMobile %>" alt="mobile-img" class="img-mobile">
         <div class="text-nav2-section">
-            <h1>Lorem ipsum dolor, sit amet.</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita laborum facere, impedit vitae reprehenderit porro voluptas? Vel ab laudantium dolorem suscipit officiis delectus sint? Fugiat reiciendis vitae impedit temporibus corrupti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quibusdam ea eveniet deleniti fuga voluptatem dolorum similique hic. </p>
+            <h1><%= data.nav2head %></h1>
+            <p><%= data.nav2para %></p>
         </div>
     </div>
     <div class="mobile-apps-for">
-        <img src="images/mobile-apps-for-bg.jpg" alt="mobile-img">
+        <img src="<%= data.appsForImg %>" alt="mobile-img">
         <div class="mobile-apps-for-text">
             <div class="container">
                 <div class="row">
-                <h1 style="text-align: center; margin: 0 auto;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                <h1 style="text-align: center; margin: 0 auto;"><%= data.appsForHead %></h1>
                     <div class="col-lg-4 col-md-6 for-innerText">
-                            <i class="fab fa-instagram" style="margin-right:5%; font-size: 1.5rem;" class="socmed-icon"></i>
-                            <h3>Heading 1</h3>
-                            <p>Numquam, voluptas aut ratione impedit animi veritatis ducimus eaque sit consequatur sequi officia, repellat quo soluta cupiditate praesentium et autem magni eos!</p>
+                            <i class="<%= data.appsForIoneClass %>" style="margin-right:5%; font-size: 1.5rem;" class="socmed-icon"></i>
+                            <h3><%= data.appsForH3one %></h3>
+                            <p><%= data.appsForPone %></p>
                     </div>
                     <div class="col-lg-4 col-md-6 for-innerText">
-                            <i class="fab fa-twitter" style="margin-right:5%; font-size: 1.5rem;" class="socmed-icon"></i>
-                            <h3>Heading 2</h3>
-                            <p>Numquam, voluptas aut ratione impedit animi veritatis ducimus eaque sit consequatur sequi officia, repellat quo soluta cupiditate praesentium et autem magni eos!</p>
+                            <i class="<%= data.appsForItwoClass %>" style="margin-right:5%; font-size: 1.5rem;" class="socmed-icon"></i>
+                            <h3><%= data.appsForH3two %></h3>
+                            <p><%= data.appsForPtwo %></p>
                     </div>
                     <div class="col-lg-4 col-md-6 for-innerText">
-                            <i class="fab fa-instagram" style="margin-right:5%; font-size: 1.5rem;" class="socmed-icon"></i>
-                            <h3>Heading 3</h3>
-                            <p>Numquam, voluptas aut ratione impedit animi veritatis ducimus eaque sit consequatur sequi officia, repellat quo soluta cupiditate praesentium et autem magni eos!</p>
+                            <i class="<%= data.appsForIthreeClass %>" style="margin-right:5%; font-size: 1.5rem;" class="socmed-icon"></i>
+                            <h3><%= data.appsForH3three %></h3>
+                            <p><%= data.appsForPthree %></p>
                     </div>
                 </div>
             </div>
@@ -94,23 +94,23 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <img src="images/ios-apps-desktop.jpg" alt="ios-img" class="ios-apps-img ios-img-desktop">
+                    <img src="<%= data.iosImgDesktop %>" alt="ios-img" class="ios-apps-img ios-img-desktop">
                     <div class="ios-heading-mobile">
-                        <h1>iOS Apps Development</h1>
+                        <h1><%= data.iosHeadOne %></h1>
                     </div>
-                    <img src="images/ios-apps-mobile.jpg" alt="ios-img" class="ios-apps-img ios-img-mobile">
+                    <img src="<%= data.iosImgMobile %>" alt="ios-img" class="ios-apps-img ios-img-mobile">
                 </div>
                 <div class="col-lg-6">
                     <div class="jumbotron jumbotron-ios-apps" style="margin-bottom: 0" style="padding: 2.5%;"></div>
                     <div class="jumbotron jumbotron-ios-apps">
-                        <h1 class="ios-heading-desktop">iOS Apps Development</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam molestias sit natus, sed ut iste ullam quod facilis debitis suscipit nemo officia perspiciatis, asperiores quae, quibusdam eius nisi! Repellendus, dolor! Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quisquam officiis ipsa hic voluptatem autem Lorem ipsum, </p>
+                        <h1 class="ios-heading-desktop"><%= data.iosHeadTwo %></h1>
+                        <p> <%= data.iosPara %></p>
                         <hr size="3rem">
                         <ul class="iOS-list">
-                            <li class="li-iOS"> <a href="#">iPhone App Development</a></li>
-                            <li class="li-iOS"> <a href="#">iPad App Development</a></li>
-                            <li class="li-iOS"> <a href="#">Apple Watch Development</a></li>
-                            <li class="li-iOS"> <a href="#">Apple TV Apps</a></li>
+                            <li class="li-iOS"> <a href="#"><%= data.liIosOne %></a></li>
+                            <li class="li-iOS"> <a href="#"><%= data.liIosTwo %></a></li>
+                            <li class="li-iOS"> <a href="#"><%= data.liIosThree %></a></li>
+                            <li class="li-iOS"> <a href="#"><%= data.liIosFour %></a></li>
                         </ul>
                         <button class="btn btn-outline-danger btn-lg">Learn More</button>
                     </div>
@@ -123,12 +123,12 @@
         <div class="container-android">
             <div class="row">
                 <div class="col-lg-6 col-android">
-                    <img src="images/android-apps-part-1-desktop.jpg" alt="" id="android-bg-img1" class="img-responsive android-bg-img android-apps-part-1-desktop">
-                    <img src="images/android-apps-part-1-mobile.jpg" alt="" id="android-bg-img1" class="img-responsive android-bg-img android-apps-part-1-mobile">
+                    <img src="<%= data.androidAppsPart1DesktopImg %>" alt="" id="android-bg-img1" class="img-responsive android-bg-img android-apps-part-1-desktop">
+                    <img src="<%= data.androidAppsPart1MobileImg %>" alt="" id="android-bg-img1" class="img-responsive android-bg-img android-apps-part-1-mobile">
                 </div>
                 <div class="col-lg-6 col-android">
-                    <img src="images/android-apps-part-2-desktop.jpg" alt="" id="android-bg-img2" class="img-responsive android-bg-img android-apps-part-2-desktop">
-                    <img src="images/android-apps-part-2-mobile.jpg" alt="" id="android-bg-img2" class="img-responsive android-bg-img android-apps-part-2-mobile">
+                    <img src="<%= data.androidAppsPart2DesktopImg %>" alt="" id="android-bg-img2" class="img-responsive android-bg-img android-apps-part-2-desktop">
+                    <img src="<%= data.androidAppsPart2MobileImg %>" alt="" id="android-bg-img2" class="img-responsive android-bg-img android-apps-part-2-mobile">
                     <div class="jumbotron jumbotron-android-apps jumbotron-android-apps2">
                         <h1 class="android-heading">Android App Development</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, pariatur necessitatibus tempore, dolores vitae deserunt veritatis architecto quae, vel officiis iure magni hic iste explicabo itaque corrupti quisquam reprehenderit quidem!</p>
@@ -172,11 +172,11 @@
                     </span>
                 </div>
            </div>
-           <img src="images/cross-platform-apps.jpg" alt="" width="100%">
+           <img src="<%= data.crossPlatformImg %>" alt="" width="100%">
         </div>   
     </div>
     <div class="cloud-section">
-        <img src="images/cloud-mobile-bg.jpg" alt="">
+        <img src="<%= data.cloudImg %>" alt="">
         <div class="cloud-selection-content">
             <div class="jumbotron" style="margin-bottom: 0; background-color: transparent;"></div>
             <h1>Mobile Apps Driven by Cloud</h1>
@@ -276,7 +276,7 @@
                     <div class="project-card-container" id="pc0">
                         <div class="project-card" id="pi0">
                             <div class="project-dp">
-                                <img src="images/portfolio-image0.jpg" alt="project-dp" width="100%">    
+                                <img src="<%= data.portfolioImg1 %>" alt="project-dp" width="100%">    
                             </div>
                             <div class="project-description" id="pd0">
                                 <div class="project-info">
@@ -290,7 +290,7 @@
                     <div class="project-card-container" id="pc1">
                         <div class="project-card" id="pi0">
                             <div class="project-dp">
-                                <img src="images/portfolio-image0.jpg" alt="project-dp" width="100%">    
+                                <img src="<%= data.portfolioImg2 %>" alt="project-dp" width="100%">    
                             </div>
                             <div class="project-description" id="pd0">
                                 <div class="project-info">
@@ -304,7 +304,7 @@
                     <div class="project-card-container" id="pc2">
                         <div class="project-card" id="pi0">
                             <div class="project-dp">
-                                <img src="images/portfolio-image0.jpg" alt="project-dp" width="100%">    
+                                <img src="<%= data.portfolioImg3 %>" alt="project-dp" width="100%">    
                             </div>
                             <div class="project-description" id="pd0">
                                 <div class="project-info">
@@ -334,7 +334,7 @@
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat numquam suscipit a minima sed! Ex sunt provident mollitia iste ab.
                                 </p>
                                 <div class="testimonial-client">
-                                    <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile"><br/>
+                                    <img class="testimonial-image" src="<%= data.client1Img %>" alt="lady-profile"><br/>
                                     <em>Beverly, Illinois</em>
                                 </div>
                             </div>
@@ -343,7 +343,7 @@
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat numquam suscipit a minima sed! Ex sunt provident mollitia iste ab.
                                 </p>
                                 <div class="testimonial-client">
-                                    <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile"><br/>
+                                    <img class="testimonial-image" src="<%= data.client2Img %>" alt="lady-profile"><br/>
                                     <em>Beverly, Illinois</em>
                                 </div>
                             </div>

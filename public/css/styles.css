@@ -133,7 +133,20 @@ button:focus {
   }
   .mobile-navbar2-text{
     display: none;
+  }
+  .footer-social-text-para > span {
+    display: flex;
+    flex-direction: row;
   } 
+  .footer-social-text-para-hide{
+    display: none;
+  }
+  .footer-social-text-column{
+    margin-left: 7% !important;
+  }
+  .footer-social-icon {
+    margin: 10% 9% 10% 0;
+  }
 }
 /* ipad pro */
 @media(max-width: 1284px) and (min-width: 992px) {

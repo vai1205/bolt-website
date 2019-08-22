@@ -2,9 +2,9 @@
 // $('.btn').on('click', function(){
 //   alert('hi')
 // })
-$ ('#mobile-development-view').on('click', function(){
-  window.location.replace('/view')
-})
+// $ ('#mobile-development-view').on('click', function(){
+//   window.location.replace('/view')
+// })
 $('#bolt-logo-b').hide()
 var target = $('#navbar2').offset().top,
     timeout = null;
