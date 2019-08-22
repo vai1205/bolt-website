@@ -30,7 +30,7 @@
 #navbar2-items > .nav-link.active::after {
     background: red !important;
     position: relative;
-    top: 2rem;
+    top: 1.8rem;
     display: block;
     width: 100%;
 }
@@ -38,7 +38,7 @@
     content: '';
     position: relative;
     width: 0;
-    top: 2rem;
+    top: 1.8rem;
     display: block;
     height: 3px;
     background: red;
@@ -48,11 +48,12 @@
     content: '';
     position: relative;
     width: 100%;
-    top: 2rem;
+    top: 1.8rem;
     height: 3px;
     display: block;
     transition: width 0.5s;
   }
+
 .below-nav2-section{
     position: relative;
 }  
