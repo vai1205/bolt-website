@@ -94,9 +94,118 @@
     .android-apps-part-2-desktop{
         display: none;
     }
+    .jumbotron-cross-platform-mobile{
+        padding: 0 !important;
+    }
+    .jumbotron-cross-platform > .tech-box-container {
+        position: absolute;
+        top: 52%;
+        left: 17%;
+        margin: 0; 
+        padding: 0;
+    }
+    .jumbotron-cross-platform > p {
+        width: 85%;
+        text-align: justify;
+    }
+    .jumbotron-cross-platform > img {
+        margin: 25% auto 0;
+    }
+    .cloud-section > img {
+        height: 100%;
+        object-fit: cover;
+    }
+    .cloud-selection-content {
+        position: absolute;
+        left: 13%;
+        width: 85%;
+    }
+    .cloud-selection-content > p {
+        text-align: justify;
+        margin-right: 12%;
+        margin-top: 8%;
+    }
+    .tech-box-container-cloud-mobile{
+        margin: 10% auto;
+    }
+    .cloud-selection-content > button {
+        margin: 10% 23%;
+    }
+    .cloud-selection-content > ul {
+        margin: 5% 5%;    
+    }
+    .cloud-selection-content > h1 {
+        text-align: center !important;
+        margin-bottom: 5%;
+        margin-right: 10%;
+    }
+    .row-industry-mobile > .col-lg-2{
+        margin-bottom: 5% !important;
+        text-align: center;
+    }
+    .jumbotron-portfolio-mobile{
+        display: none;
+    }
+    .text-for-portfolio > h1 {
+        margin-bottom: 10%;
+        margin-top: 5%;
+    }
+    .text-for-portfolio > p {
+        color: #fff !important;
+        text-align: justify;
+        width: 90%;
+        margin: 0 5%;
+    }
+    .jumbotron-contact-mobile{
+        display: none;
+    }
+    .portfolio-wrapper{
+        top: 42%;
+        width: 200px;
+        height: 350px;
+    }
+    .portfolio-animation-container {
+        margin: 15%;
+        padding: 25%;
+    }
+    #pc0{
+        left: -20%;
+    }
+    #pc1{
+        left: 21%;
+    }
+    #pc2{
+        left: -71%;
+    }
+    .project-info {
+        position: absolute;
+        top: 14%;
+        left: 20%;
+    }
+    .project-info > p {
+        display: none;
+    }
+    .project-info > button {
+        text-align: center;
+        margin-left: 0%;
+        margin-top: 12%;
+    }
+    #pc1:hover, #pc2:hover, #pc0:hover{
+        z-index: 1000;
+    }
+    .carousel-control-prev,.carousel-control-next{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .jumbotron-contact >h2 {
+        text-align: center;
+        width: 90%;
+        margin-left: 8%;
+        margin-bottom: 6%;
+    }
 }
 /* for desktop only  */
-@media(min-width:991px){
+@media (min-width:991px) {
     .below-nav2-section > .img-mobile {
         display: none;
     }
@@ -130,7 +239,7 @@
     .android-apps-part-1-mobile{
         display: none;
     }
-    .android-apps-part-2-mobile{
+    .android-apps-part-2-mobile {
         display: none;
     }
 }
