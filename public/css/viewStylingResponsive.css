@@ -1,5 +1,12 @@
 /* for mobile only */
 @media (max-width:500px){
+    #navbar2 > .navbar-nav {
+        flex-direction: row;
+    }
+    #navbar2-items > a {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
     #navbar2-items > .nav-link.active::after {
         top: 0.5rem;
         display: block;
@@ -70,7 +77,13 @@
     .jumbotron-ios-apps > ul {
         margin-left: 7%;
     }
-    .col-android > #android-bg-img2 {
+    .container-android {
+        width: 96%;
+    }
+    .col-android{
+        padding: 0;
+    }
+    .col-android > #android-bg-img2, #android-bg-img1 {
         max-width: 100%;
         object-fit: cover;
     }
@@ -100,9 +113,9 @@
     .jumbotron-cross-platform > .tech-box-container {
         position: absolute;
         top: 52%;
-        left: 17%;
+        left: 0;
         margin: 0; 
-        padding: 0;
+        padding: 0 17%;
     }
     .jumbotron-cross-platform > p {
         width: 85%;
@@ -118,6 +131,7 @@
     .cloud-selection-content {
         position: absolute;
         left: 13%;
+        top: 2.5rem;
         width: 85%;
     }
     .cloud-selection-content > p {
@@ -241,5 +255,8 @@
     }
     .android-apps-part-2-mobile {
         display: none;
+    }
+    .cloud-selection-content {
+        top: -5rem;
     }
 }

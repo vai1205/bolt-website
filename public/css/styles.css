@@ -113,7 +113,7 @@ button:focus {
   }
   b, strong {
     font-weight: 400 !important;
-}
+  }
   .nav-item:hover::after {
     width: 25%;
    /* transition: width .3s; */
@@ -127,6 +127,12 @@ button:focus {
   }
   #menu{
     height: 6rem;
+  }
+  #bolt-logo-b{
+    display: none !important;
+  }
+  .mobile-navbar2-text{
+    display: none;
   } 
 }
 /* ipad pro */
