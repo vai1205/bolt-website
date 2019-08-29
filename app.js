@@ -42,6 +42,7 @@ app.post('/viewPath', function(req,res){
 //=============================================PAGE DATA==============================================
 const mobileDevelopment = {
 	activeMobileDevelopment: 'active',
+	activeWebDevelopment : ' ',
 	topBannerImage:'images/mobile-banner.jpg',
 	imgDesktop:'images/mobile-background-desktop.jpg',
 	imgMobile: 'images/mobile-background-mobile.jpg',
@@ -118,6 +119,7 @@ const mobileDevelopment = {
 }
 const webDevelopment = {
 	activeWebDevelopment : 'active',
+	activeMobileDevelopment : ' ',
 	topBannerImage: 'images/web/web-banner.jpg',
 	imgDesktop:'images/web/custom-web-development-desktop.jpg',
 	imgMobile: 'images/web/custom-web-development-mobile.jpg',
