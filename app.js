@@ -115,7 +115,9 @@ const mobileDevelopment = {
 	portfolioImg2:'images/portfolio-image0.jpg',
 	portfolioImg3:'images/portfolio-image0.jpg',
 	client1Img:'images/lady-img.jpg',
-	client2Img:'images/lady-img.jpg'
+	client2Img:'images/lady-img.jpg',
+	client1Feedback: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat numquam suscipit a minima sed! Ex sunt provident mollitia iste ab.',
+	client2Feedback: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat numquam suscipit a minima sed! Ex sunt provident mollitia iste ab.'
 }
 const webDevelopment = {
 	activeWebDevelopment : 'active',
@@ -180,7 +182,7 @@ const webDevelopment = {
 	client1Name: 'Beverly, Illinois',
 	client2Name: 'Beverly, Illinois',
 	client1Feedback: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat numquam suscipit a minima sed! Ex sunt provident mollitia iste ab.',
-	client2Feedback: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat numquam suscipit a minima sed! Ex sunt provident mollitia iste ab.',
+	client2Feedback: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat numquam suscipit a minima sed! Ex sunt provident mollitia iste ab.'
 }
 //==========================================SERVER CONNECTION============================================
 

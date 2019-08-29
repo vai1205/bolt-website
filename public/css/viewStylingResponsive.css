@@ -221,6 +221,7 @@
         margin-bottom: 6%;
     }
 }
+
 /* for desktop only  */
 @media (min-width:991px) {
     .below-nav2-section > .img-mobile {
@@ -263,3 +264,141 @@
         top: -5rem;
     }
 }
+/* for iPad/tablet */
+@media(max-width: 991px) and (min-width: 500px){
+    #navbar2 > .navbar-nav {
+        flex-direction: row;
+    }
+    #navbar2-items > a {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #navbar2-items > .nav-link.active::after {
+        top: 0.5rem;
+        display: block;
+        width: 100%;
+    }
+    #navbar2-items > .nav-item::after {
+        content: '';
+        position: relative;
+        width: 0;
+        top: 0.5rem;
+        display: block;
+        height: 3px;
+        background: red;
+        transition: 0.5s;
+      }
+    #navbar2-items >  .nav-item:hover::after {
+        content: '';
+        position: relative;
+        width: 100%;
+        top: 0.5rem;
+        height: 3px;
+        display: block;
+        transition: width 0.5s;
+      }
+      .mobile-navbar2-text{
+        display: none;
+      }
+      .text-nav2-section > p {
+        width: 41%;
+        margin: 0 auto;
+        text-align: justify !important;
+    }
+    .text-nav2-section > h1 {
+       margin-bottom: 6%; 
+    }
+    .img-mobile{
+        display: none;
+    }
+    .mobile-apps-for > img {
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .ios-heading-desktop, .jumbotron-ios-apps-tab{
+        display: none;
+    }
+    .ios-heading-mobile{
+        margin-top: 5% !important;
+    }
+    .ios-img-desktop{
+        display: none;
+    }
+    .ios-img-mobile{
+        max-width: 100%;
+    }
+    .android-apps-part-1-desktop, .android-apps-part-2-desktop {
+        display: none;
+    }
+    .col-android > #android-bg-img2 {
+        z-index: -1;
+        /* max-width: 100%; */
+        width: 100%;
+    }
+    .col-android > #android-bg-img1 {
+        z-index: -1;
+        /* max-width: 100%; */
+        width: 100%;
+    }
+    .cloud-section > img {
+        height: 100%;
+        object-fit: cover;
+    }
+    .jumbotron-cross-platform > .tech-box-container {
+        position: absolute;
+        top: 39%;
+        left: 0;
+        margin: 0;
+        padding: 0 29%;
+    }
+    .jumbotron-contact {
+        padding: 3% !important;
+    }
+    .portfolio-wrapper{
+        top: 42%;
+        width: 200px;
+        height: 350px;
+    }
+    .portfolio-animation-container {
+        margin: 0%;
+        padding: 25%;
+    }
+    #pc0{
+        left: -9%;
+    }
+    #pc1{
+        left: 62%;
+    }
+    #pc2{
+        left: -80%;
+    }
+    .project-info {
+        position: absolute;
+        top: 14%;
+        left: 20%;
+    }
+    .project-info > p {
+        display: none;
+    }
+    .project-info > button {
+        text-align: center;
+        margin-left: 0%;
+        margin-top: 12%;
+    }
+    #pc1:hover, #pc2:hover, #pc0:hover{
+        z-index: 1000;
+    }
+}
+@media (max-width:1201px)and (min-width:991px){
+    #pc0{
+        left: -9%;
+    }
+    #pc1{
+        left: 62%;
+    }
+    #pc2{
+        left: -80%;
+    }  
+}
+

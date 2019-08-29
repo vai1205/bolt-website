@@ -227,11 +227,13 @@
     color: #bababa;   
 }
 .jumbotron-cross-platform > .tech-box-container{
-     position: absolute;
+     /* position: absolute;
      top:0;
      left: 0;
      margin: 20%;
-     padding: 0 21%;
+     padding: 0 21%; */
+     padding-left: 32%;
+    padding-top: 3%;
 }
 .jumbotron-cross-platform > img{
     margin: 10% auto 0;
