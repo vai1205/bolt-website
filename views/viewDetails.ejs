@@ -16,6 +16,8 @@
     </div>
     <!-- below-banner -->
     <!-- navbar2 -->
+    <form action="/viewPath" method="POST" id="nav2-form">
+    <input id="nav2-input" type="hidden" value=" " name="viewName">
     <nav class="navbar navbar-expand-lg navbar-light shadow-sm p-3 bg-white rounded" id="navbar2">
         <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar2-band" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -24,11 +26,16 @@
             <img src="images/favicon.ico" style="padding-left: 2rem;" alt="bolt-logo-b" id="bolt-logo-b">
             <!-- <div class="navbar-collapse" id="navbar2-band"> -->
                 <div class="navbar-nav" id="navbar2-items">
-                    <a class="nav-item nav-link active" href="#">Mobile 
-                        <span class="mobile-navbar2-text">
+                        <!-- <a class="nav-item nav-link active">Mobile 
+                            <span class="mobile-navbar2-text">
                             Development</span> <span class="sr-only">(current)</span>
+                        </a> -->
+                    <a class="nav-item nav-link <%= data.activeMobileDevelopment %> nav2-item" href=" " id="mobileDevelopment">
+                        Mobile 
+                        <span class="mobile-navbar2-text">
+                        Development</span> <span class="sr-only">(current)</span>
                     </a>
-                    <a class="nav-item nav-link" href="#">
+                    <a class="nav-item nav-link <%= data.activeWebDevelopment %> nav2-item" href=" " id="webDevelopment">
                         Web 
                         <span class="mobile-navbar2-text">
                         Development
@@ -56,6 +63,7 @@
             <!-- </div> -->
         <!-- </a> -->
     </nav>
+    </form>
     <!-- page content for nav selection -->
     <div class="below-nav2-section" style="margin-top: 0.2rem;">
     <img src="<%= data.imgDesktop %>" alt="desktop-img" class="img-desktop">
@@ -119,7 +127,7 @@
             </div>
         </div>
     </div>
-    <div class="android-apps">
+    <div class="android-apps" style= "<%= data.hide %> ">
         <div class="container-android">
             <div class="row">
                 <div class="col-lg-6 col-android">
@@ -130,14 +138,14 @@
                     <img src="<%= data.androidAppsPart2DesktopImg %>" alt="" id="android-bg-img2" class="img-responsive android-bg-img android-apps-part-2-desktop">
                     <img src="<%= data.androidAppsPart2MobileImg %>" alt="" id="android-bg-img2" class="img-responsive android-bg-img android-apps-part-2-mobile">
                     <div class="jumbotron jumbotron-android-apps jumbotron-android-apps2">
-                        <h1 class="android-heading">Android App Development</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, pariatur necessitatibus tempore, dolores vitae deserunt veritatis architecto quae, vel officiis iure magni hic iste explicabo itaque corrupti quisquam reprehenderit quidem!</p>
+                        <h1 class="android-heading"><%= data.androidHeadOne %></h1>
+                        <p><%= data.androidPara %></p>
                         <hr size="3rem">
                         <ul class="android-list">
-                            <li class="li-android"> <a href="#">Android Smartphone Apps</a></li>
-                            <li class="li-android"> <a href="#">Android Tablet Apps</a></li>
-                            <li class="li-android"> <a href="#">Android Wear Apps</a></li>
-                            <li class="li-android"> <a href="#">Android TV Apps</a></li>
+                            <li class="li-android"> <a href="#"><%= data.liAndroidOne %></a></li>
+                            <li class="li-android"> <a href="#"><%= data.liAndroidTwo %></a></li>
+                            <li class="li-android"> <a href="#"><%= data.liAndroidThree %></a></li>
+                            <li class="li-android"> <a href="#"><%= data.liAndroidFour %></a></li>
                         </ul>
                         <button class="btn btn-outline-light btn-lg">Learn More</button>
                     </div>   
@@ -145,30 +153,30 @@
             </div>
         </div>
     </div>
-    <div class="cross-platform">
+    <div class="cross-platform" style= "<%= data.hide %> ">
         <div class="jumbotron jumbotron-cross-platform jumbotron-cross-platform-mobile"></div>
         <div class="jumbotron jumbotron-cross-platform" style="position: relative;">
-           <h1>Cross Platform Apps</h1>
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sunt excepturi, sequi doloremque aspernatur fuga cumque aut quibusdam beatae voluptates blanditiis, amet sit consequuntur vitae fugiat dignissimos officiis fugit perferendis!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, necessitatibus corporis? Cumque at ex officia sequi praesentium! Voluptatem obcaecati </p>
+           <h1><%= data.crossPlatformHeadOne %></h1>
+           <p><%= data.crossPlatformPara %></p>
            <div class="container tech-box-container">
                 <div class="input-group-prepend tech-box">
                     <span class="input-group-text box-color-cross-platform">
-                        <i class="fab fa-node-js tech-type"></i>
+                        <i class="<%= data.crossIoneClass %>"></i>
                     </span>
                 </div>
                 <div class="input-group-prepend tech-box">
                     <span class="input-group-text box-color-cross-platform">
-                        <i class="fab fa-node-js tech-type"></i>
+                        <i class="<%= data.crossItwoClass %>"></i>
                     </span>
                 </div>
                 <div class="input-group-prepend tech-box">
                     <span class="input-group-text box-color-cross-platform">
-                        <i class="fab fa-node-js tech-type"></i>
+                        <i class="<%= data.crossIthreeClass %>"></i>
                     </span>
                 </div>
                 <div class="input-group-prepend tech-box">
                     <span class="input-group-text box-color-cross-platform">
-                        <i class="fab fa-node-js tech-type"></i>
+                        <i class="<%= data.crossIfourClass %>"></i>
                     </span>
                 </div>
            </div>
@@ -179,35 +187,35 @@
         <img src="<%= data.cloudImg %>" alt="">
         <div class="cloud-selection-content">
             <div class="jumbotron" style="margin-bottom: 0; background-color: transparent;"></div>
-            <h1>Mobile Apps Driven by Cloud</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores adipisci iusto officiis iure? In rem minima recusandae iusto quas, suscipit quisquam eius animi ex harum, repellat alias sapiente nesciunt voluptatem? Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, repellat quia corrupti natus eaque aspernatur.</p>
+            <h1><%= data.cloudHead %></h1>
+            <p><%= data.cloudPara %></p>
             <div class="container tech-box-container tech-box-container-cloud-mobile">
                 <div class="input-group-prepend tech-box">
                     <span class="input-group-text box-color-cloud-section">
-                        <i class="fab fa-node-js tech-type"></i>
+                        <i class="<%= data.cloudIoneclass %>"></i>
                     </span>
                 </div>
                 <div class="input-group-prepend tech-box">
                     <span class="input-group-text box-color-cloud-section">
-                        <i class="fab fa-node-js tech-type"></i>
+                        <i class="<%= data.cloudIoneclass %>"></i>
                     </span>
                 </div>
                 <div class="input-group-prepend tech-box">
                     <span class="input-group-text box-color-cloud-section">
-                        <i class="fab fa-node-js tech-type"></i>
+                        <i class="<%= data.cloudIoneclass %>"></i>
                     </span>
                 </div>
                 <div class="input-group-prepend tech-box">
                     <span class="input-group-text box-color-cloud-section">
-                        <i class="fab fa-node-js tech-type"></i>
+                        <i class="<%= data.cloudIoneclass %>"></i>
                     </span>
                 </div>
             </div>    
             <ul class="cloud-section-list">
-                <li class="li-cloud"><a href="#">Cloud Consulting</a></li>
-                <li class="li-cloud"><a href="#">Migrate to Cloud</a></li>
-                <li class="li-cloud"><a href="#">Content Delivery</a></li>
-                <li class="li-cloud"><a href="#">Managed Cloud Services</a></li>
+                <li class="li-cloud"><a href="#"><%= data.liCloudOne %></a></li>
+                <li class="li-cloud"><a href="#"><%= data.liCloudTwo %></a></li>
+                <li class="li-cloud"><a href="#"><%= data.liCloudThree %></a></li>
+                <li class="li-cloud"><a href="#"><%= data.liCloudFour %></a></li>
             </ul>
             <button class="btn btn-outline-light btn-lg">Learn More</button>  
         </div>
@@ -215,48 +223,48 @@
     <div class="worked-section">
         <div class="jumbotron jumbotron-works" style="padding: 2.5%"></div>
         <div class="jumbotron jumbotron-works">
-            <h1>Worked with leading Industries</h1>
+            <h1><%= data.workedHead %></h1>
             <div class="container worked-box-container">
                 <div class="row row-industry-mobile">
                     <div class="col-lg-2 col-md-4">
                         <div class="input-group-prepend tech-box">
                             <span class="input-group-text box-color-worked-section">
-                                <i class="fas fa-anchor"></i>
+                                <i class="<%= data.workedIoneClass  %>"></i>
                             </span>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-4">
                         <div class="input-group-prepend tech-box">
                             <span class="input-group-text box-color-worked-section">
-                                <i class="fas fa-anchor"></i>
+                                <i class="<%= data.workedItwoClass  %>"></i>
                             </span>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-4">
                         <div class="input-group-prepend tech-box">
                             <span class="input-group-text box-color-worked-section">
-                                <i class="fas fa-anchor"></i>
+                                <i class="<%= data.workedIthreeClass  %>"></i>
                             </span>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-4">
                         <div class="input-group-prepend tech-box">
                             <span class="input-group-text box-color-worked-section">
-                                <i class="fas fa-anchor"></i>
+                                <i class="<%= data.workedIfourClass  %>"></i>
                             </span>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-4">
                         <div class="input-group-prepend tech-box">
                             <span class="input-group-text box-color-worked-section">
-                                <i class="fas fa-anchor"></i>
+                                <i class="<%= data.workedIfiveClass  %>"></i>
                             </span>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-4">
                         <div class="input-group-prepend tech-box">
                             <span class="input-group-text box-color-worked-section">
-                                <i class="fas fa-anchor"></i>
+                                <i class="<%= data.workedIsixClass  %>"></i>
                             </span>
                         </div>
                     </div>
@@ -268,8 +276,8 @@
         <div class="jumbotron jumbotron-portfolio jumbotron-portfolio-mobile" style="padding:2.5%;"></div>
         <div id="portfolio-content" class="jumbotron jumbotron-portfolio">
             <div class="text-for-portfolio">
-                <h1>Recent Projects</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora mollitia eius dolorem nesciunt, deleniti non iure nemo facere ab corrupti? Et error soluta saepe illo accusantium libero eos cum magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque aliquam temporibus odio dolor tempore earum adipisci nobis voluptate asperiores eius necessitatibus vero magnam assumenda, libero vel minima aliquid unde dolorem?</p> 
+                <h1><%= data.portfolioHead %></h1>
+                <p><%= data.portfolioPara %></p> 
             </div>
             <div class="portfolio-animation-container">
                 <div class="portfolio-wrapper">
@@ -280,8 +288,8 @@
                             </div>
                             <div class="project-description" id="pd0">
                                 <div class="project-info">
-                                    <h3 style="text-align: center">HELP</h3>
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum maiores culpa cumque cupiditate.</p>
+                                    <h3 style="text-align: center"><%= data.portfolioHead1 %></h3>
+                                    <p><%= data.portfolioPara1 %></p>
                                     <button class="btn btn-outline-light">Learn More</button> 
                                 </div>
                             </div>
@@ -294,8 +302,8 @@
                             </div>
                             <div class="project-description" id="pd0">
                                 <div class="project-info">
-                                    <h3 style="text-align: center">HELP</h3>
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum maiores culpa cumque cupiditate.</p>
+                                    <h3 style="text-align: center"><%= data.portfolioHead1 %></h3>
+                                    <p><%= data.portfolioPara2 %></p>
                                     <button class="btn btn-outline-light">Learn More</button>
                                 </div>
                             </div>
@@ -308,8 +316,8 @@
                             </div>
                             <div class="project-description" id="pd0">
                                 <div class="project-info">
-                                    <h3 style="text-align: center">HELP</h3>
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum maiores culpa cumque cupiditate.</p>
+                                    <h3 style="text-align: center"><%= data.portfolioHead1 %></h3>
+                                    <p><%= data.portfolioPara3 %></p>
                                     <button class="btn btn-outline-light">Learn More</button>
                                 </div>
                             </div>
@@ -331,20 +339,20 @@
                         <div class="carousel-inner">
                             <div class="carousel-item active container-fluid">
                                 <p class="testimonial-text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat numquam suscipit a minima sed! Ex sunt provident mollitia iste ab.
+                                <%= data.client1Feedback %>
                                 </p>
                                 <div class="testimonial-client">
                                     <img class="testimonial-image" src="<%= data.client1Img %>" alt="lady-profile"><br/>
-                                    <em>Beverly, Illinois</em>
+                                    <em><%= data.client1Name %></em>
                                 </div>
                             </div>
                             <div class="carousel-item container-fluid">
                                 <p class="testimonial-text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat numquam suscipit a minima sed! Ex sunt provident mollitia iste ab.
+                                <%= data.client2Feedback %> 
                                 </p>
                                 <div class="testimonial-client">
                                     <img class="testimonial-image" src="<%= data.client2Img %>" alt="lady-profile"><br/>
-                                    <em>Beverly, Illinois</em>
+                                    <em><%= data.client2Name %></em>
                                 </div>
                             </div>
                         </div>
