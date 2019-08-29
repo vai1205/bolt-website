@@ -30,9 +30,7 @@ $('#bolt-logo-b').on('click', function(){
 })
 selectedCategory = undefined;
 $('.nav2-item').on('click', function(){
-  $('.nav2-item').removeClass('active')
   selectedCategory = $(this).attr('id')
   $('#nav2-input').attr('value', selectedCategory)
   $('#nav2-form').submit()
-  $('#'+ selectedCategory).addClass('active')
 })
