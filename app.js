@@ -198,7 +198,7 @@ const graphicsDesign = {
 	imgMobile: 'images/graphics/graphic-background-mobile.jpg',
 	nav2head: 'First Impression should be the best!',
 	nav2para: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita laborum facere, impedit vitae reprehenderit porro voluptas? Vel ab laudantium dolorem suscipit officiis delectus sint? Fugiat reiciendis vitae impedit temporibus corrupti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quibusdam ea eveniet deleniti fuga voluptatem dolorum similique hic. ',
-	appsForImg: 'images/graphics/2 vector.jpg',
+	appsForImg: 'images/graphics/2 real.jpg',
 	appsForHead: 'User Interface of the apps speak and express!',
 	appsForIoneClass:'fas fa-bolt',
 	appsForH3one: 'Clear',
