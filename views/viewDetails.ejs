@@ -16,8 +16,6 @@
     </div>
     <!-- below-banner -->
     <!-- navbar2 -->
-    <form action="/viewPath" method="POST" id="nav2-form">
-    <input id="nav2-input" type="hidden" value=" " name="viewName">
     <nav class="navbar navbar-expand-lg navbar-light shadow-sm p-3 bg-white rounded" id="navbar2">
         <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar2-band" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -26,16 +24,12 @@
             <img src="images/favicon.ico" style="padding-left: 2rem;" alt="bolt-logo-b" id="bolt-logo-b">
             <!-- <div class="navbar-collapse" id="navbar2-band"> -->
                 <div class="navbar-nav" id="navbar2-items">
-                        <!-- <a class="nav-item nav-link active">Mobile 
-                            <span class="mobile-navbar2-text">
-                            Development</span> <span class="sr-only">(current)</span>
-                        </a> -->
-                    <a class="nav-item nav-link <%= data.activeMobileDevelopment %> nav2-item" href=" " id="mobileDevelopment">
+                    <a class="nav-item nav-link <%= data.activeMobileDevelopment %> nav2-item" href="/mobileDevelopment ">
                         Mobile 
                         <span class="mobile-navbar2-text">
                         Development</span> <span class="sr-only">(current)</span>
                     </a>
-                    <a class="nav-item nav-link <%= data.activeWebDevelopment %> nav2-item" href=" " id="webDevelopment">
+                    <a class="nav-item nav-link <%= data.activeWebDevelopment %> nav2-item" href="/webDevelopment ">
                         Web 
                         <span class="mobile-navbar2-text">
                         Development
@@ -63,7 +57,6 @@
             <!-- </div> -->
         <!-- </a> -->
     </nav>
-    </form>
     <!-- page content for nav selection -->
     <div class="below-nav2-section" style="margin-top: 0.2rem;">
     <img src="<%= data.imgDesktop %>" alt="desktop-img" class="img-desktop">

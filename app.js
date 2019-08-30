@@ -12,33 +12,26 @@ app.use(
 		extended: true
 	})
 )
-//=============================================VARIABLE DECLARATIONS==============================================
+//==========================================VARIABLE DECLARATIONS==================================
 var data
 //=============================================GET REQUESTS==============================================
 
 //Get request: HOME PAGE=============================================
-app.get('/', function(req,res){
+app.get('/', (req,res)=>{
     res.render('home')
 })
-app.get('/view', function(req,res){
-    res.render('viewDetails',{
+app.get('/mobileDevelopment', (req,res)=>{
+	data = mobileDevelopment
+	res.render('viewDetails',{
 		data:data
 	})
 })
-
-//=============================================POST REQUESTS==============================================
-
-app.post('/viewPath', function(req,res){
-	var viewName = req.body.viewName
-	if (viewName === 'mobileDevelopment'){
-		data = mobileDevelopment
-		res.redirect('/view')
-	} else if (viewName === 'webDevelopment'){
-		data = webDevelopment
-		res.redirect('/view')
-	}
+app.get('/webDevelopment', (req,res)=>{
+	data = webDevelopment
+	res.render('viewDetails',{
+		data:data
+	})
 })
-
 //=============================================PAGE DATA==============================================
 const mobileDevelopment = {
 	activeMobileDevelopment: 'active',

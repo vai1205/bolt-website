@@ -28,9 +28,6 @@ $(window).scroll(function () {
 $('#bolt-logo-b').on('click', function(){
   window.location.replace('/')
 })
-selectedCategory = undefined;
 $('.nav2-item').on('click', function(){
-  selectedCategory = $(this).attr('id')
-  $('#nav2-input').attr('value', selectedCategory)
   $('#nav2-form').submit()
 })
