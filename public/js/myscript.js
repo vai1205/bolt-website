@@ -28,6 +28,4 @@ $(window).scroll(function () {
 $('#bolt-logo-b').on('click', function(){
   window.location.replace('/')
 })
-$('.nav2-item').on('click', function(){
-  $('#nav2-form').submit()
-})
+
