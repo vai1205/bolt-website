@@ -38,6 +38,9 @@ app.get('/graphicsDesign', (req,res)=>{
 		data:data
 	})
 })
+app.get('/learnMore', (req,res)=>{
+	res.render('learnMore')
+})
 //=============================================PAGE DATA==============================================
 // ========mobileDevelopment========
 const mobileDevelopment = {
