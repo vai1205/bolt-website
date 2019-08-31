@@ -38,15 +38,23 @@ app.get('/graphicsDesign', (req,res)=>{
 		data:data
 	})
 })
+app.get('/mobileGames', (req,res)=>{
+	data = mobileGames
+	res.render('viewDetails',{
+		data:data
+	})
+})
 app.get('/learnMore', (req,res)=>{
 	res.render('learnMore')
 })
+
 //=============================================PAGE DATA==============================================
 // ========mobileDevelopment========
 const mobileDevelopment = {
 	activeMobileDevelopment: 'active',
 	activeWebDevelopment : ' ',
 	activeGraphicsDesign : ' ',
+	activeMobileGames: ' ',
 	topBannerImage:'images/mobile-banner.jpg',
 	imgDesktop:'images/mobile-background-desktop.jpg',
 	imgMobile: 'images/mobile-background-mobile.jpg',
@@ -129,6 +137,7 @@ const webDevelopment = {
 	activeWebDevelopment : 'active',
 	activeMobileDevelopment : ' ',
 	activeGraphicsDesign : ' ',
+	activeMobileGames: ' ',
 	topBannerImage: 'images/web/web-banner.jpg',
 	imgDesktop:'images/web/custom-web-development-desktop.jpg',
 	imgMobile: 'images/web/custom-web-development-mobile.jpg',
@@ -196,6 +205,7 @@ const graphicsDesign = {
 	activeWebDevelopment : ' ',
 	activeMobileDevelopment : ' ',
 	activeGraphicsDesign : 'active',
+	activeMobileGames: ' ',
 	topBannerImage: 'images/graphics/design-banner.jpg',
 	imgDesktop:'images/graphics/graphic-background-desktop.jpg',
 	imgMobile: 'images/graphics/graphic-background-mobile.jpg',
@@ -222,6 +232,74 @@ const graphicsDesign = {
 	liIosThree:'Efficient',
 	liIosFour:'Familiar',
 	cloudImg:'images/graphics/4.jpg',
+	cloudHead: 'Experience, not just Interface!',
+	cloudPara: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores adipisci iusto officiis iure? In rem minima recusandae iusto quas, suscipit quisquam eius animi ex harum, repellat alias sapiente nesciunt voluptatem? Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, repellat quia corrupti natus eaque aspernatur.',
+	cloudIoneclass: 'fas fas fa-tape tech-type',
+	cloudItwoclass: 'fas fa-pencil-ruler tech-type',
+	cloudIthreeclass: 'fas fa-ruler-combined tech-type',
+	cloudIfourclass: 'fas fa-crop-alt tech-type',
+	liCloudOne: 'Low Fidelity Wireframe',
+	liCloudTwo: 'High Fidelity Wireframe',
+	liCloudThree: 'UI',
+	liCloudFour: 'UX',
+	portfolioImg1:'images/portfolio-image0.jpg',
+	portfolioImg2:'images/portfolio-image0.jpg',
+	portfolioImg3:'images/portfolio-image0.jpg',
+	workedHead: 'Designed for apps of Different Categories',
+	workedIoneClass: 'fas fa-water',
+	workedItwoClass: 'fas fa-clinic-medical',
+	workedIthreeClass: 'fas fa-cookie-bite',
+	workedIfourClass: 'fas fa-home',
+	workedIfiveClass: 'fas fa-headphones',
+	workedIsixClass: 'fas fa-book-open',
+	portfolioHead: 'Recent Projects',
+	portfolioPara: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora mollitia eius dolorem nesciunt, deleniti non iure nemo facere ab corrupti? Et error soluta saepe illo accusantium libero eos cum magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque aliquam temporibus odio dolor tempore earum adipisci nobis voluptate asperiores eius necessitatibus vero magnam assumenda, libero vel minima aliquid unde dolorem?',
+	portfolioHead1: 'HELP',
+	portfolioHead2: 'HELP',
+	portfolioHead3: 'HELP',
+	portfolioPara1: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum maiores culpa cumque cupiditate.',
+	portfolioPara2: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum maiores culpa cumque cupiditate.',
+	portfolioPara3: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum maiores culpa cumque cupiditate.',
+	client1Img:'images/lady-img.jpg',
+	client2Img:'images/lady-img.jpg',
+	client1Name: 'Beverly, Illinois',
+	client2Name: 'Beverly, Illinois',
+	client1Feedback: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat numquam suscipit a minima sed! Ex sunt provident mollitia iste ab.',
+	client2Feedback: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat numquam suscipit a minima sed! Ex sunt provident mollitia iste ab.'
+}
+// ========mobileGames========
+const mobileGames = {
+	hide: 'display:none;',
+	activeWebDevelopment : ' ',
+	activeMobileDevelopment : ' ',
+	activeGraphicsDesign : ' ',
+	activeMobileGames: 'active',
+	topBannerImage: 'images/graphics/design-banner.jpg',
+	imgDesktop:'images/games/1.jpg',
+	imgMobile: 'images/games/1-mobile.jpg',
+	nav2head: 'First Impression should be the best!',
+	nav2para: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita laborum facere, impedit vitae reprehenderit porro voluptas? Vel ab laudantium dolorem suscipit officiis delectus sint? Fugiat reiciendis vitae impedit temporibus corrupti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quibusdam ea eveniet deleniti fuga voluptatem dolorum similique hic. ',
+	appsForImg: 'images/games/2.jpg',
+	appsForHead: 'User Interface of the apps speak and express!',
+	appsForIoneClass:'fas fa-bolt',
+	appsForH3one: 'Clear',
+	appsForPone:'Numquam, voluptas aut ratione impedit animi veritatis ducimus eaque sit consequatur sequi officia, repellat quo soluta cupiditate praesentium et autem magni eos!',
+	appsForItwoClass:'far fa-grin-stars',
+	appsForH3two: 'Attractive',
+	appsForPtwo: 'Numquam, voluptas aut ratione impedit animi veritatis ducimus eaque sit consequatur sequi officia, repellat quo soluta cupiditate praesentium et autem magni eos!',
+	appsForIthreeClass:'fas fa-tablet-alt',
+	appsForH3three: 'Responsive',
+	appsForPthree: 'Numquam, voluptas aut ratione impedit animi veritatis ducimus eaque sit consequatur sequi officia, repellat quo soluta cupiditate praesentium et autem magni eos!',
+	iosImgDesktop: 'images/games/3.jpg',
+	iosHeadOne: 'We take care when we desgin',
+	iosImgMobile: 'images/games/3-mobile.jpg',
+	iosHeadTwo: 'We take care when we DESIGN',
+	iosPara: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam molestias sit natus, sed ut iste ullam quod facilis debitis suscipit nemo officia perspiciatis, asperiores quae, quibusdam eius nisi! Repellendus, dolor! Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quisquam officiis ipsa hic voluptatem autem Lorem ipsum.',
+	liIosOne: 'Concise',
+	liIosTwo:'Consistent',
+	liIosThree:'Efficient',
+	liIosFour:'Familiar',
+	cloudImg:'images/games/4.jpg',
 	cloudHead: 'Experience, not just Interface!',
 	cloudPara: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores adipisci iusto officiis iure? In rem minima recusandae iusto quas, suscipit quisquam eius animi ex harum, repellat alias sapiente nesciunt voluptatem? Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, repellat quia corrupti natus eaque aspernatur.',
 	cloudIoneclass: 'fas fas fa-tape tech-type',
