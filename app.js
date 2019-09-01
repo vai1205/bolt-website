@@ -59,6 +59,9 @@ app.get('/learnMoreIphone', (req,res)=>{
 app.get('/contactUs', (req,res)=>{
 	res.render('contactUs')
 })
+app.get('/pageTemplate', (req,res)=>{
+	res.render('pageTemplate')
+})
 
 //=============================================PAGE DATA==============================================
 // ========mobileDevelopment========
