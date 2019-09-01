@@ -1,0 +1,122 @@
+.banner{
+    margin-top: 5.5%;
+    position: relative;
+}
+.banner-img{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1000;
+}
+.banner-text{
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    display: block;
+    margin: auto;
+    color: #fff;
+}
+.banner-text > h1 {
+    line-height: 1.2 !important;
+    font-size: 400% !important;
+}
+.mission {
+    width: 50%;
+    padding-left:15%;
+    position: absolute;
+    top: 65%;
+    left: 0;
+}
+.mission > h1 {
+    margin-bottom: 5%;
+} 
+.divider{
+    margin: 3%;
+}
+h1 > span {
+    color: red;
+}
+.feature-text{
+    margin-top: 10%;
+}
+.col-lg-5 > img {
+    max-width: 100%;
+}
+.card-group-custom{
+    padding: 0 10%;
+}
+.mid-heading{
+    margin-bottom: 2.5%;
+}
+.cta {
+    text-align: center;
+    background: #f7f7f7;
+    margin: 5% auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.cta-join{
+    background: red;
+}
+.cta > p {
+    font-size: 1.5rem;
+    text-align: center !important;
+}
+h4 > span {
+    color: red;
+}
+.card-body > h4 {
+    text-align: center !important;
+}
+.card-body > p {
+    text-align: center !important;
+}
+/* media queries */
+/* mobile only */
+@media (max-width:500px){
+    .banner{
+        margin-bottom: 61%;
+    }
+    .mission {
+        width: 80%;
+        position: absolute;
+        top: 70%;
+    } 
+    .banner-text > h1 {
+        line-height: 1.2 !important;
+        font-size: 300% !important;
+    }
+    .banner-text{
+        position: absolute;
+        top: 25%;
+    }  
+}
+/* for tab/iPad */
+@media (max-width: 991px) and (min-width: 500px){
+    .mission {
+        position: absolute;
+        top: 50%;
+    }
+    .banner{
+        margin-bottom: 20%;
+    }
+    .feature-text{
+        margin-top: 1%;
+    }
+}
+/* ipad pro only */
+@media (width: 1024px) and (height:1366px ){
+    .mission {
+        position: absolute;
+        top: 40%;
+    }
+    .banner{
+        margin-bottom: 15%;
+    }
+}
+@media (max-width: 1370px) and (min-width:1030px ){
+    .mission {
+        position: absolute;
+        top: 50%;
+    }
+}

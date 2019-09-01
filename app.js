@@ -59,7 +59,7 @@ app.get('/learnMoreIphone', (req,res)=>{
 app.get('/contactUs', (req,res)=>{
 	res.render('contactUs')
 })
-app.get('/pageTemplate', (req,res)=>{
+app.get('/about', (req,res)=>{
 	res.render('pageTemplate')
 })
 
