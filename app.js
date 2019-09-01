@@ -13,7 +13,7 @@ app.use(
 	})
 )
 //==========================================VARIABLE DECLARATIONS==================================
-var data
+var data, learnMoreData
 //=============================================GET REQUESTS==============================================
 
 //Get request: HOME PAGE=============================================
@@ -50,8 +50,14 @@ app.get('/customizedSoftware', (req,res)=>{
 		data:data
 	})
 })
-app.get('/learnMore', (req,res)=>{
-	res.render('learnMore')
+app.get('/learnMoreIphone', (req,res)=>{
+	learnMoreData = learnMoreIphone
+	res.render('learnMore',{
+		learnMoreData:learnMoreData
+	})
+})
+app.get('/contactUs', (req,res)=>{
+	res.render('contactUs')
 })
 
 //=============================================PAGE DATA==============================================
@@ -87,6 +93,7 @@ const mobileDevelopment = {
 	liIosTwo:'iPad App Development',
 	liIosThree:'Apple Watch Development',
 	liIosFour:'Apple TV Apps',
+	learnMorePath : '/learnMoreIphone',
 	androidAppsPart1DesktopImg: 'images/android-apps-part-1-desktop.jpg',
 	androidAppsPart1MobileImg:'images/android-apps-part-1-mobile.jpg',
 	androidAppsPart2DesktopImg: 'images/android-apps-part-2-desktop.jpg',
@@ -413,6 +420,28 @@ const customizedSoftware = {
 	client2Name: 'Beverly, Illinois',
 	client1Feedback: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat numquam suscipit a minima sed! Ex sunt provident mollitia iste ab.',
 	client2Feedback: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat numquam suscipit a minima sed! Ex sunt provident mollitia iste ab.'
+}
+// ======== learnMoreIphone ========
+const learnMoreIphone = {
+ topBannerImage : 'images/learnMore/top-banner.jpg',
+ topHead : 'Give Your Business App an iOS Advantage',
+ topPara : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur enim totam sapiente maiores, quia, at iusto placeat nesciunt amet ipsa pariatur commodi suscipit eaque vero consequatur velit perferendis odio adipisci.',
+ hireImg: 'images/learnMore/middle-upper.png',
+ hireHead : 'Hire our iOS developers',
+ hirePara: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique repellat facere optio sint quidem fugiat laudantium ipsam ducimus! Adipisci, delectus. Corrupti aliquid laborum deserunt ducimus molestiae repellendus consequatur quos explicabLorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis placeat neque error autem, a animi nesciunt quisquam cumque et at labore sint cupiditate? Quaerat dignissimos laudantium cum ipsa, earum voluptatibus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat odit hic, ducimus delectus adipisci nemo aspernatur architecto optio impedit distinctio mollitia aperiam asperiores. Voluptatum, totam quo sed dolor doloribus non!',
+ liImg1 :'images/learnMore/1.png',
+ liImg2 :'images/learnMore/2.png',
+ liImg3 :'images/learnMore/3.png',
+ liImg4 :'images/learnMore/4.png',
+ liHead1 : 'iOS App Customization',
+ liHead2 : 'iOS App Customization',
+ liHead3 : 'iOS App Customization',
+ liHead4 : 'iOS App Customization',
+ liPara1 : 'Get a customized iOS app with attractive UI and enhanced security for addressing business requirements while targeting niche iOS device users',
+ liPara2 : 'Get a customized iOS app with attractive UI and enhanced security for addressing business requirements while targeting niche iOS device users',
+ liPara3 : 'Get a customized iOS app with attractive UI and enhanced security for addressing business requirements while targeting niche iOS device users',
+ liPara4 : 'Get a customized iOS app with attractive UI and enhanced security for addressing business requirements while targeting niche iOS device users',
+
 }
 //==========================================SERVER CONNECTION============================================
 

@@ -4,11 +4,12 @@
     <div class="carousel slide" data-ride="false">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="images/learnMore/top-banner.jpg" class="d-block w-100" alt="top-section-img">
+                <img src="<%= learnMoreData.topBannerImage %>" class="d-block w-100" alt="top-section-img">
                 <div class="carousel-caption d-none d-md-block">
-                    <h1>Give Your Business App an iOS Advantage
+                    <h1>
+                        <%= learnMoreData.topHead %>
                     </h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur enim totam sapiente maiores, quia, at iusto placeat nesciunt amet ipsa pariatur commodi suscipit eaque vero consequatur velit perferendis odio adipisci.</p>
+                    <p><%= learnMoreData.topPara %></p>
                 </div>
             </div>
         </div>
@@ -17,20 +18,20 @@
 <div class="middle-upper-section">
     <div class="row">
         <div class="col-lg-6 middle-upper-img-set">
-            <img src="images/learnMore/middle-upper.png" class="middle-upper-img" alt="">
+            <img src="<%= learnMoreData.hireImg %>" class="middle-upper-img" alt="">
         </div>
         <div class="col-lg-6 middle-upper-text-set">
             <h1>
-            Hire our iOS developers
+                <%= learnMoreData.hireHead %>
             </h1>
             <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique repellat facere optio sint quidem fugiat laudantium ipsam ducimus! Adipisci, delectus. Corrupti aliquid laborum deserunt ducimus molestiae repellendus consequatur quos explicabo.
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis placeat neque error autem, a animi nesciunt quisquam cumque et at labore sint cupiditate? Quaerat dignissimos laudantium cum ipsa, earum voluptatibus.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat odit hic, ducimus delectus adipisci nemo aspernatur architecto optio impedit distinctio mollitia aperiam asperiores. Voluptatum, totam quo sed dolor doloribus non! 
+                <%= learnMoreData.hirePara %>
             </p>
+            <form action="/contactUs" method="GET">
                 <button class="btn btn-lg btn-danger">
                     Get in touch
                 </button>
+            </form>
         </div>
     </div>
 </div>
@@ -40,38 +41,38 @@
         <div class="row box-container">
             <div class="col-lg-3 col-md-6">
                 <div class="small-img">
-                    <img src="images/learnMore/1.png" alt="">
+                    <img src="<%= learnMoreData.liImg1 %>" alt="">
                 </div>
                 <div class="small-text">
-                    <h3>iOS App Customization</h3>
-                    <p>Get a customized iOS app with attractive UI and enhanced security for addressing business requirements while targeting niche iOS device users</p>
+                    <h3><%= learnMoreData.liHead1 %></h3>
+                    <p><%= learnMoreData.liPara1 %></p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="small-img">
-                    <img src="images/learnMore/2.png" alt="">
+                    <img src="<%= learnMoreData.liImg2 %>" alt="">
                 </div>
                 <div class="small-text">
-                    <h3>iOS App Customization</h3>
-                    <p>Get a customized iOS app with attractive UI and enhanced security for addressing business requirements while targeting niche iOS device users</p>
+                    <h3><%= learnMoreData.liHead2 %></h3>
+                    <p><%= learnMoreData.liPara2 %></p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="small-img">
-                    <img src="images/learnMore/3.png" alt="">
+                    <img src="<%= learnMoreData.liImg3 %>" alt="">
                 </div>
                 <div class="small-text">
-                    <h3>iOS App Customization</h3>
-                    <p>Get a customized iOS app with attractive UI and enhanced security for addressing business requirements while targeting niche iOS device users</p>
+                    <h3><%= learnMoreData.liHead3 %></h3>
+                    <p><%= learnMoreData.liPara3 %></p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="small-img">
-                    <img src="images/learnMore/4.png" alt="">
+                    <img src="<%= learnMoreData.liImg4 %>" alt="">
                 </div>
                 <div class="small-text">
-                    <h3>iOS App Customization</h3>
-                    <p>Get a customized iOS app with attractive UI and enhanced security for addressing business requirements while targeting niche iOS device users</p>
+                    <h3><%= learnMoreData.liHead4 %></h3>
+                    <p><%= learnMoreData.liPara4 %></p>
                 </div>
             </div>   
         </div>
@@ -143,7 +144,9 @@
                 <p>We help you grow your business from local to global level with our user-friendly, high quality web and mobile app solutions.We help you grow your business from local to global level with our user-friendly, high quality web .</p>
             </div>
             <div class="col-lg-3">
-                <button class="btn btn-lg btn-danger">Let's Work Together</button>
+                <form action="/contactUs" method="GET">
+                    <button class="btn btn-lg btn-danger">Let's Work Together</button>
+                </form>
             </div>
         </div>
     </div>

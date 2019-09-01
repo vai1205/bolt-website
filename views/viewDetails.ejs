@@ -113,7 +113,9 @@
                             <li class="li-iOS"> <a href="#"><%= data.liIosThree %></a></li>
                             <li class="li-iOS"> <a href="#"><%= data.liIosFour %></a></li>
                         </ul>
-                        <button class="btn btn-outline-danger btn-lg">Learn More</button>
+                        <form action="<%= data.learnMorePath %>" method="GET">
+                            <button class="btn btn-outline-danger btn-lg">Learn More</button>
+                        </form>
                     </div>
                 </div>
                 
@@ -370,14 +372,16 @@
                             </div>
                             <div class="form-group">
                                 <label for="queryTopic"><span>*</span>Select a topic</label>
-                                <select class="form-control" id="queryTopic">
-                                    <option>Select</option>
-                                    <option>Mobile Development</option>
-                                    <option>Web Development</option>
-                                    <option>Graphics Designing</option>
-                                    <option>Mobile Games</option>
-                                    <option>Customized Software</option>
-                                </select>
+                                <div class="selectWrapper">
+                                    <select class="form-control selectBox" id="queryTopic">
+                                            <option>Select</option>
+                                            <option>Mobile Development</option>
+                                            <option>Web Development</option>
+                                            <option>Graphics Designing</option>
+                                            <option>Mobile Games</option>
+                                            <option>Customized Software</option>
+                                    </select>
+                                </div>
                             </div>
                             <div class="form-group">
                                 <label for="clientEmail1"><span>*</span>Email address</label>

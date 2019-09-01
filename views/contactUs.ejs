@@ -1,0 +1,90 @@
+<%- include("partials/header") -%>
+<link rel="stylesheet" href="css/contactUs.css">
+<img src="images/contactUs/contact-us-bg.jpg" class="contact-us-bg" alt="">
+<div class="form-container">
+    <h3>Share your Idea!</h3>
+    <form action="/contact" method="POST">
+        <div class="form-group">
+            <label for="clientName"><span>*</span>Name</label>
+            <input type="text" class="form-control" id="clientName" placeholder="Enter Name">
+            <small id="clientNameHelp" class="form-text text-muted"></small>
+        </div>
+        <div class="form-group">
+            <label for="queryTopic"><span>*</span>Select a topic</label>
+            <div class="selectWrapper">
+                <select class="form-control selectBox" id="queryTopic">
+                        <option>Select</option>
+                        <option>Mobile Development</option>
+                        <option>Web Development</option>
+                        <option>Graphics Designing</option>
+                        <option>Mobile Games</option>
+                        <option>Customized Software</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="clientEmail1"><span>*</span>Email address</label>
+            <input type="email" class="form-control" id="clientEmail1" placeholder="email@example.com">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+        <label for="clientMobileNumber"><span>*</span>Mobile Number</label>
+        <input type="number" class="form-control" id="clientMobileNumber" placeholder="Enter Mobile Number">
+        <small id="mobileNumberHelp" class="form-text text-muted">To get in touch with you on voice.</small>
+        </div>
+        <div class="form-group">
+            <label for="clientCompanyName">Company Name</label>
+            <input type="text" class="form-control" id="clientCompanyName" placeholder="Enter Company Name">
+            <small id="clientCompanyNameHelp" class="form-text text-muted"></small>
+        </div>
+        <div class="form-group">
+            <label for="clientProjectIdea"><span>*</span>Idea</label>
+            <textarea class="form-control" id="clientProjectIdea" rows="3" placeholder="Share your project idea in brief"></textarea>
+        </div>
+        <button type="submit" class="btn btn-danger">Submit</button>
+    </form>
+</div>
+<div class="contact-img">
+    <img src="images/contactUs/kabootar.png" alt="" class="kabootar">
+</div>
+<div class="contact-details">
+    <div class="contact-details-img">
+        <img src="images/contactUs/2.jpg" alt="" class="contact-lower-img">
+    </div>
+    <div class="contact-details-text">
+        <h1>How to find <span>Bolt HQ</span></h1>
+        <ul>
+            <li>
+                <h2>Address :</h2>
+                <p>Muneshwar Vihar Colony <br />
+                    Haidargarh Road, <br />
+                    Near MB College, <br />
+                    Barabanki - 225001 <br />
+                    Uttar Pradesh, India 
+                </p>
+                <a href="https://www.google.com/maps/place/Bolt+Infotech/@26.9179973,81.1933905,17z/data=!3m1!4b1!4m5!3m4!1s0x39996039b4eb3db3:0x5d20fc5e700d5b4b!8m2!3d26.9179925!4d81.1955792">Find on Google Maps ></a><br /><br />
+            </li>
+            <li>
+                <h2>Voice Call :</h2>
+                <p> +91-9454714721  <span><a href="tel:+919454714721">: Call Now ></a></span><br />
+                +91-9140473141  <span><a href="tel:+919140473141">: Call Now ></a></span>
+                </p>
+            </li>
+            <li>
+                <h2>Email :</h2>
+                <p> support@boltinfotech.com  <span><a href="mailto:support@boltinfotecch.com?Subject=Query%20Redirected%20from%20Website%20">: Ping Support  ></a></span><br />
+                admin@boltinfotech.com  <span><a href="mailto:admin@boltinfotecch.com?Subject=Query%20Redirected%20from%20Website%20">: Ping Bolt Admin ></a></span>
+                </p>
+            </li>
+            <li>
+                <h2>Discord :</h2>
+                <p> Bolt Infotech  <span><a href="https://discord.gg/erg4ZV">: Join Server  ></a></span><br />
+                </p>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="foot">
+    <%- include("partials/footer-social") -%>
+</div>
+<%- include("partials/footer") -%> 
