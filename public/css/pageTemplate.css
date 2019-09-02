@@ -38,6 +38,7 @@ h1 > span {
 }
 .feature-text{
     margin-top: 10%;
+    text-align: center !important;
 }
 .col-lg-5 > img {
     max-width: 100%;

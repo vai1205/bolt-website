@@ -13,7 +13,7 @@ app.use(
 	})
 )
 //==========================================VARIABLE DECLARATIONS==================================
-var data, learnMoreData
+var data, learnMoreData, pageTemplateData
 //=============================================GET REQUESTS==============================================
 
 //Get request: HOME PAGE=============================================
@@ -60,7 +60,19 @@ app.get('/contactUs', (req,res)=>{
 	res.render('contactUs')
 })
 app.get('/about', (req,res)=>{
-	res.render('pageTemplate')
+	pageTemplateData = about
+	res.render('pageTemplate', {
+		pageTemplateData:pageTemplateData
+	})
+})
+app.get('/whatWeDo', (req,res)=>{
+	pageTemplateData = whatWeDo
+	res.render('pageTemplate', {
+		pageTemplateData:pageTemplateData
+	})
+})
+app.get('/blogs', (req,res)=>{
+	res.render('blogs')
 })
 
 //=============================================PAGE DATA==============================================
@@ -443,9 +455,115 @@ const learnMoreIphone = {
  liPara1 : 'Get a customized iOS app with attractive UI and enhanced security for addressing business requirements while targeting niche iOS device users',
  liPara2 : 'Get a customized iOS app with attractive UI and enhanced security for addressing business requirements while targeting niche iOS device users',
  liPara3 : 'Get a customized iOS app with attractive UI and enhanced security for addressing business requirements while targeting niche iOS device users',
- liPara4 : 'Get a customized iOS app with attractive UI and enhanced security for addressing business requirements while targeting niche iOS device users',
-
+ liPara4 : 'Get a customized iOS app with attractive UI and enhanced security for addressing business requirements while targeting niche iOS device users'
 }
+// ======== about ========
+const about = {
+	//section or element hide data
+	btnHide : 'display:none;',
+	feature1Hide : ' ',
+	feature2Hide : ' ',
+	feature3Hide : 'display:none;',
+	feature4Hide : 'display:none;',
+	feature5Hide : 'display:none;',
+	//display data
+	bannerImg: 'images/about/banner.png',
+	bannerTextPart1 : 'Because we love',
+	bannerTextPart2 : ' what we do',
+	bannerSideHead : 'Our Mission',
+	bannerSidePara : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore ea amet sequi a cum totam illum, ex voluptas nobis, odit repudiandae excepturi at, adipisci vitae repellendus doloribus esse quaerat eligendi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut animi iusto illo repudiandae, reprehenderit quisquam aspernatur at eligendi laudantium dolores, nisi quam cum qui eaque nesciunt, ducimus a esse modi!',
+	feature1Img : 'images/about/1.png',
+	feature2Img : 'images/about/2.png',
+	feature3Img : 'images/about/3.png',
+	feature4Img : 'images/about/4.png',
+	feature5Img : 'images/about/5.png',
+	feature1HeadPart1 : 'First featurette heading.',
+	feature1HeadPart2 : 'It’ll blow your mind.',
+	feature2HeadPart1 : 'First featurette heading.',
+	feature2HeadPart2 : 'It’ll blow your mind.',
+	feature3HeadPart1 : 'First featurette heading.',
+	feature3HeadPart2 : 'It’ll blow your mind.',
+	feature4HeadPart1 : 'First featurette heading.',
+	feature4HeadPart2 : 'It’ll blow your mind.',
+	feature5HeadPart1 : 'First featurette heading.',
+	feature5HeadPart2 : 'It’ll blow your mind.',
+	feature1Para : 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab enim ratione exercitationem nihil, reprehenderit iure inventore. Expedita et eum nam illo cupiditate aut possimus veniam, commodi voluptatum, ducimus, natus illum.',
+	feature2Para : 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab enim ratione exercitationem nihil, reprehenderit iure inventore. Expedita et eum nam illo cupiditate aut possimus veniam, commodi voluptatum, ducimus, natus illum.',
+	feature3Para : 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab enim ratione exercitationem nihil, reprehenderit iure inventore. Expedita et eum nam illo cupiditate aut possimus veniam, commodi voluptatum, ducimus, natus illum.',
+	feature4Para : 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab enim ratione exercitationem nihil, reprehenderit iure inventore. Expedita et eum nam illo cupiditate aut possimus veniam, commodi voluptatum, ducimus, natus illum.',
+	feature5Para : 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab enim ratione exercitationem nihil, reprehenderit iure inventore. Expedita et eum nam illo cupiditate aut possimus veniam, commodi voluptatum, ducimus, natus illum.',
+	cardHeadPart1 : 'Why ',
+	cardHeadPart2 : 'BOLT?',
+	card1Img: 'images/about/6.png',
+	card2Img: 'images/about/7.png',
+	card3Img: 'images/about/8.png',
+	card1HeadPart1: 'Client ',
+	card1HeadPart2: 'First Always',
+	card2HeadPart1: 'Our People ',
+	card2HeadPart2 : 'Our Strength',
+	card3HeadPart1: 'Quality Policy ',
+	card3HeadPart2: 'Not Negotiable',
+	card1Para: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
+	card2Para: 'This card has supporting text below as a natural lead-in to additional content.',
+	card3Para : 'This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.'
+}
+// ======== what we do ========
+const whatWeDo = {
+	//section or element hide data
+	btnHide : ' ',
+	feature1Hide : ' ',
+	feature2Hide : ' ',
+	feature3Hide : ' ',
+	feature4Hide : ' ',
+	feature5Hide : ' ',
+	//button route
+	btn1route : '/mobileDevelopment',
+	btn2route : '/webDevelopment',
+	btn3route : '/graphicsDesign',
+	btn4route : '/mobileGames',
+	btn5route : '/customizedSoftware',
+	//display data
+	bannerImg: 'images/whatWeDo/banner.png',
+	bannerTextPart1 : 'Going on all day,',
+	bannerTextPart2 : 'Going on all night!',
+	bannerSideHead : 'We Work',
+	bannerSidePara : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore ea amet sequi a cum totam illum, ex voluptas nobis, odit repudiandae excepturi at, adipisci vitae repellendus doloribus esse quaerat eligendi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut animi iusto illo repudiandae, reprehenderit quisquam aspernatur at eligendi laudantium dolores, nisi quam cum qui eaque nesciunt, ducimus a esse modi!',
+	feature1Img : 'images/whatWeDo/1.png',
+	feature2Img : 'images/whatWeDo/2.png',
+	feature3Img : 'images/whatWeDo/3.png',
+	feature4Img : 'images/whatWeDo/4.png',
+	feature5Img : 'images/whatWeDo/5.png',
+	feature1HeadPart1 : 'Mobile',
+	feature1HeadPart2 : 'Development',
+	feature2HeadPart1 : 'Web',
+	feature2HeadPart2 : 'Development',
+	feature3HeadPart1 : 'Graphics',
+	feature3HeadPart2 : 'Design',
+	feature4HeadPart1 : 'Mobile',
+	feature4HeadPart2 : 'Games.',
+	feature5HeadPart1 : 'Customized',
+	feature5HeadPart2 : 'Software',
+	feature1Para : 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab enim ratione exercitationem nihil, reprehenderit iure inventore. Expedita et eum nam illo cupiditate aut possimus veniam, commodi voluptatum, ducimus, natus illum.',
+	feature2Para : 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab enim ratione exercitationem nihil, reprehenderit iure inventore. Expedita et eum nam illo cupiditate aut possimus veniam, commodi voluptatum, ducimus, natus illum.',
+	feature3Para : 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab enim ratione exercitationem nihil, reprehenderit iure inventore. Expedita et eum nam illo cupiditate aut possimus veniam, commodi voluptatum, ducimus, natus illum.',
+	feature4Para : 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab enim ratione exercitationem nihil, reprehenderit iure inventore. Expedita et eum nam illo cupiditate aut possimus veniam, commodi voluptatum, ducimus, natus illum.',
+	feature5Para : 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab enim ratione exercitationem nihil, reprehenderit iure inventore. Expedita et eum nam illo cupiditate aut possimus veniam, commodi voluptatum, ducimus, natus illum.',
+	cardHeadPart1 : 'Why ',
+	cardHeadPart2 : 'BOLT?',
+	card1Img: 'images/whatWeDo/6.png',
+	card2Img: 'images/whatWeDo/7.png',
+	card3Img: 'images/whatWeDo/8.png',
+	card1HeadPart1: 'Client ',
+	card1HeadPart2: 'First Always',
+	card2HeadPart1: 'Our People ',
+	card2HeadPart2 : 'Our Strength',
+	card3HeadPart1: 'Quality Policy ',
+	card3HeadPart2: 'Not Negotiable',
+	card1Para: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
+	card2Para: 'This card has supporting text below as a natural lead-in to additional content.',
+	card3Para : 'This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.'
+}
+
 //==========================================SERVER CONNECTION============================================
 
 app.listen(process.env.PORT||3000, function() {

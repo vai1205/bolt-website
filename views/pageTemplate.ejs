@@ -1,38 +1,89 @@
 <%- include("partials/header") -%>
 <link rel="stylesheet" href="css/pageTemplate.css">
 <div class="banner">
-    <img src="images/about/banner.png" alt="" class="banner-img">
+    <img src="<%= pageTemplateData.bannerImg %>" alt="" class="banner-img">
     <div class="banner-text">
-        <h1>Because we love <br /> what we do</h1>
+        <h1><%= pageTemplateData.bannerTextPart1 %><br /><%= pageTemplateData.bannerTextPart2 %></h1>
     </div>
 </div>
 <div class="mission">
-    <h1>Our Mission</h1>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore ea amet sequi a cum totam illum, ex voluptas nobis, odit repudiandae excepturi at, adipisci vitae repellendus doloribus esse quaerat eligendi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut animi iusto illo repudiandae, reprehenderit quisquam aspernatur at eligendi laudantium dolores, nisi quam cum qui eaque nesciunt, ducimus a esse modi!</p>
+    <h1><%= pageTemplateData.bannerSideHead %></h1>
+    <p><%= pageTemplateData.bannerSidePara %></p>
 </div>
 <div class="divider">
     <hr>
 </div>
 <div class="container">
-    <div class="row">
+    <div class="row" style="<%= pageTemplateData.feature1Hide %>">
         <div class="col-lg-5 col-md-5">
-            <img src="images/about/1.png" alt="">
+            <img src="<%= pageTemplateData.feature1Img %>" alt="">
         </div>
         <div class="col-lg-7 col-md-7 feature-text">
-            <h1>First featurette heading. <span>It’ll blow your mind.</span> </h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab enim ratione exercitationem nihil, reprehenderit iure inventore. Expedita et eum nam illo cupiditate aut possimus veniam, commodi voluptatum, ducimus, natus illum.</p>
+            <h1><%= pageTemplateData.feature1HeadPart1 %> <span><%= pageTemplateData.feature1HeadPart2 %></span> </h1>
+            <p><%= pageTemplateData.feature1Para %></p>
+            <form action="<%= pageTemplateData.btn1route %>" method="GET">
+            <button class="btn btn-danger" style="<%= pageTemplateData.btnHide %>">Learn More</button>
+            </form>
         </div>
     </div>
-    <div class="divider">
+    <div class="divider" style="<%= pageTemplateData.feature2Hide %>">
         <hr>
     </div>
-    <div class="row">
+    <div class="row" style="<%= pageTemplateData.feature2Hide %>">
         <div class="col-lg-7 col-md-7 feature-text">
-            <h1>First featurette heading. <span>It’ll blow your mind.</span> </h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab enim ratione exercitationem nihil, reprehenderit iure inventore. Expedita et eum nam illo cupiditate aut possimus veniam, commodi voluptatum, ducimus, natus illum.</p>
+            <h1><%= pageTemplateData.feature2HeadPart1 %> <span><%= pageTemplateData.feature2HeadPart2 %></span> </h1>
+            <p><%= pageTemplateData.feature2Para %></p>
+            <form action="<%= pageTemplateData.btn2route %>" method="GET">
+            <button class="btn btn-danger" style="<%= pageTemplateData.btnHide %>">Learn More</button>
+            </form>
         </div>
         <div class="col-lg-5 col-md-5">
-            <img src="images/about/2.png" alt="">
+            <img src="<%= pageTemplateData.feature2Img %>" alt="">
+        </div>
+    </div>
+    <div class="divider" style="<%= pageTemplateData.feature3Hide %>">
+        <hr>
+    </div>
+    <div class="row" style="<%= pageTemplateData.feature3Hide %>">
+        <div class="col-lg-5 col-md-5">
+            <img src="<%= pageTemplateData.feature3Img %>" alt="">
+        </div>
+        <div class="col-lg-7 col-md-7 feature-text">
+            <h1><%= pageTemplateData.feature3HeadPart1 %> <span><%= pageTemplateData.feature3HeadPart2 %></span> </h1>
+            <p><%= pageTemplateData.feature3Para %></p>
+            <form action="<%= pageTemplateData.btn3route %>" method="GET">
+            <button class="btn btn-danger" style="<%= pageTemplateData.btnHide %>">Learn More</button>
+            </form>
+        </div>
+    </div>
+    <div class="divider" style="<%= pageTemplateData.feature4Hide %>">
+        <hr>
+    </div>
+    <div class="row" style="<%= pageTemplateData.feature4Hide %>">
+        <div class="col-lg-7 col-md-7 feature-text">
+            <h1><%= pageTemplateData.feature4HeadPart1 %> <span><%= pageTemplateData.feature4HeadPart2 %></span> </h1>
+            <p><%= pageTemplateData.feature4Para %></p>
+            <form action="<%= pageTemplateData.btn4route %>" method="GET">
+            <button class="btn btn-danger" style="<%= pageTemplateData.btnHide %>">Learn More</button>
+            </form>
+        </div>
+        <div class="col-lg-5 col-md-5">
+            <img src="<%= pageTemplateData.feature4Img %>" alt="">
+        </div>
+    </div>
+    <div class="divider" style="<%= pageTemplateData.feature5Hide %>">
+        <hr>
+    </div>
+    <div class="row" style="<%= pageTemplateData.feature5Hide %>">
+        <div class="col-lg-5 col-md-5">
+            <img src="<%= pageTemplateData.feature5Img %>" alt="">
+        </div>
+        <div class="col-lg-7 col-md-7 feature-text">
+            <h1><%= pageTemplateData.feature5HeadPart1 %> <span><%= pageTemplateData.feature5HeadPart2 %></span> </h1>
+            <p><%= pageTemplateData.feature5Para %></p>
+            <form action="<%= pageTemplateData.btn5route %>" method="GET">
+            <button class="btn btn-danger" style="<%= pageTemplateData.btnHide %>">Learn More</button>
+            </form>
         </div>
     </div>
 </div>
@@ -40,36 +91,33 @@
     <hr>
 </div>
 <div class="mid-heading">
-    <h1>Why 
-        <span>
-        BOLT</span>?
-    </h1>
+    <h1><%= pageTemplateData.cardHeadPart1 %><span><%= pageTemplateData.cardHeadPart2 %></span> </h1>
 </div>
-<div class="card-group card-group-custom">
+<div class="card-deck card-group-custom">
     <div class="card">
-        <img src="images/about/3.png" class="card-img-top" alt="...">
+        <img src="<%= pageTemplateData.card1Img %>" class="card-img-top" alt="...">
         <div class="card-body">
-            <h4 class="card-title">Client <span>First Always</span></h4>
+            <h4 class="card-title"><%= pageTemplateData.card1HeadPart1 %> <span><%= pageTemplateData.card1HeadPart2 %></span> </h4>
             <hr>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><%= pageTemplateData.card1Para %></p>
             <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
         </div>
     </div>
     <div class="card">
-        <img src="images/about/4.png" class="card-img-top" alt="...">
+        <img src="<%= pageTemplateData.card2Img %>" class="card-img-top" alt="...">
         <div class="card-body">
-            <h4 class="card-title">Our People <span>Our Strength</span></h4>
+            <h4 class="card-title"><%= pageTemplateData.card2HeadPart1 %> <span><%= pageTemplateData.card2HeadPart2 %></span> </h4>
             <hr>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text"><%= pageTemplateData.card2Para %></p>
             <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
         </div>
     </div>
     <div class="card">
-        <img src="images/about/5.png" class="card-img-top" alt="...">
+        <img src="<%= pageTemplateData.card3Img %>" class="card-img-top" alt="...">
         <div class="card-body">
-            <h4 class="card-title">Quality Policy <span>Not Negotiable</span></h4>
+            <h4 class="card-title"><%= pageTemplateData.card3HeadPart1 %> <span><%= pageTemplateData.card3HeadPart2 %></span> </h4>
             <hr>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            <p class="card-text"><%= pageTemplateData.card3Para %></p>
             <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
         </div>
     </div>
