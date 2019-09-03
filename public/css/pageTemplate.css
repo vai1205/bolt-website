@@ -129,4 +129,8 @@ h4 > span {
         object-fit: cover;
         z-index: -1000;
     }
+    .banner{
+        margin-top: 6.5%;
+        position: relative;
+    }
 }
