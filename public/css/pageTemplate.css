@@ -121,3 +121,12 @@ h4 > span {
         top: 50%;
     }
 }
+@media (min-width:991px){
+    .banner-img{
+        /* max-width: 100%; */
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        z-index: -1000;
+    }
+}
