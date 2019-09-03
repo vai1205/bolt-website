@@ -1,6 +1,9 @@
 .nav-logo-light{
   display: none;
 }
+.nav-link.active {
+  color: red !important;
+}
 input, select{
   border-radius: 3rem !important;
 }

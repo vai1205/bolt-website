@@ -14,6 +14,14 @@ app.use(
 )
 //==========================================VARIABLE DECLARATIONS==================================
 var data, learnMoreData, pageTemplateData
+// ======== default pageTemplateData ========
+pageTemplateData = {
+	activeAbout : ' ',
+	activeWhatWeDo : ' ',
+	activeBlogs : ' ',
+	activeOurWork : '',
+	activeCareers : ' ',	
+}
 //=============================================GET REQUESTS==============================================
 
 //Get request: HOME PAGE=============================================
@@ -23,41 +31,91 @@ app.get('/', (req,res)=>{
 app.get('/mobileDevelopment', (req,res)=>{
 	data = mobileDevelopment
 	res.render('viewDetails',{
-		data:data
+		data:data,
+		pageTemplateData:pageTemplateData
 	})
 })
 app.get('/webDevelopment', (req,res)=>{
 	data = webDevelopment
 	res.render('viewDetails',{
-		data:data
+		data:data,
+		pageTemplateData:pageTemplateData
 	})
 })
 app.get('/graphicsDesign', (req,res)=>{
 	data = graphicsDesign
 	res.render('viewDetails',{
-		data:data
+		data:data,
+		pageTemplateData:pageTemplateData
 	})
 })
 app.get('/mobileGames', (req,res)=>{
 	data = mobileGames
 	res.render('viewDetails',{
-		data:data
+		data:data,
+		pageTemplateData:pageTemplateData
 	})
 })
 app.get('/customizedSoftware', (req,res)=>{
 	data = customizedSoftware
 	res.render('viewDetails',{
-		data:data
+		data:data,
+		pageTemplateData:pageTemplateData
 	})
 })
 app.get('/learnMoreIphone', (req,res)=>{
 	learnMoreData = learnMoreIphone
 	res.render('learnMore',{
-		learnMoreData:learnMoreData
+		learnMoreData:learnMoreData,
+		pageTemplateData:pageTemplateData
+	})
+})
+app.get('/learnMoreAndroid', (req,res)=>{
+	learnMoreData = learnMoreAndroid
+	res.render('learnMore',{
+		learnMoreData:learnMoreData,
+		pageTemplateData:pageTemplateData
+	})
+})
+app.get('/learnMoreCloud', (req,res)=>{
+	learnMoreData = learnMoreCloud
+	res.render('learnMore',{
+		learnMoreData:learnMoreData,
+		pageTemplateData:pageTemplateData
+	})
+})
+app.get('/learnMoreWebDev', (req,res)=>{
+	learnMoreData = learnMoreWebDev
+	res.render('learnMore',{
+		learnMoreData:learnMoreData,
+		pageTemplateData:pageTemplateData
+	})
+})
+app.get('/learnMoreDesign', (req,res)=>{
+	learnMoreData = learnMoreDesign
+	res.render('learnMore',{
+		learnMoreData:learnMoreData,
+		pageTemplateData:pageTemplateData
+	})
+})
+app.get('/learnMoreGames', (req,res)=>{
+	learnMoreData = learnMoreGames
+	res.render('learnMore',{
+		learnMoreData:learnMoreData,
+		pageTemplateData:pageTemplateData
+	})
+})
+app.get('/learnMoreSoftware', (req,res)=>{
+	learnMoreData = learnMoreSoftware
+	res.render('learnMore',{
+		learnMoreData:learnMoreData,
+		pageTemplateData:pageTemplateData
 	})
 })
 app.get('/contactUs', (req,res)=>{
-	res.render('contactUs')
+	res.render('contactUs',{
+		pageTemplateData:pageTemplateData
+	})
 })
 app.get('/about', (req,res)=>{
 	pageTemplateData = about
@@ -72,12 +130,28 @@ app.get('/whatWeDo', (req,res)=>{
 	})
 })
 app.get('/blogs', (req,res)=>{
-	res.render('blogs')
+	pageTemplateData = blogs
+	res.render('blogs',{
+		pageTemplateData:pageTemplateData	
+	})
+})
+app.get('/ourWork', (req,res)=>{
+	pageTemplateData = ourWork
+	res.render('pageTemplate', {
+		pageTemplateData:pageTemplateData
+	})
+})
+app.get('/careers', (req,res)=>{
+	pageTemplateData = careers
+	res.render('pageTemplate', {
+		pageTemplateData:pageTemplateData
+	})
 })
 
 //=============================================PAGE DATA==============================================
 // ========mobileDevelopment========
 const mobileDevelopment = {
+	btnHide : ' ',
 	activeMobileDevelopment: 'active',
 	activeWebDevelopment : ' ',
 	activeGraphicsDesign : ' ',
@@ -108,7 +182,9 @@ const mobileDevelopment = {
 	liIosTwo:'iPad App Development',
 	liIosThree:'Apple Watch Development',
 	liIosFour:'Apple TV Apps',
-	learnMorePath : '/learnMoreIphone',
+	learnMoreRouteIos : '/learnMoreIphone',
+	learnMoreRouteAndroid : '/learnMoreAndroid',
+	learnMoreRouteCloud : '/learnMoreCloud',
 	androidAppsPart1DesktopImg: 'images/android-apps-part-1-desktop.jpg',
 	androidAppsPart1MobileImg:'images/android-apps-part-1-mobile.jpg',
 	androidAppsPart2DesktopImg: 'images/android-apps-part-2-desktop.jpg',
@@ -162,6 +238,8 @@ const mobileDevelopment = {
 }
 // ========webDevelopment========
 const webDevelopment = {
+	learnMoreRouteCloud : '/learnMoreWebDev',
+	btnHide : 'display:none;',
 	hide: 'display:none;',
 	activeWebDevelopment : 'active',
 	activeMobileDevelopment : ' ',
@@ -231,6 +309,8 @@ const webDevelopment = {
 }
 // ========graphicsDesign========
 const graphicsDesign = {
+	learnMoreRouteCloud : '/learnMoreDesign',
+	btnHide : 'display:none;',
 	hide: 'display:none;',
 	activeWebDevelopment : ' ',
 	activeMobileDevelopment : ' ',
@@ -300,6 +380,8 @@ const graphicsDesign = {
 }
 // ========mobileGames========
 const mobileGames = {
+	learnMoreRouteCloud : '/learnMoreGames',
+	btnHide : 'display:none;',
 	hide: 'display:none;',
 	activeWebDevelopment : ' ',
 	activeMobileDevelopment : ' ',
@@ -369,6 +451,8 @@ const mobileGames = {
 }
 // ========customizedSoftware========
 const customizedSoftware = {
+	learnMoreRouteCloud : '/learnMoreSoftware',
+	btnHide : 'display:none;',
 	hide: 'display:none;',
 	activeWebDevelopment : ' ',
 	activeMobileDevelopment : ' ',
@@ -449,14 +533,140 @@ const learnMoreIphone = {
  liImg3 :'images/learnMore/3.png',
  liImg4 :'images/learnMore/4.png',
  liHead1 : 'iOS App Customization',
- liHead2 : 'iOS App Customization',
- liHead3 : 'iOS App Customization',
- liHead4 : 'iOS App Customization',
+ liHead2 : 'Reach Elite Class',
+ liHead3 : 'Get the Latest App',
+ liHead4 : 'Attractive AI, Ultimate UX',
  liPara1 : 'Get a customized iOS app with attractive UI and enhanced security for addressing business requirements while targeting niche iOS device users',
  liPara2 : 'Get a customized iOS app with attractive UI and enhanced security for addressing business requirements while targeting niche iOS device users',
  liPara3 : 'Get a customized iOS app with attractive UI and enhanced security for addressing business requirements while targeting niche iOS device users',
  liPara4 : 'Get a customized iOS app with attractive UI and enhanced security for addressing business requirements while targeting niche iOS device users'
 }
+// ======== learnMoreAndroid ========
+const learnMoreAndroid = {
+	topBannerImage : 'images/learnMoreAndroid/android-banner.jpg',
+	topHead : 'Give Your Business App an iOS Advantage',
+	topPara : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur enim totam sapiente maiores, quia, at iusto placeat nesciunt amet ipsa pariatur commodi suscipit eaque vero consequatur velit perferendis odio adipisci.',
+	hireImg: 'images/learnMoreAndroid/middle-upper.png',
+	hireHead : 'Hire our Android developers',
+	hirePara: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique repellat facere optio sint quidem fugiat laudantium ipsam ducimus! Adipisci, delectus. Corrupti aliquid laborum deserunt ducimus molestiae repellendus consequatur quos explicabLorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis placeat neque error autem, a animi nesciunt quisquam cumque et at labore sint cupiditate? Quaerat dignissimos laudantium cum ipsa, earum voluptatibus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat odit hic, ducimus delectus adipisci nemo aspernatur architecto optio impedit distinctio mollitia aperiam asperiores. Voluptatum, totam quo sed dolor doloribus non!',
+	liImg1 :'images/learnMore/1.png',
+	liImg2 :'images/learnMore/2.png',
+	liImg3 :'images/learnMore/3.png',
+	liImg4 :'images/learnMore/4.png',
+	liHead1 : 'iOS App Customization',
+	liHead2 : 'Reach Elite Class',
+	liHead3 : 'Get the Latest App',
+	liHead4 : 'Attractive AI, Ultimate UX',
+	liPara1 : 'Get a customized iOS app with attractive UI and enhanced security for addressing business requirements while targeting niche iOS device users',
+	liPara2 : 'Get a customized iOS app with attractive UI and enhanced security for addressing business requirements while targeting niche iOS device users',
+	liPara3 : 'Get a customized iOS app with attractive UI and enhanced security for addressing business requirements while targeting niche iOS device users',
+	liPara4 : 'Get a customized iOS app with attractive UI and enhanced security for addressing business requirements while targeting niche iOS device users'
+   }
+// ======== learnMoreCloud ========
+const learnMoreCloud = {
+	topBannerImage : 'images/learnMoreCloud/cloud--banner.jpg',
+	topHead : 'Give Your Business App an iOS Advantage',
+	topPara : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur enim totam sapiente maiores, quia, at iusto placeat nesciunt amet ipsa pariatur commodi suscipit eaque vero consequatur velit perferendis odio adipisci.',
+	hireImg: 'images/learnMoreCloud/middle-upper.png',
+	hireHead : 'Hire our Back-End developers',
+	hirePara: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique repellat facere optio sint quidem fugiat laudantium ipsam ducimus! Adipisci, delectus. Corrupti aliquid laborum deserunt ducimus molestiae repellendus consequatur quos explicabLorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis placeat neque error autem, a animi nesciunt quisquam cumque et at labore sint cupiditate? Quaerat dignissimos laudantium cum ipsa, earum voluptatibus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat odit hic, ducimus delectus adipisci nemo aspernatur architecto optio impedit distinctio mollitia aperiam asperiores. Voluptatum, totam quo sed dolor doloribus non!',
+	liImg1 :'images/learnMore/1.png',
+	liImg2 :'images/learnMore/2.png',
+	liImg3 :'images/learnMore/3.png',
+	liImg4 :'images/learnMore/4.png',
+	liHead1 : 'iOS App Customization',
+	liHead2 : 'Reach Elite Class',
+	liHead3 : 'Get the Latest App',
+	liHead4 : 'Attractive AI, Ultimate UX',
+	liPara1 : 'Get a customized iOS app with attractive UI and enhanced security for addressing business requirements while targeting niche iOS device users',
+	liPara2 : 'Get a customized iOS app with attractive UI and enhanced security for addressing business requirements while targeting niche iOS device users',
+	liPara3 : 'Get a customized iOS app with attractive UI and enhanced security for addressing business requirements while targeting niche iOS device users',
+	liPara4 : 'Get a customized iOS app with attractive UI and enhanced security for addressing business requirements while targeting niche iOS device users'
+   }
+// ======== learnMoreWebDev ========
+const learnMoreWebDev = {
+	topBannerImage : 'images/learnMoreWebDev/web-banner.jpg',
+	topHead : 'Give Your Business App an iOS Advantage',
+	topPara : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur enim totam sapiente maiores, quia, at iusto placeat nesciunt amet ipsa pariatur commodi suscipit eaque vero consequatur velit perferendis odio adipisci.',
+	hireImg: 'images/learnMoreWebDev/middle-upper.png',
+	hireHead : 'Hire our Back-End developers',
+	hirePara: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique repellat facere optio sint quidem fugiat laudantium ipsam ducimus! Adipisci, delectus. Corrupti aliquid laborum deserunt ducimus molestiae repellendus consequatur quos explicabLorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis placeat neque error autem, a animi nesciunt quisquam cumque et at labore sint cupiditate? Quaerat dignissimos laudantium cum ipsa, earum voluptatibus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat odit hic, ducimus delectus adipisci nemo aspernatur architecto optio impedit distinctio mollitia aperiam asperiores. Voluptatum, totam quo sed dolor doloribus non!',
+	liImg1 :'images/learnMore/1.png',
+	liImg2 :'images/learnMore/2.png',
+	liImg3 :'images/learnMore/3.png',
+	liImg4 :'images/learnMore/4.png',
+	liHead1 : 'iOS App Customization',
+	liHead2 : 'Reach Elite Class',
+	liHead3 : 'Get the Latest App',
+	liHead4 : 'Attractive AI, Ultimate UX',
+	liPara1 : 'Get a customized iOS app with attractive UI and enhanced security for addressing business requirements while targeting niche iOS device users',
+	liPara2 : 'Get a customized iOS app with attractive UI and enhanced security for addressing business requirements while targeting niche iOS device users',
+	liPara3 : 'Get a customized iOS app with attractive UI and enhanced security for addressing business requirements while targeting niche iOS device users',
+	liPara4 : 'Get a customized iOS app with attractive UI and enhanced security for addressing business requirements while targeting niche iOS device users'
+   }
+// ======== learnMoreDesign ========
+const learnMoreDesign = {
+	topBannerImage : 'images/learnMoreDesign/design-banner.jpg',
+	topHead : 'Give Your Business App an iOS Advantage',
+	topPara : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur enim totam sapiente maiores, quia, at iusto placeat nesciunt amet ipsa pariatur commodi suscipit eaque vero consequatur velit perferendis odio adipisci.',
+	hireImg: 'images/learnMoreDesign/middle-upper.png',
+	hireHead : 'Hire our Back-End developers',
+	hirePara: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique repellat facere optio sint quidem fugiat laudantium ipsam ducimus! Adipisci, delectus. Corrupti aliquid laborum deserunt ducimus molestiae repellendus consequatur quos explicabLorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis placeat neque error autem, a animi nesciunt quisquam cumque et at labore sint cupiditate? Quaerat dignissimos laudantium cum ipsa, earum voluptatibus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat odit hic, ducimus delectus adipisci nemo aspernatur architecto optio impedit distinctio mollitia aperiam asperiores. Voluptatum, totam quo sed dolor doloribus non!',
+	liImg1 :'images/learnMore/1.png',
+	liImg2 :'images/learnMore/2.png',
+	liImg3 :'images/learnMore/3.png',
+	liImg4 :'images/learnMore/4.png',
+	liHead1 : 'iOS App Customization',
+	liHead2 : 'Reach Elite Class',
+	liHead3 : 'Get the Latest App',
+	liHead4 : 'Attractive AI, Ultimate UX',
+	liPara1 : 'Get a customized iOS app with attractive UI and enhanced security for addressing business requirements while targeting niche iOS device users',
+	liPara2 : 'Get a customized iOS app with attractive UI and enhanced security for addressing business requirements while targeting niche iOS device users',
+	liPara3 : 'Get a customized iOS app with attractive UI and enhanced security for addressing business requirements while targeting niche iOS device users',
+	liPara4 : 'Get a customized iOS app with attractive UI and enhanced security for addressing business requirements while targeting niche iOS device users'
+   }
+// ======== learnMoreGames ========
+const learnMoreGames = {
+	topBannerImage : 'images/learnMoreGames/banner.jpg',
+	topHead : 'Give Your Business App an iOS Advantage',
+	topPara : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur enim totam sapiente maiores, quia, at iusto placeat nesciunt amet ipsa pariatur commodi suscipit eaque vero consequatur velit perferendis odio adipisci.',
+	hireImg: 'images/learnMoreGames/middle-upper.png',
+	hireHead : 'Hire our Back-End developers',
+	hirePara: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique repellat facere optio sint quidem fugiat laudantium ipsam ducimus! Adipisci, delectus. Corrupti aliquid laborum deserunt ducimus molestiae repellendus consequatur quos explicabLorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis placeat neque error autem, a animi nesciunt quisquam cumque et at labore sint cupiditate? Quaerat dignissimos laudantium cum ipsa, earum voluptatibus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat odit hic, ducimus delectus adipisci nemo aspernatur architecto optio impedit distinctio mollitia aperiam asperiores. Voluptatum, totam quo sed dolor doloribus non!',
+	liImg1 :'images/learnMore/1.png',
+	liImg2 :'images/learnMore/2.png',
+	liImg3 :'images/learnMore/3.png',
+	liImg4 :'images/learnMore/4.png',
+	liHead1 : 'iOS App Customization',
+	liHead2 : 'Reach Elite Class',
+	liHead3 : 'Get the Latest App',
+	liHead4 : 'Attractive AI, Ultimate UX',
+	liPara1 : 'Get a customized iOS app with attractive UI and enhanced security for addressing business requirements while targeting niche iOS device users',
+	liPara2 : 'Get a customized iOS app with attractive UI and enhanced security for addressing business requirements while targeting niche iOS device users',
+	liPara3 : 'Get a customized iOS app with attractive UI and enhanced security for addressing business requirements while targeting niche iOS device users',
+	liPara4 : 'Get a customized iOS app with attractive UI and enhanced security for addressing business requirements while targeting niche iOS device users'
+   }
+// ======== learnMoreSoftware ========
+const learnMoreSoftware = {
+	topBannerImage : 'images/learnMoreSoftware/custom-banner.jpg',
+	topHead : 'Give Your Business App an iOS Advantage',
+	topPara : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur enim totam sapiente maiores, quia, at iusto placeat nesciunt amet ipsa pariatur commodi suscipit eaque vero consequatur velit perferendis odio adipisci.',
+	hireImg: 'images/learnMoreSoftware /middle-upper.png',
+	hireHead : 'Hire our Back-End developers',
+	hirePara: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique repellat facere optio sint quidem fugiat laudantium ipsam ducimus! Adipisci, delectus. Corrupti aliquid laborum deserunt ducimus molestiae repellendus consequatur quos explicabLorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis placeat neque error autem, a animi nesciunt quisquam cumque et at labore sint cupiditate? Quaerat dignissimos laudantium cum ipsa, earum voluptatibus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat odit hic, ducimus delectus adipisci nemo aspernatur architecto optio impedit distinctio mollitia aperiam asperiores. Voluptatum, totam quo sed dolor doloribus non!',
+	liImg1 :'images/learnMore/1.png',
+	liImg2 :'images/learnMore/2.png',
+	liImg3 :'images/learnMore/3.png',
+	liImg4 :'images/learnMore/4.png',
+	liHead1 : 'iOS App Customization',
+	liHead2 : 'Reach Elite Class',
+	liHead3 : 'Get the Latest App',
+	liHead4 : 'Attractive AI, Ultimate UX',
+	liPara1 : 'Get a customized iOS app with attractive UI and enhanced security for addressing business requirements while targeting niche iOS device users',
+	liPara2 : 'Get a customized iOS app with attractive UI and enhanced security for addressing business requirements while targeting niche iOS device users',
+	liPara3 : 'Get a customized iOS app with attractive UI and enhanced security for addressing business requirements while targeting niche iOS device users',
+	liPara4 : 'Get a customized iOS app with attractive UI and enhanced security for addressing business requirements while targeting niche iOS device users'
+   }
 // ======== about ========
 const about = {
 	//section or element hide data
@@ -466,6 +676,12 @@ const about = {
 	feature3Hide : 'display:none;',
 	feature4Hide : 'display:none;',
 	feature5Hide : 'display:none;',
+	//navbar active
+	activeAbout : 'active',
+	activeWhatWeDo : '',
+	activeBlogs : '',
+	activeOurWork : '',
+	activeCareers : '',
 	//display data
 	bannerImg: 'images/about/banner.png',
 	bannerTextPart1 : 'Because we love',
@@ -516,12 +732,24 @@ const whatWeDo = {
 	feature3Hide : ' ',
 	feature4Hide : ' ',
 	feature5Hide : ' ',
+	//navbar active
+	activeAbout : ' ',
+	activeWhatWeDo : 'active',
+	activeBlogs : '',
+	activeOurWork : '',
+	activeCareers : '',
 	//button route
 	btn1route : '/mobileDevelopment',
 	btn2route : '/webDevelopment',
 	btn3route : '/graphicsDesign',
 	btn4route : '/mobileGames',
 	btn5route : '/customizedSoftware',
+	//button text
+	btn1text : 'Learn More',
+	btn2text : 'Learn More',
+	btn3text : 'Learn More',
+	btn4text : 'Learn More',
+	btn5text : 'Learn More',
 	//display data
 	bannerImg: 'images/whatWeDo/banner.png',
 	bannerTextPart1 : 'Going on all day,',
@@ -562,6 +790,136 @@ const whatWeDo = {
 	card1Para: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
 	card2Para: 'This card has supporting text below as a natural lead-in to additional content.',
 	card3Para : 'This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.'
+}
+// ======== our work ========
+const ourWork = {
+	//section or element hide data
+	btnHide : 'display:none',
+	feature1Hide : ' ',
+	feature2Hide : ' ',
+	feature3Hide : ' ',
+	feature4Hide : ' ',
+	feature5Hide : 'display:none',
+	//navbar active
+	activeAbout : ' ',
+	activeWhatWeDo : ' ',
+	activeBlogs : '',
+	activeOurWork : 'active',
+	activeCareers : '',
+	//display data
+	bannerImg: 'images/ourWork/banner.png',
+	bannerTextPart1 : 'Whatever',
+	bannerTextPart2 : 'IT takes!',
+	bannerSideHead : 'Recent Developments',
+	bannerSidePara : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore ea amet sequi a cum totam illum, ex voluptas nobis, odit repudiandae excepturi at, adipisci vitae repellendus doloribus esse quaerat eligendi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut animi iusto illo repudiandae, reprehenderit quisquam aspernatur at eligendi laudantium dolores, nisi quam cum qui eaque nesciunt, ducimus a esse modi!',
+	feature1Img : 'images/ourWork/1.png',
+	feature2Img : 'images/ourWork/2.png',
+	feature3Img : 'images/ourWork/3.png',
+	feature4Img : 'images/ourWork/4.png',
+	feature1HeadPart1 : 'Project',
+	feature1HeadPart2 : 'HELP',
+	feature2HeadPart1 : 'Project',
+	feature2HeadPart2 : 'COZY',
+	feature3HeadPart1 : 'Project',
+	feature3HeadPart2 : 'BYEPLASTIK',
+	feature4HeadPart1 : 'Project',
+	feature4HeadPart2 : 'MATHPIX',
+	feature1Para : 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab enim ratione exercitationem nihil, reprehenderit iure inventore. Expedita et eum nam illo cupiditate aut possimus veniam, commodi voluptatum, ducimus, natus illum.',
+	feature2Para : 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab enim ratione exercitationem nihil, reprehenderit iure inventore. Expedita et eum nam illo cupiditate aut possimus veniam, commodi voluptatum, ducimus, natus illum.',
+	feature3Para : 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab enim ratione exercitationem nihil, reprehenderit iure inventore. Expedita et eum nam illo cupiditate aut possimus veniam, commodi voluptatum, ducimus, natus illum.',
+	feature4Para : 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab enim ratione exercitationem nihil, reprehenderit iure inventore. Expedita et eum nam illo cupiditate aut possimus veniam, commodi voluptatum, ducimus, natus illum.',
+	feature5Para : 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab enim ratione exercitationem nihil, reprehenderit iure inventore. Expedita et eum nam illo cupiditate aut possimus veniam, commodi voluptatum, ducimus, natus illum.',
+	cardHeadPart1 : 'Why ',
+	cardHeadPart2 : 'BOLT?',
+	card1Img: 'images/whatWeDo/6.png',
+	card2Img: 'images/whatWeDo/7.png',
+	card3Img: 'images/whatWeDo/8.png',
+	card1HeadPart1: 'Client ',
+	card1HeadPart2: 'First Always',
+	card2HeadPart1: 'Our People ',
+	card2HeadPart2 : 'Our Strength',
+	card3HeadPart1: 'Quality Policy ',
+	card3HeadPart2: 'Not Negotiable',
+	card1Para: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
+	card2Para: 'This card has supporting text below as a natural lead-in to additional content.',
+	card3Para : 'This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.'
+}
+// ======== careers ========
+const careers = {
+	//section or element hide data
+	btnHide : ' ',
+	feature1Hide : ' ',
+	feature2Hide : ' ',
+	feature3Hide : ' ',
+	feature4Hide : ' ',
+	feature5Hide : 'display:none',
+	//navbar active
+	activeAbout : ' ',
+	activeWhatWeDo : ' ',
+	activeBlogs : '',
+	activeOurWork : '',
+	activeCareers : 'active',
+	//button route
+	btn1route : ' ',
+	btn2route : '/webDevelopment',
+	btn3route : '/graphicsDesign',
+	btn4route : '/mobileGames',
+	btn5route : '/customizedSoftware',
+	//button text
+	btn1text : 'Get Hired!',
+	btn2text : 'Get Hired!',
+	btn3text : 'Get Hired!',
+	btn4text : 'Get Hired!',
+	btn5text : 'Get Hired!',
+	//display data
+	bannerImg: 'images/whatWeDo/banner.png',
+	bannerTextPart1 : 'Whatever',
+	bannerTextPart2 : 'IT takes!',
+	bannerSideHead : 'Recent Developments',
+	bannerSidePara : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore ea amet sequi a cum totam illum, ex voluptas nobis, odit repudiandae excepturi at, adipisci vitae repellendus doloribus esse quaerat eligendi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut animi iusto illo repudiandae, reprehenderit quisquam aspernatur at eligendi laudantium dolores, nisi quam cum qui eaque nesciunt, ducimus a esse modi!',
+	feature1Img : 'images/whatWeDo/1.png',
+	feature2Img : 'images/whatWeDo/2.png',
+	feature3Img : 'images/whatWeDo/3.png',
+	feature4Img : 'images/whatWeDo/4.png',
+	feature5Img : 'images/whatWeDo/5.png',
+	feature1HeadPart1 : 'Project',
+	feature1HeadPart2 : 'HELP',
+	feature2HeadPart1 : 'Project',
+	feature2HeadPart2 : 'COZY',
+	feature3HeadPart1 : 'Project',
+	feature3HeadPart2 : 'BYEPLASTIK',
+	feature4HeadPart1 : 'Project',
+	feature4HeadPart2 : 'MATHPIX',
+	feature5HeadPart1 : 'Customized',
+	feature5HeadPart2 : 'Software',
+	feature1Para : 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab enim ratione exercitationem nihil, reprehenderit iure inventore. Expedita et eum nam illo cupiditate aut possimus veniam, commodi voluptatum, ducimus, natus illum.',
+	feature2Para : 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab enim ratione exercitationem nihil, reprehenderit iure inventore. Expedita et eum nam illo cupiditate aut possimus veniam, commodi voluptatum, ducimus, natus illum.',
+	feature3Para : 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab enim ratione exercitationem nihil, reprehenderit iure inventore. Expedita et eum nam illo cupiditate aut possimus veniam, commodi voluptatum, ducimus, natus illum.',
+	feature4Para : 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab enim ratione exercitationem nihil, reprehenderit iure inventore. Expedita et eum nam illo cupiditate aut possimus veniam, commodi voluptatum, ducimus, natus illum.',
+	feature5Para : 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab enim ratione exercitationem nihil, reprehenderit iure inventore. Expedita et eum nam illo cupiditate aut possimus veniam, commodi voluptatum, ducimus, natus illum.',
+	cardHeadPart1 : 'Why ',
+	cardHeadPart2 : 'BOLT?',
+	card1Img: 'images/whatWeDo/6.png',
+	card2Img: 'images/whatWeDo/7.png',
+	card3Img: 'images/whatWeDo/8.png',
+	card1HeadPart1: 'Client ',
+	card1HeadPart2: 'First Always',
+	card2HeadPart1: 'Our People ',
+	card2HeadPart2 : 'Our Strength',
+	card3HeadPart1: 'Quality Policy ',
+	card3HeadPart2: 'Not Negotiable',
+	card1Para: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
+	card2Para: 'This card has supporting text below as a natural lead-in to additional content.',
+	card3Para : 'This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.'
+}
+// ======== blogs ========
+const blogs = {
+	//navbar active
+	activeAbout : ' ',
+	activeWhatWeDo : ' ',
+	activeBlogs : 'active',
+	activeOurWork : '',
+	activeCareers : ' ',	
 }
 
 //==========================================SERVER CONNECTION============================================

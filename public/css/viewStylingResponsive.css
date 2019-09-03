@@ -70,7 +70,7 @@
     .jumbotron-ios-apps{
         padding-top: 0 !important;
     }
-    .jumbotron-ios-apps > button {
+    .iosBtn {
         margin: 10% 30% 10% 30%;
     }
     .jumbotron-ios-apps > hr {
@@ -96,7 +96,7 @@
     .android-heading{
         display: none;
     }
-    .jumbotron-android-apps > button {
+    .androidBtn {
         margin: 10% 30%;
     }
     .jumbotron-android-apps > ul {
@@ -145,7 +145,7 @@
     .tech-box-container-cloud-mobile{
         margin: 10% auto;
     }
-    .cloud-selection-content > button {
+    .cloudBtn {
         margin: 10% 23%;
     }
     .cloud-selection-content > ul {

@@ -37,11 +37,11 @@ href="https://github.com/vai1205"
         <img src="images/learnMore/logo-nav.png" style="padding-left: 2rem;" alt="bolt-logo" class="nav-logo-light">
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav for-learn-more-inner">
-                <a class="nav-item nav-link for-learn-more-text" href="/about">About Us </a>
-                <a class="nav-item nav-link for-learn-more-text" href="/whatWeDo">What we do</a>
-                <a class="nav-item nav-link for-learn-more-text" href="/blogs">Blogs</a>
-                <a class="nav-item nav-link for-learn-more-text" href="#">Our Work</a>
-                <a class="nav-item nav-link for-learn-more-text" href="#">Careers</a>
+                <a class="nav-item nav-link for-learn-more-text <%= pageTemplateData.activeAbout %>" href="/about">About Us </a>
+                <a class="nav-item nav-link for-learn-more-text <%= pageTemplateData.activeWhatWeDo %>" href="/whatWeDo">What we do</a>
+                <a class="nav-item nav-link for-learn-more-text <%= pageTemplateData.activeBlogs %>" href="/blogs">Blogs</a>
+                <a class="nav-item nav-link for-learn-more-text <%= pageTemplateData.activeOurWork %>" href="/ourWork">Our Work</a>
+                <a class="nav-item nav-link for-learn-more-text <%= pageTemplateData.activeCareers %>" href="/careers">Careers</a>
                 <form action="/contactUs" method="GET">
                     <button class="btn btn-danger my-2 my-sm-0" type="submit">Get Estimate</button>
                 </form>

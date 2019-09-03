@@ -113,8 +113,8 @@
                             <li class="li-iOS"> <a href="#"><%= data.liIosThree %></a></li>
                             <li class="li-iOS"> <a href="#"><%= data.liIosFour %></a></li>
                         </ul>
-                        <form action="<%= data.learnMorePath %>" method="GET">
-                            <button class="btn btn-outline-danger btn-lg">Learn More</button>
+                        <form action="<%= data.learnMoreRouteIos %>" method="GET">
+                            <button class="iosBtn btn btn-outline-danger btn-lg" style="<%= data.btnHide %>">Learn More</button>
                         </form>
                     </div>
                 </div>
@@ -142,7 +142,9 @@
                             <li class="li-android"> <a href="#"><%= data.liAndroidThree %></a></li>
                             <li class="li-android"> <a href="#"><%= data.liAndroidFour %></a></li>
                         </ul>
-                        <button class="btn btn-outline-light btn-lg">Learn More</button>
+                        <form action="<%= data.learnMoreRouteAndroid %>" method="GET">
+                            <button class="androidBtn btn btn-outline-light btn-lg">Learn More</button>
+                        </form>
                     </div>   
                 </div>
             </div>
@@ -212,7 +214,9 @@
                 <li class="li-cloud"><a href="#"><%= data.liCloudThree %></a></li>
                 <li class="li-cloud"><a href="#"><%= data.liCloudFour %></a></li>
             </ul>
-            <button class="btn btn-outline-light btn-lg">Learn More</button>  
+            <form action="<%= data.learnMoreRouteCloud %>" method="GET">
+                <button class="cloudBtn btn btn-outline-light btn-lg">Learn More</button>
+            </form>  
         </div>
     </div>
     <div class="worked-section">

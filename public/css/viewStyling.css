@@ -130,7 +130,7 @@
     text-decoration: none !important;
 }
 
-.jumbotron-ios-apps > button {
+.iosBtn {
     margin: 10% 50% 10% 3%;
 }
 .container-android{
@@ -191,7 +191,7 @@
     color: red !important;
     text-decoration: none !important;
 }
-.jumbotron-android-apps > button {
+.androidBtn {
     margin: 5% 50% 5% 15%;
 }
 .jumbotron-cross-platform-mobile{
@@ -290,7 +290,7 @@
     text-shadow: 1px 1px 5px #fff ;
     text-decoration: none;
 }
-.cloud-selection-content > button {
+.cloudBtn {
     margin: 5% 2%;
 }
 .jumbotron-works{
