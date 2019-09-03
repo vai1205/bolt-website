@@ -15,11 +15,11 @@ app.use(
 //==========================================VARIABLE DECLARATIONS==================================
 var data, learnMoreData, pageTemplateData
 // ======== default pageTemplateData ========
-pageTemplateData = {
+const defaultPageTemplateData = {
 	activeAbout : ' ',
 	activeWhatWeDo : ' ',
 	activeBlogs : ' ',
-	activeOurWork : '',
+	activeOurWork : ' ',
 	activeCareers : ' ',	
 }
 //=============================================GET REQUESTS==============================================
@@ -30,6 +30,7 @@ app.get('/', (req,res)=>{
 })
 app.get('/mobileDevelopment', (req,res)=>{
 	data = mobileDevelopment
+	pageTemplateData = defaultPageTemplateData
 	res.render('viewDetails',{
 		data:data,
 		pageTemplateData:pageTemplateData
@@ -37,6 +38,7 @@ app.get('/mobileDevelopment', (req,res)=>{
 })
 app.get('/webDevelopment', (req,res)=>{
 	data = webDevelopment
+	pageTemplateData = defaultPageTemplateData
 	res.render('viewDetails',{
 		data:data,
 		pageTemplateData:pageTemplateData
@@ -44,6 +46,7 @@ app.get('/webDevelopment', (req,res)=>{
 })
 app.get('/graphicsDesign', (req,res)=>{
 	data = graphicsDesign
+	pageTemplateData = defaultPageTemplateData
 	res.render('viewDetails',{
 		data:data,
 		pageTemplateData:pageTemplateData
@@ -51,6 +54,7 @@ app.get('/graphicsDesign', (req,res)=>{
 })
 app.get('/mobileGames', (req,res)=>{
 	data = mobileGames
+	pageTemplateData = defaultPageTemplateData
 	res.render('viewDetails',{
 		data:data,
 		pageTemplateData:pageTemplateData
@@ -58,6 +62,7 @@ app.get('/mobileGames', (req,res)=>{
 })
 app.get('/customizedSoftware', (req,res)=>{
 	data = customizedSoftware
+	pageTemplateData = defaultPageTemplateData
 	res.render('viewDetails',{
 		data:data,
 		pageTemplateData:pageTemplateData
@@ -65,6 +70,7 @@ app.get('/customizedSoftware', (req,res)=>{
 })
 app.get('/learnMoreIphone', (req,res)=>{
 	learnMoreData = learnMoreIphone
+	pageTemplateData = defaultPageTemplateData
 	res.render('learnMore',{
 		learnMoreData:learnMoreData,
 		pageTemplateData:pageTemplateData
@@ -72,6 +78,7 @@ app.get('/learnMoreIphone', (req,res)=>{
 })
 app.get('/learnMoreAndroid', (req,res)=>{
 	learnMoreData = learnMoreAndroid
+	pageTemplateData = defaultPageTemplateData
 	res.render('learnMore',{
 		learnMoreData:learnMoreData,
 		pageTemplateData:pageTemplateData
@@ -79,6 +86,7 @@ app.get('/learnMoreAndroid', (req,res)=>{
 })
 app.get('/learnMoreCloud', (req,res)=>{
 	learnMoreData = learnMoreCloud
+	pageTemplateData = defaultPageTemplateData
 	res.render('learnMore',{
 		learnMoreData:learnMoreData,
 		pageTemplateData:pageTemplateData
@@ -86,6 +94,7 @@ app.get('/learnMoreCloud', (req,res)=>{
 })
 app.get('/learnMoreWebDev', (req,res)=>{
 	learnMoreData = learnMoreWebDev
+	pageTemplateData = defaultPageTemplateData
 	res.render('learnMore',{
 		learnMoreData:learnMoreData,
 		pageTemplateData:pageTemplateData
@@ -93,6 +102,7 @@ app.get('/learnMoreWebDev', (req,res)=>{
 })
 app.get('/learnMoreDesign', (req,res)=>{
 	learnMoreData = learnMoreDesign
+	pageTemplateData = defaultPageTemplateData
 	res.render('learnMore',{
 		learnMoreData:learnMoreData,
 		pageTemplateData:pageTemplateData
@@ -100,6 +110,7 @@ app.get('/learnMoreDesign', (req,res)=>{
 })
 app.get('/learnMoreGames', (req,res)=>{
 	learnMoreData = learnMoreGames
+	pageTemplateData = defaultPageTemplateData
 	res.render('learnMore',{
 		learnMoreData:learnMoreData,
 		pageTemplateData:pageTemplateData
@@ -107,12 +118,14 @@ app.get('/learnMoreGames', (req,res)=>{
 })
 app.get('/learnMoreSoftware', (req,res)=>{
 	learnMoreData = learnMoreSoftware
+	pageTemplateData = defaultPageTemplateData
 	res.render('learnMore',{
 		learnMoreData:learnMoreData,
 		pageTemplateData:pageTemplateData
 	})
 })
 app.get('/contactUs', (req,res)=>{
+	pageTemplateData = defaultPageTemplateData
 	res.render('contactUs',{
 		pageTemplateData:pageTemplateData
 	})
@@ -651,7 +664,7 @@ const learnMoreSoftware = {
 	topBannerImage : 'images/learnMoreSoftware/custom-banner.jpg',
 	topHead : 'Give Your Business App an iOS Advantage',
 	topPara : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur enim totam sapiente maiores, quia, at iusto placeat nesciunt amet ipsa pariatur commodi suscipit eaque vero consequatur velit perferendis odio adipisci.',
-	hireImg: 'images/learnMoreSoftware /middle-upper.png',
+	hireImg: 'images/learnMoreSoftware/middle-upper.png',
 	hireHead : 'Hire our Back-End developers',
 	hirePara: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique repellat facere optio sint quidem fugiat laudantium ipsam ducimus! Adipisci, delectus. Corrupti aliquid laborum deserunt ducimus molestiae repellendus consequatur quos explicabLorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis placeat neque error autem, a animi nesciunt quisquam cumque et at labore sint cupiditate? Quaerat dignissimos laudantium cum ipsa, earum voluptatibus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat odit hic, ducimus delectus adipisci nemo aspernatur architecto optio impedit distinctio mollitia aperiam asperiores. Voluptatum, totam quo sed dolor doloribus non!',
 	liImg1 :'images/learnMore/1.png',
@@ -872,26 +885,26 @@ const careers = {
 	btn4text : 'Get Hired!',
 	btn5text : 'Get Hired!',
 	//display data
-	bannerImg: 'images/whatWeDo/banner.png',
+	bannerImg: 'images/careers/banner.png',
 	bannerTextPart1 : 'Whatever',
 	bannerTextPart2 : 'IT takes!',
 	bannerSideHead : 'Recent Developments',
 	bannerSidePara : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore ea amet sequi a cum totam illum, ex voluptas nobis, odit repudiandae excepturi at, adipisci vitae repellendus doloribus esse quaerat eligendi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut animi iusto illo repudiandae, reprehenderit quisquam aspernatur at eligendi laudantium dolores, nisi quam cum qui eaque nesciunt, ducimus a esse modi!',
-	feature1Img : 'images/whatWeDo/1.png',
-	feature2Img : 'images/whatWeDo/2.png',
-	feature3Img : 'images/whatWeDo/3.png',
-	feature4Img : 'images/whatWeDo/4.png',
-	feature5Img : 'images/whatWeDo/5.png',
-	feature1HeadPart1 : 'Project',
-	feature1HeadPart2 : 'HELP',
-	feature2HeadPart1 : 'Project',
-	feature2HeadPart2 : 'COZY',
-	feature3HeadPart1 : 'Project',
-	feature3HeadPart2 : 'BYEPLASTIK',
-	feature4HeadPart1 : 'Project',
-	feature4HeadPart2 : 'MATHPIX',
-	feature5HeadPart1 : 'Customized',
-	feature5HeadPart2 : 'Software',
+	feature1Img : 'images/careers/1.png',
+	feature2Img : 'images/careers/2.png',
+	feature3Img : 'images/careers/3.png',
+	feature4Img : 'images/careers/4.png',
+	feature5Img : 'images/careers/5.png',
+	feature1HeadPart1 : 'Mobile',
+	feature1HeadPart2 : 'DEVELOPER',
+	feature2HeadPart1 : 'Web',
+	feature2HeadPart2 : 'DEVELOPER',
+	feature3HeadPart1 : 'Graphics',
+	feature3HeadPart2 : 'DESIGNER',
+	feature4HeadPart1 : 'Game',
+	feature4HeadPart2 : 'DEVELOPER',
+	feature5HeadPart1 : 'Back-end',
+	feature5HeadPart2 : 'DEVELOPER',
 	feature1Para : 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab enim ratione exercitationem nihil, reprehenderit iure inventore. Expedita et eum nam illo cupiditate aut possimus veniam, commodi voluptatum, ducimus, natus illum.',
 	feature2Para : 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab enim ratione exercitationem nihil, reprehenderit iure inventore. Expedita et eum nam illo cupiditate aut possimus veniam, commodi voluptatum, ducimus, natus illum.',
 	feature3Para : 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab enim ratione exercitationem nihil, reprehenderit iure inventore. Expedita et eum nam illo cupiditate aut possimus veniam, commodi voluptatum, ducimus, natus illum.',

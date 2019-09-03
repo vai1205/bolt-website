@@ -29,3 +29,4 @@ $('#bolt-logo-b').on('click', function(){
   window.location.replace('/')
 })
 
+
