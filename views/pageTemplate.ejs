@@ -6,6 +6,32 @@
         <h1><%= pageTemplateData.bannerTextPart1 %><br /><%= pageTemplateData.bannerTextPart2 %></h1>
     </div>
 </div>
+
+<div class="modal fade" id="hireModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Drop your <span>Resume</span>!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="form-group">
+                    <label for="exampleFormControlFile1"> <span> CODE</span> is life and <span>LOVE</span> Coffee? <br /> Upload your Resume and we will be in touch with you soon :)</label>
+                    <input type="file" class="form-control-file form-control" id="exampleFormControlFile1">
+                </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-danger">Upload</button>
+            </form>
+        </div>
+        </div>
+    </div>
+</div>
+
 <div class="mission">
     <h1><%= pageTemplateData.bannerSideHead %></h1>
     <p><%= pageTemplateData.bannerSidePara %></p>
@@ -24,6 +50,7 @@
             <form action="<%= pageTemplateData.btn1route %>" method="GET">
             <button class="btn btn-danger" style = "<%= pageTemplateData.btnHide %>"><%= pageTemplateData.btn1text %></button>
             </form>
+            <button type="submit" class="btn btn-danger modal-btn" style = "<%= pageTemplateData.modalBtnHide %>"><%= pageTemplateData.btn1text %></button>
         </div>
     </div>
     <div class="divider" style="<%= pageTemplateData.feature2Hide %>">
@@ -36,6 +63,7 @@
             <form action="<%= pageTemplateData.btn2route %>" method="GET">
             <button class="btn btn-danger" style="<%= pageTemplateData.btnHide %>"><%= pageTemplateData.btn2text %></button>
             </form>
+            <button type="submit" class="btn btn-danger modal-btn" style = "<%= pageTemplateData.modalBtnHide %>"><%= pageTemplateData.btn2text %></button>
         </div>
         <div class="col-lg-5 col-md-5">
             <img src="<%= pageTemplateData.feature2Img %>" alt="">
@@ -54,6 +82,7 @@
             <form action="<%= pageTemplateData.btn3route %>" method="GET">
             <button class="btn btn-danger" style="<%= pageTemplateData.btnHide %>"><%= pageTemplateData.btn3text %></button>
             </form>
+            <button type="submit" class="btn btn-danger modal-btn" style = "<%= pageTemplateData.modalBtnHide %>"><%= pageTemplateData.btn3text %></button>
         </div>
     </div>
     <div class="divider" style="<%= pageTemplateData.feature4Hide %>">
@@ -66,6 +95,7 @@
             <form action="<%= pageTemplateData.btn4route %>" method="GET">
             <button class="btn btn-danger" style="<%= pageTemplateData.btnHide %>"><%= pageTemplateData.btn4text %></button>
             </form>
+            <button type="submit" class="btn btn-danger modal-btn" style = "<%= pageTemplateData.modalBtnHide %>"><%= pageTemplateData.btn4text %></button>
         </div>
         <div class="col-lg-5 col-md-5">
             <img src="<%= pageTemplateData.feature4Img %>" alt="">
@@ -84,6 +114,7 @@
             <form action="<%= pageTemplateData.btn5route %>" method="GET">
             <button class="btn btn-danger" style="<%= pageTemplateData.btnHide %>"><%= pageTemplateData.btn5text %></button>
             </form>
+            <button type="submit" class="btn btn-danger modal-btn" style = "<%= pageTemplateData.modalBtnHide %>"><%= pageTemplateData.btn5text %></button>
         </div>
     </div>
 </div>
@@ -122,7 +153,7 @@
         </div>
     </div>
 </div>
-<div class="cta">
+<div class="cta" style="<%= pageTemplateData.sectionHide %>">
     <h1>Wanna Collaborate?</h1><br />
     <p>It will be fun transforming your idea digitally.</p>
     <form action="/contactUs" method="GET">

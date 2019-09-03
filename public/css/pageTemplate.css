@@ -33,7 +33,7 @@
 .divider{
     margin: 3%;
 }
-h1 > span {
+h1 > span, h5 > span, label > span {
     color: red;
 }
 .feature-text{

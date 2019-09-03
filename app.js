@@ -237,7 +237,7 @@ const mobileDevelopment = {
 	portfolioPara: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora mollitia eius dolorem nesciunt, deleniti non iure nemo facere ab corrupti? Et error soluta saepe illo accusantium libero eos cum magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque aliquam temporibus odio dolor tempore earum adipisci nobis voluptate asperiores eius necessitatibus vero magnam assumenda, libero vel minima aliquid unde dolorem?',
 	portfolioHead1: 'HELP',
 	portfolioHead2: 'COZY',
-	portfolioHead3: 'MATHPIX',
+	portfolioHead3: 'GURU',
 	portfolioPara1: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum maiores culpa cumque cupiditate.',
 	portfolioPara2: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum maiores culpa cumque cupiditate.',
 	portfolioPara3: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum maiores culpa cumque cupiditate.',
@@ -309,7 +309,7 @@ const webDevelopment = {
 	portfolioPara: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora mollitia eius dolorem nesciunt, deleniti non iure nemo facere ab corrupti? Et error soluta saepe illo accusantium libero eos cum magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque aliquam temporibus odio dolor tempore earum adipisci nobis voluptate asperiores eius necessitatibus vero magnam assumenda, libero vel minima aliquid unde dolorem?',
 	portfolioHead1: 'HELP',
 	portfolioHead2: 'COZY',
-	portfolioHead3: 'MATHPIX',
+	portfolioHead3: 'GURU',
 	portfolioPara1: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum maiores culpa cumque cupiditate.',
 	portfolioPara2: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum maiores culpa cumque cupiditate.',
 	portfolioPara3: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum maiores culpa cumque cupiditate.',
@@ -380,7 +380,7 @@ const graphicsDesign = {
 	portfolioPara: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora mollitia eius dolorem nesciunt, deleniti non iure nemo facere ab corrupti? Et error soluta saepe illo accusantium libero eos cum magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque aliquam temporibus odio dolor tempore earum adipisci nobis voluptate asperiores eius necessitatibus vero magnam assumenda, libero vel minima aliquid unde dolorem?',
 	portfolioHead1: 'HELP',
 	portfolioHead2: 'COZY',
-	portfolioHead3: 'MATHPIX',
+	portfolioHead3: 'GURU',
 	portfolioPara1: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum maiores culpa cumque cupiditate.',
 	portfolioPara2: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum maiores culpa cumque cupiditate.',
 	portfolioPara3: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum maiores culpa cumque cupiditate.',
@@ -451,7 +451,7 @@ const mobileGames = {
 	portfolioPara: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora mollitia eius dolorem nesciunt, deleniti non iure nemo facere ab corrupti? Et error soluta saepe illo accusantium libero eos cum magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque aliquam temporibus odio dolor tempore earum adipisci nobis voluptate asperiores eius necessitatibus vero magnam assumenda, libero vel minima aliquid unde dolorem?',
 	portfolioHead1: 'HELP',
 	portfolioHead2: 'COZY',
-	portfolioHead3: 'MATHPIX',
+	portfolioHead3: 'GURU',
 	portfolioPara1: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum maiores culpa cumque cupiditate.',
 	portfolioPara2: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum maiores culpa cumque cupiditate.',
 	portfolioPara3: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum maiores culpa cumque cupiditate.',
@@ -522,7 +522,7 @@ const customizedSoftware = {
 	portfolioPara: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora mollitia eius dolorem nesciunt, deleniti non iure nemo facere ab corrupti? Et error soluta saepe illo accusantium libero eos cum magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque aliquam temporibus odio dolor tempore earum adipisci nobis voluptate asperiores eius necessitatibus vero magnam assumenda, libero vel minima aliquid unde dolorem?',
 	portfolioHead1: 'HELP',
 	portfolioHead2: 'COZY',
-	portfolioHead3: 'MATHPIX',
+	portfolioHead3: 'GURU',
 	portfolioPara1: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum maiores culpa cumque cupiditate.',
 	portfolioPara2: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum maiores culpa cumque cupiditate.',
 	portfolioPara3: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum maiores culpa cumque cupiditate.',
@@ -684,6 +684,8 @@ const learnMoreSoftware = {
 const about = {
 	//section or element hide data
 	btnHide : 'display:none;',
+	modalBtnHide : 'display:none;',
+	sectionHide : ' ',
 	feature1Hide : ' ',
 	feature2Hide : ' ',
 	feature3Hide : 'display:none;',
@@ -739,6 +741,8 @@ const about = {
 // ======== what we do ========
 const whatWeDo = {
 	//section or element hide data
+	modalBtnHide : 'display:none;',
+	sectionHide : ' ',
 	btnHide : ' ',
 	feature1Hide : ' ',
 	feature2Hide : ' ',
@@ -808,6 +812,8 @@ const whatWeDo = {
 const ourWork = {
 	//section or element hide data
 	btnHide : 'display:none',
+	modalBtnHide : 'display:none;',
+	sectionHide : ' ',
 	feature1Hide : ' ',
 	feature2Hide : ' ',
 	feature3Hide : ' ',
@@ -836,7 +842,7 @@ const ourWork = {
 	feature3HeadPart1 : 'Project',
 	feature3HeadPart2 : 'BYEPLASTIK',
 	feature4HeadPart1 : 'Project',
-	feature4HeadPart2 : 'MATHPIX',
+	feature4HeadPart2 : 'GURU',
 	feature1Para : 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab enim ratione exercitationem nihil, reprehenderit iure inventore. Expedita et eum nam illo cupiditate aut possimus veniam, commodi voluptatum, ducimus, natus illum.',
 	feature2Para : 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab enim ratione exercitationem nihil, reprehenderit iure inventore. Expedita et eum nam illo cupiditate aut possimus veniam, commodi voluptatum, ducimus, natus illum.',
 	feature3Para : 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab enim ratione exercitationem nihil, reprehenderit iure inventore. Expedita et eum nam illo cupiditate aut possimus veniam, commodi voluptatum, ducimus, natus illum.',
@@ -860,7 +866,8 @@ const ourWork = {
 // ======== careers ========
 const careers = {
 	//section or element hide data
-	btnHide : ' ',
+	btnHide : 'display:none;',
+	sectionHide : 'display:none;',
 	feature1Hide : ' ',
 	feature2Hide : ' ',
 	feature3Hide : ' ',
@@ -874,10 +881,10 @@ const careers = {
 	activeCareers : 'active',
 	//button route
 	btn1route : ' ',
-	btn2route : '/webDevelopment',
-	btn3route : '/graphicsDesign',
-	btn4route : '/mobileGames',
-	btn5route : '/customizedSoftware',
+	btn2route : ' ',
+	btn3route : ' ',
+	btn4route : ' ',
+	btn5route : ' ',
 	//button text
 	btn1text : 'Get Hired!',
 	btn2text : 'Get Hired!',
