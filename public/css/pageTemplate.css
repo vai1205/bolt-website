@@ -129,8 +129,12 @@ h4 > span {
         object-fit: cover;
         z-index: -1000;
     }
-    .banner{
-        margin-top: 6.5%;
-        position: relative;
+}
+@media (min-width:1500px){
+    .mission {
+        padding-left:15%;
+        position: absolute;
+        top: 75%;
+        left: 0;
     }
 }
