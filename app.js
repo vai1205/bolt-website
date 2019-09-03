@@ -888,7 +888,7 @@ const careers = {
 	bannerImg: 'images/careers/banner.png',
 	bannerTextPart1 : 'We offer',
 	bannerTextPart2 : 'CAREERS!',
-	bannerSideHead : 'Recent Developments',
+	bannerSideHead : 'Passion to code? Come on!',
 	bannerSidePara : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore ea amet sequi a cum totam illum, ex voluptas nobis, odit repudiandae excepturi at, adipisci vitae repellendus doloribus esse quaerat eligendi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut animi iusto illo repudiandae, reprehenderit quisquam aspernatur at eligendi laudantium dolores, nisi quam cum qui eaque nesciunt, ducimus a esse modi!',
 	feature1Img : 'images/careers/1.png',
 	feature2Img : 'images/careers/2.png',
