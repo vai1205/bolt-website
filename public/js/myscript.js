@@ -10,7 +10,6 @@ $('.modal-btn').on('click',()=>{
   $('#hireModal').modal('show')
 })
 
-
 $('#bolt-logo-b').hide()
 var target = $('#navbar2').offset().top,
     timeout = null;

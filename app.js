@@ -3,6 +3,8 @@ const dotenv = require('dotenv')
 dotenv.config()
 const express = require('express')
 const bodyParser = require('body-parser')
+const nodemailer = require('nodemailer')
+const upload = require('express-fileupload')
 const ejs = require('ejs')
 const app = express()
 app.use(express.static('public'))
@@ -12,6 +14,9 @@ app.use(
 		extended: true
 	})
 )
+app.use(upload({
+	limits: { fileSize: 5 * 1024 * 1024 }
+  }))
 //==========================================VARIABLE DECLARATIONS==================================
 var data, learnMoreData, pageTemplateData
 // ======== default pageTemplateData ========
@@ -145,6 +150,18 @@ app.get('/whatWeDo', (req,res)=>{
 app.get('/blogs', (req,res)=>{
 	pageTemplateData = blogs
 	res.render('blogs',{
+		pageTemplateData:pageTemplateData	
+	})
+})
+app.get('/thanks', (req,res)=>{
+	pageTemplateData = defaultPageTemplateData
+	res.render('thanks',{
+		pageTemplateData:pageTemplateData	
+	})
+})
+app.get('/resumeSubmitted', (req,res)=>{
+	pageTemplateData = defaultPageTemplateData
+	res.render('resumeSubmitted',{
 		pageTemplateData:pageTemplateData	
 	})
 })
@@ -941,7 +958,110 @@ const blogs = {
 	activeOurWork : '',
 	activeCareers : ' ',	
 }
-
+//======================================== Email Configurations ==================================
+const transporter = nodemailer.createTransport({
+	service : 'gmail',
+	auth : {
+		user : 'enquiry.boltinfotech@gmail.com',
+		pass : process.env.GMAIL_PASS
+	}
+})
+//=============================================POST REQUESTS==============================================
+//contact form for share idea
+app.post('/contact', (req,res)=>{
+	const mailOptionsForClient = {
+		from : 'enquiry.boltinfotech@gmail.com',
+		to : req.body.clientEmail,
+		subject : 'Your Idea is worth Millions!',
+		html : '<h4 style="text-align: center;">&nbsp;</h4><table style="height: 204px;" width="628"><tbody><tr><td style="width: 618px; border-color: red; background-color: #f7f7f7;"><h2 style="text-align: center;"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://cdn1.imggmi.com/uploads/2019/9/4/e219c92cddcfee450817a8dec9462382-full.png" alt="" width="156" height="78" /><strong>We appreciate your <span style="color: #ff0000;">interest</span> in our Services.</strong></h2><p style="text-align: center;">Thanks for contacting us. We will be in touch with you soon!</p></td></tr></tbody></table>',
+	}
+	transporter.sendMail(mailOptionsForClient,(err, info)=>{
+		if (err){
+			console.log(err);	
+		} else {
+			console.log('Email 1 sent' + info.response)
+		}
+	})
+	const mailOptionsForBolt = {
+		from : 'enquiry.boltinfotech@gmail.com',
+		to : 'support@boltinfotech.com',
+		subject : 'Enquiry data : From Website',
+		html : '<b><li> Name : </b>'+ req.body.clientName + '<br />' + '<b><li> Topic :</b> ' + req.body.topic + '<br />' + '<b><li> Email : </b>' + req.body.clientEmail + '<br />' + '<b><li> Mobile : </b>' + req.body.clientMobile + '<br />' + '<b><li> Company : </b>' + req.body.company + '<br />' + '<b><li> Idea : </b>' + req.body.idea
+	}
+	transporter.sendMail(mailOptionsForBolt,(err, info)=>{
+		if (err){
+			console.log(err);	
+		} else {
+			console.log('Email 2 sent' + info.response)
+		}
+	})
+	res.redirect('/thanks')
+})
+// contact form for free consultation
+app.post('/freeConsultation', (req,res)=>{
+	const mailOptionsForClient = {
+		from : 'enquiry.boltinfotech@gmail.com',
+		to : req.body.clientEmail,
+		subject : 'Your Idea is worth Millions!',
+		html : '<h4 style="text-align: center;">&nbsp;</h4><table style="height: 204px;" width="628"><tbody><tr><td style="width: 618px; border-color: red; background-color: #f7f7f7;"><h2 style="text-align: center;"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://cdn1.imggmi.com/uploads/2019/9/4/e219c92cddcfee450817a8dec9462382-full.png" alt="" width="156" height="78" /><strong>We appreciate your <span style="color: #ff0000;">interest</span> in our Services.</strong></h2><p style="text-align: center;">Thanks for contacting us. We will be in touch with you soon!</p></td></tr></tbody></table>',
+	}
+	transporter.sendMail(mailOptionsForClient,(err, info)=>{
+		if (err){
+			console.log(err);	
+		} else {
+			console.log('Email 1 sent' + info.response)
+		}
+	})
+	const mailOptionsForBolt = {
+		from : 'enquiry.boltinfotech@gmail.com',
+		to : 'support@boltinfotech.com',
+		subject : 'Enquiry data : Free Consultation',
+		html : '<b><li> Name : </b>'+ req.body.clientName + '<br />' + '<b><li> Email : </b>' + req.body.clientEmail + '<br />' + '<b><li> Mobile : </b>' + req.body.clientMobile + '<br />'  + '<b><li> Idea : </b>' + req.body.idea
+	}
+	transporter.sendMail(mailOptionsForBolt,(err, info)=>{
+		if (err){
+			console.log(err);	
+		} else {
+			console.log('Email 2 sent' + info.response)
+		}
+	})
+	res.redirect('/thanks')
+})
+//contact form for resume upload
+app.post('/upload',(req,res)=>{
+	if (req.files){
+		//console.log (req.files)
+		const file = req.files.fileName, name = file.name, type = file.mimetype
+		file.mv('public/uploads/resume'+name, (err)=>{
+			if (err){
+				console.log(err)
+				res.send ('sorry. please try again')
+			}
+			else{
+				res.redirect('/resumeSubmitted')
+				const mailOptionsForBolt = {
+					from : 'enquiry.boltinfotech@gmail.com',
+					to : 'support@boltinfotech.com',
+					subject : 'Candidate application on website',
+					text : 'Resume file as uploaded by the candidate',
+					attachments : [
+						{
+							filename : 'resume'+name,
+							path : 'public/uploads/resume'+name
+						}
+					]
+				}
+				transporter.sendMail(mailOptionsForBolt,(err, info)=>{
+					if (err){
+						console.log(err);	
+					} else {
+						console.log('Email of resume sent' + info.response)
+					}
+				})
+			}
+		})
+	}
+})
 //==========================================SERVER CONNECTION============================================
 
 app.listen(process.env.PORT||3000, function() {

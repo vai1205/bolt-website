@@ -377,13 +377,13 @@
                         <div class="form-container">
                             <div class="form-group">
                                 <label for="clientName"><span>*</span>Name</label>
-                                <input type="text" class="form-control" id="clientName" placeholder="Enter Name">
+                                <input type="text" class="form-control" id="clientName" placeholder="Enter Name" name="clientName" required>
                                 <small id="clientNameHelp" class="form-text text-muted"></small>
                             </div>
                             <div class="form-group">
                                 <label for="queryTopic"><span>*</span>Select a topic</label>
                                 <div class="selectWrapper">
-                                    <select class="form-control selectBox" id="queryTopic">
+                                    <select class="form-control selectBox" id="queryTopic" name="topic" required>
                                             <option>Select</option>
                                             <option>Mobile Development</option>
                                             <option>Web Development</option>
@@ -395,22 +395,22 @@
                             </div>
                             <div class="form-group">
                                 <label for="clientEmail1"><span>*</span>Email address</label>
-                                <input type="email" class="form-control" id="clientEmail1" placeholder="email@example.com">
+                                <input type="email" class="form-control" id="clientEmail1" placeholder="email@example.com" name="clientEmail" required>
                                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                             </div>
                             <div class="form-group">
                             <label for="clientMobileNumber"><span>*</span>Mobile Number</label>
-                            <input type="number" class="form-control" id="clientMobileNumber" placeholder="Enter Mobile Number">
+                            <input type="number" class="form-control" id="clientMobileNumber" placeholder="Enter Mobile Number" name="clientMobile" required>
                             <small id="mobileNumberHelp" class="form-text text-muted">To get in touch with you on voice.</small>
                             </div>
                             <div class="form-group">
                                 <label for="clientCompanyName">Company Name</label>
-                                <input type="text" class="form-control" id="clientCompanyName" placeholder="Enter Company Name">
+                                <input type="text" class="form-control" id="clientCompanyName" placeholder="Enter Company Name" name="company">
                                 <small id="clientCompanyNameHelp" class="form-text text-muted"></small>
                             </div>
                             <div class="form-group">
                                 <label for="clientProjectIdea"><span>*</span>Idea</label>
-                                <textarea class="form-control" id="clientProjectIdea" rows="3" placeholder="Share your project idea in brief"></textarea>
+                                <textarea class="form-control" id="clientProjectIdea" rows="3" placeholder="Share your project idea in brief" name="idea" required></textarea>
                             </div>
                             <button type="submit" class="btn btn-danger">Submit</button>
                         </div>
