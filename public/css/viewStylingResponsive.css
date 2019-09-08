@@ -430,3 +430,25 @@
         left: -66%;
     }
 }
+/* for extra large screens */
+@media (min-width:1400px){
+    .below-nav2-section > img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+    .mobile-apps-for-text {
+        width: 100%;
+    }
+    .mobile-apps-for > img {
+        max-width: 100%;
+        object-fit: cover;
+        width: 100%;
+    }
+    .mobile-apps-for-text {
+        padding: 14%;
+    }
+    .text-nav2-section > h1 {
+        margin-bottom:4%; 
+    }
+}
