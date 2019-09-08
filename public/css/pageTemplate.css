@@ -138,3 +138,25 @@ h4 > span {
         left: 0;
     }
 }
+@media (max-width:500px){
+    .mission {
+        width: 68%;
+        position: absolute;
+        top: 77%;
+    }
+    .banner-text > h1 {
+        line-height: 1.2 !important;
+        font-size: 300% !important;
+        width: 97%;
+    }
+    .feature-text {
+        margin-top: 10%;
+        text-align: center !important;
+        padding: 0 15%;
+    }
+    .cta > p {
+        font-size: 1.5rem;
+        text-align: center !important;
+        padding: 0 10%;
+    }
+}

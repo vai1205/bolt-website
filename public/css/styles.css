@@ -138,7 +138,9 @@ button:focus {
   color: #7f7f7f;
   margin: auto 1%;
 }
-
+span > a {
+  color: red !important;
+}
 /* media queries */
 /* mobile */
 @media (max-width:500px){
@@ -220,3 +222,16 @@ button:focus {
     font-size: 1.5rem !important;
   }
 } 
+
+/* very small phone */
+@media(max-width:400px){
+  .content-wrap {
+    margin-top: -53px;
+  }
+  .btn-v-small-mob{
+    margin-top: -37px;
+  }
+  .head-para{
+    margin-top: -16px;
+  }
+}
