@@ -401,4 +401,32 @@
         left: -80%;
     }  
 }
-
+/* for small mobile devices */
+@media(max-width: 400px){
+    .jumbotron-cross-platform > .tech-box-container {
+        display: none;
+    }
+    .jumbotron-cross-platform > img {
+        margin: 6% auto 0;
+    }
+    .iosBtn {
+        margin: 10% 20% 10% 24%;
+    }
+    .androidBtn {
+        margin: 0% 30%;
+    }
+    .portfolio-wrapper {
+        top: 52%;
+        width: 200px;
+        height: 350px;
+    }
+    #pc0 {
+        left: -28%;
+    }
+    #pc1 {
+        left: 14%;
+    }
+    #pc2 {
+        left: -66%;
+    }
+}
