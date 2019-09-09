@@ -118,7 +118,7 @@ h4 > span {
 @media (max-width: 1370px) and (min-width:1030px ){
     .mission {
         position: absolute;
-        top: 50%;
+        top: 70%;
     }
 }
 @media (min-width:991px){
