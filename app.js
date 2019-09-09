@@ -302,7 +302,7 @@ const webDevelopment = {
 	liIosThree:'Web app servers',
 	liIosFour:'App Engagements with push',
 	cloudImg:'images/web/CMS-desktop.jpg',
-	cloudHead: 'Content Management Systems',
+	cloudHead: 'CMS',
 	cloudPara: 'Content management systems (CMS) that we deliver are easy to update and manage. Without any technical knowledge, you can update your website easily. You can update the content, images and almost everything on your website. We make sure that you get full control over your website. ',
 	cloudIoneclass: 'fab fa-wordpress tech-type',
 	cloudItwoclass: 'fab fa-joomla tech-type',
