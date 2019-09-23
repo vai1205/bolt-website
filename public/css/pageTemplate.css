@@ -1,3 +1,13 @@
+
+.card{
+    transition: all .5s;
+    border-radius: 25px;
+    overflow: hidden;
+}
+.card:hover{
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.274);
+    transform: scale(1.05);
+}
 .banner{
     margin-top: 5.5%;
     position: relative;
