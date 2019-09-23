@@ -37,6 +37,9 @@ body {
   font-size: 1.1rem;
   font-weight: bold;
 }
+strong span {
+  color: red;
+}
 p{
   color: #7f7f7f;
   text-align: justify;

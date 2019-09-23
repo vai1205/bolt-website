@@ -38,6 +38,39 @@
     </a>
 </nav>
 <div id="pagepiling">
+    <!-- section0: landing section -->
+    <div id="home" class="section">
+        <div class="container container-wrap">
+            <div class="row">
+                <div class="col-lg-6 col-sm-12">
+                    <img src="images/0 copy.png" class="img-responsive" style="width: 100%; height: auto;" alt="">
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <div class="content-wrap">
+                        <h1>
+                        <strong>
+                        Welcome to <span>BOLT</span> 
+                        </strong>
+                        </h1><br />
+                        <p class="head-para">
+                                We work round the clock to provide IT support solutions you need;
+                                ...when you need them!
+                        </p>
+                        <p class="for-desktop">
+                            At Bolt Infotech, we develop innovative and creative software and services that provide total communication and information solutions. Since 2015, we have been helping global companies and established brands reimagine their business by building impactful digital engineering solutions powered by the latest technologies. Bolt's business philosophy is to assure the highest quality product, total client satisfaction, timely delivery of solutions and the best quality/price ratio found in the industry. 
+                        </p>
+                        <br />
+                        <form action="/#mobile-development">
+                            <button type="submit" id="mobile-development-view" class="btn btn-outline-danger btn-lg btn-v-small-mob">
+                                    &#8659;
+                            </button>
+                        </form>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- section1: mobile Development -->
     <div id="mobile-development" class="section">
         <div class="container container-wrap">
@@ -49,7 +82,7 @@
                     <div class="content-wrap">
                         <h1>
                         <strong>
-                        Mobile Development
+                        Mobile <span>Development</span> 
                         </strong>
                         </h1><br />
                         <p class="head-para">
@@ -81,7 +114,7 @@
                     <div class="content-wrap">
                         <h1>
                         <strong>
-                        Web Development
+                        Web <span>Development</span> 
                         </strong>
                         </h1><br />
                         <p class="head-para">
@@ -111,7 +144,7 @@
                     <div class="content-wrap">
                         <h1>
                         <strong>
-                        Design
+                        Grpahics <span>Design</span>
                         </strong>
                         </h1><br />
                         <p class="head-para">
@@ -141,7 +174,7 @@
                     <div class="content-wrap">
                         <h1>
                         <strong>
-                        Mobile Games
+                        Mobile <span>Games</span>
                         </strong>
                         </h1><br />
                         <p class="head-para">
@@ -171,7 +204,7 @@
                     <div class="content-wrap">
                         <h1>
                         <strong>
-                        Customized Software
+                        Customized <span>Software</span> 
                         </strong>
                         </h1><br />
                         <p class="head-para">
@@ -201,7 +234,7 @@
                         <div class="content-wrap">
                             <h1>
                             <strong>
-                            Stuff we did
+                            Stuff <span>we did</span> 
                             </strong>
                             </h1><br />
                             <p class="head-para">
@@ -230,7 +263,7 @@
                         <div class="content-wrap">
                             <h1>
                             <strong>
-                            Share your idea
+                            Share <span>your idea</span> 
                             </strong>
                             </h1><br />
                             <p class="head-para">
@@ -259,7 +292,7 @@
                         <div class="content-wrap">
                             <h1>
                             <strong>
-                            This is us
+                            This is <span>us</span> 
                             </strong>
                             </h1><br />
                             <p class="head-para">
@@ -288,7 +321,7 @@
                         <div class="content-wrap">
                             <h1>
                             <strong>
-                            Get in touch
+                            Get in <span>Touch</span> 
                             </strong>
                             </h1><br />
                             <p class="head-para">
@@ -315,11 +348,11 @@
 <script>
     $('#pagepiling').pagepiling({
     menu: '#menu',
-    anchors: ['mobile-development', 'web-development', 'graphics-design' ,'mobile-games','customized-software', 'stuff-we-did','share-your-idea','this-is-us','get-in-touch'],
-    sectionsColor: ['#fff','#fff','#fff','#fff','#fff','#fff','#fff','#fff','#fff'],
+    anchors: ['home','mobile-development', 'web-development', 'graphics-design' ,'mobile-games','customized-software', 'stuff-we-did','share-your-idea','this-is-us','get-in-touch'],
+    sectionsColor: ['#fff','#fff','#fff','#fff','#fff','#fff','#fff','#fff','#fff','#fff'],
     navigation: {
         'position': 'right',
-        'tooltips': ['Mobile Development', 'Web Development','Design', 'Mobile Games','Customized Software', 'Stuff we did','Share your idea','This is us','Get in touch']
+        'tooltips': ['Home', 'Mobile Development', 'Web Development','Design', 'Mobile Games','Customized Software', 'Stuff we did','Share your idea','This is us','Get in touch']
     },
     menu: '#menu',
     afterRender: function(){
