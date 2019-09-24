@@ -30,6 +30,7 @@
                 <a class="nav-item nav-link" href="/blogs">Blogs</a>
                 <a class="nav-item nav-link" href="/ourWork">Our Work</a>
                 <a class="nav-item nav-link" href="/careers">Careers</a>
+                <a class="nav-item nav-link" href="/workshops">Workshops</a>
                 <form action="/contactUs" method="GET">
                     <button class="btn btn-danger my-2 my-sm-0" type="submit">Get Estimate</button>
                 </form>
@@ -42,7 +43,7 @@
     <div id="home" class="section">
         <div class="container container-wrap">
             <div class="row">
-                <div class="col-lg-6 col-sm-12">
+                <div class="col-lg-6 col-sm-12 js-tilt" data-tilt>
                     <img src="images/0 copy.png" class="img-responsive" style="width: 100%; height: auto;" alt="">
                 </div>
                 <div class="col-lg-6 col-sm-12">
@@ -75,7 +76,7 @@
     <div id="mobile-development" class="section">
         <div class="container container-wrap">
             <div class="row">
-                <div class="col-lg-6 col-sm-12">
+                <div class="col-lg-6 col-sm-12 js-tilt" data-tilt>
                     <img src="images/1 copy.png" class="img-responsive" style="width: 100%; height: auto;" alt="">
                 </div>
                 <div class="col-lg-6 col-sm-12">
@@ -107,7 +108,7 @@
     <div id="web-development" class="section">
         <div class="container container-wrap">
             <div class="row">
-                <div class="col-lg-6 col-sm-12">
+                <div class="col-lg-6 col-sm-12 js-tilt" data-tilt>
                     <img src="images/2 copy.png" class="img-responsive" style="width: 100%; height: auto;" alt="">
                 </div>
                 <div class="col-lg-6 col-sm-12">
@@ -137,7 +138,7 @@
     <div id="graphics-design" class="section">
         <div class="container container-wrap">
             <div class="row">
-                <div class="col-lg-6 col-sm-12">
+                <div class="col-lg-6 col-sm-12 js-tilt" data-tilt>
                     <img src="images/3 copy.png" class="img-responsive" style="width: 100%; height: auto;" alt="">
                 </div>
                 <div class="col-lg-6 col-sm-12">
@@ -167,7 +168,7 @@
     <div id="mobile-games" class="section">
         <div class="container container-wrap">
             <div class="row">
-                <div class="col-lg-6 col-sm-12">
+                <div class="col-lg-6 col-sm-12 js-tilt" data-tilt>
                     <img src="images/4 copy.png" class="img-responsive" style="width: 100%; height: auto;" alt="">
                 </div>
                 <div class="col-lg-6 col-sm-12">
@@ -197,7 +198,7 @@
     <div id="customized-software" class="section">
         <div class="container container-wrap">
             <div class="row">
-                <div class="col-lg-6 col-sm-12">
+                <div class="col-lg-6 col-sm-12 js-tilt" data-tilt>
                     <img src="images/5 copy.png" class="img-responsive" style="width: 100%; height: auto;" alt="">
                 </div>
                 <div class="col-lg-6 col-sm-12">
@@ -227,7 +228,7 @@
         <div id="stuff-we-did" class="section">
             <div class="container container-wrap">
                 <div class="row">
-                    <div class="col-lg-6 col-sm-12">
+                    <div class="col-lg-6 col-sm-12 js-tilt" data-tilt>
                         <img src="images/6 copy.png" class="img-responsive" style="width: 100%; height: auto;" alt="">
                     </div>
                     <div class="col-lg-6 col-sm-12">
@@ -256,7 +257,7 @@
         <div id="stuff-we-did" class="section">
             <div class="container container-wrap">
                 <div class="row">
-                    <div class="col-lg-6 col-sm-12">
+                    <div class="col-lg-6 col-sm-12 js-tilt" data-tilt>
                         <img src="images/7 copy.png" class="img-responsive" style="width: 100%; height: auto;" alt="">
                     </div>
                     <div class="col-lg-6 col-sm-12">
@@ -285,7 +286,7 @@
         <div id="this-is-us" class="section">
             <div class="container container-wrap">
                 <div class="row">
-                    <div class="col-lg-6 col-sm-12">
+                    <div class="col-lg-6 col-sm-12 js-tilt" data-tilt>
                         <img src="images/8 copy.png" class="img-responsive" style="width: 100%; height: auto;" alt="">
                     </div>
                     <div class="col-lg-6 col-sm-12">
@@ -314,7 +315,7 @@
         <div id="get-in-touch" class="section">
             <div class="container container-wrap">
                 <div class="row">
-                    <div class="col-lg-6 col-sm-12">
+                    <div class="col-lg-6 col-sm-12 js-tilt" data-tilt>
                         <img src="images/9 copy.png" class="img-responsive" style="width: 100%; height: auto;" alt="">
                     </div>
                     <div class="col-lg-6 col-sm-12">
@@ -369,6 +370,14 @@
 </script>
  <!-- custom js -->
  <script src="js/myscript.js" charset="utf-8"></script>
+ <!--===============================================================================================-->
+ <script src="js/tilt.jquery.min.js"></script>
+ <script >
+     $('.js-tilt').tilt({
+         scale: 1.1
+     })
+ </script>
+<!--===============================================================================================-->
  <!-- bootstrap js -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

@@ -177,6 +177,12 @@ app.get('/careers', (req,res)=>{
 		pageTemplateData:pageTemplateData
 	})
 })
+app.get('/workshops', (req,res)=>{
+	pageTemplateData = workshops
+	res.render('pageTemplate', {
+		pageTemplateData:pageTemplateData
+	})
+})
 
 //=============================================PAGE DATA==============================================
 // ========mobileDevelopment========
@@ -699,6 +705,10 @@ const learnMoreSoftware = {
    }
 // ======== about ========
 const about = {
+	//hide download btn
+	downloadBtnHide : 'display:none',
+	//img2 css patch
+	cssPatch : 'css-patch',
 	//section or element hide data
 	btnHide : 'display:none;',
 	modalBtnHide : 'display:none;',
@@ -714,6 +724,7 @@ const about = {
 	activeBlogs : '',
 	activeOurWork : '',
 	activeCareers : '',
+	activeWorkshops : '',
 	//display data
 	bannerImg: 'images/about/banner.png',
 	bannerTextPart1 : 'Because we love',
@@ -754,6 +765,10 @@ const about = {
 }
 // ======== what we do ========
 const whatWeDo = {
+	//hide download btn
+	downloadBtnHide : 'display:none',
+	//img2 css patch
+	cssPatch : ' ',
 	//section or element hide data
 	modalBtnHide : 'display:none;',
 	sectionHide : ' ',
@@ -769,6 +784,7 @@ const whatWeDo = {
 	activeBlogs : '',
 	activeOurWork : '',
 	activeCareers : '',
+	activeWorkshops : '',
 	//button route
 	btn1route : '/mobileDevelopment',
 	btn2route : '/webDevelopment',
@@ -824,6 +840,10 @@ const whatWeDo = {
 }
 // ======== our work ========
 const ourWork = {
+	//hide download btn
+	downloadBtnHide : 'display:none',
+	//img2 css patch
+	cssPatch : ' ',
 	//section or element hide data
 	btnHide : 'display:none',
 	modalBtnHide : 'display:none;',
@@ -839,6 +859,7 @@ const ourWork = {
 	activeBlogs : '',
 	activeOurWork : 'active',
 	activeCareers : '',
+	activeWorkshops : '',
 	//display data
 	bannerImg: 'images/ourWork/banner.png',
 	bannerTextPart1 : 'Whatever',
@@ -878,6 +899,10 @@ const ourWork = {
 }
 // ======== careers ========
 const careers = {
+	//hide download btn
+	downloadBtnHide : 'display:none',
+	//img2 css patch
+	cssPatch : ' ',
 	//section or element hide data
 	btnHide : 'display:none;',
 	sectionHide : 'display:none;',
@@ -892,6 +917,7 @@ const careers = {
 	activeBlogs : '',
 	activeOurWork : '',
 	activeCareers : 'active',
+	activeWorkshops : '',
 	//button route
 	btn1route : ' ',
 	btn2route : ' ',
@@ -944,6 +970,84 @@ const careers = {
 	card2Para: 'We ensure standing side by side with you with our team in all moments of Happiness and sorrow. We believe in woking togehter as a Family :)',
 	card3Para : "We've built this business with the passion for innovation and a flexible approach in what we do. That's why we keep our eyes and ears open for smart people who get things done."
 }
+// ======== workshops ========
+const workshops = {
+	//hide download btn
+	downloadBtnHide : ' ',
+	//section or element hide data
+	modalBtnHide : 'display:none;',
+	//img2 css patch
+	cssPatch : '',
+	//section or element hide data
+	btnHide : 'display:none;',
+	sectionHide : 'display:none;',
+	feature1Hide : ' ',
+	feature2Hide : ' ',
+	feature3Hide : ' ',
+	feature4Hide : ' ',
+	feature5Hide : 'display:none',
+	//navbar active
+	activeAbout : ' ',
+	activeWhatWeDo : ' ',
+	activeBlogs : '',
+	activeOurWork : '',
+	activeCareers : '',
+	activeWorkshops : 'active',
+	//button route
+	btn1route : ' ',
+	btn2route : ' ',
+	btn3route : ' ',
+	btn4route : ' ',
+	btn5route : ' ',
+	//button text
+	btn1text : 'Download Brochure',
+	btn2text : 'Download Brochure',
+	btn3text : 'Download Brochure',
+	btn4text : 'Download Brochure',
+	btn5text : 'Download Brochure',
+	btn6text : 'Download Brochure',
+	btn7text : 'Download Brochure',
+	btn8text : 'Download Brochure',
+	//display data
+	bannerImg: 'images/workshops/banner.png',
+	bannerTextPart1 : 'Get',
+	bannerTextPart2 : 'INDUSTRY READY!',
+	bannerSideHead : 'Learn Pragmatically..',
+	bannerSidePara : "We give the complete practical insights of the stated topics in our Development workshop, providing the students, an opportunity to learn the latest technologies on the top of cutting edge tech stacks, by our Industry Experts. Students get a chance to work on live projects and even make a complete project from scratch in our Worksops. We also provide knowledge on project management strategies including Git Version Control and Agile Working Methodology in our Training Sessions.",
+	feature1Img : 'images/workshops/1.png',
+	feature2Img : 'images/workshops/2.png',
+	feature3Img : 'images/workshops/3.png',
+	feature4Img : 'images/workshops/4.png',
+	feature5Img : 'images/workshops/5.png',
+	feature1HeadPart1 : 'Mobile development',
+	feature1HeadPart2 : 'WORKSHOPS',
+	feature2HeadPart1 : 'Web development',
+	feature2HeadPart2 : 'WORKSHOPS',
+	feature3HeadPart1 : 'Graphics designing',
+	feature3HeadPart2 : 'WORKSHOPS',
+	feature4HeadPart1 : 'Game development',
+	feature4HeadPart2 : 'WORKSHOPS',
+	feature5HeadPart1 : 'Back-end development',
+	feature5HeadPart2 : 'WORKSHOPS',
+	feature1Para : 'Have got amazing work experience on Android Development, iOS development, Java, Kotlin, Objective-C, Swift, Xcode, React Native or Flutter? Apply now! We will look into your past projects and knowledge base before giving you a call.',
+	feature2Para : 'More than confident for coding backend APIs on ASP .NET, PHP, NodeJs, Python? Have you got knowledge of the latest front-end tech stacks including SASS, Advanced CSS, jQuery and HTML5? Love integrating CMS efficiently? Apply now!',
+	feature3Para : 'The sky is the limit for your creativity? Have you got an amazing color sense and theming concepts? Got expertise working on Adobe CC applications? (Confident working on any one of them or more?) Provide links to your works in your Resume and Apply now!',
+	feature4Para : 'Best aware of all technical aspects of the game development including challenges in implementing the core game mechanics, art, animation? Can optimize code for the best possible performance, quality, and responsiveness of games across platforms? Hit the button below.',
+	cardHeadPart1 : 'Automobile ',
+	cardHeadPart2 : 'Workshops',
+	card1Img: 'images/workshops/6.png',
+	card2Img: 'images/workshops/7.png',
+	card3Img: 'images/workshops/8.png',
+	card1HeadPart1: 'Car ',
+	card1HeadPart2: 'Overhauling',
+	card2HeadPart1: 'Motor Cycle ',
+	card2HeadPart2 : 'Overhauling',
+	card3HeadPart1: 'Engine ',
+	card3HeadPart2: 'Overhauling',
+	card1Para: 'Our work environment never restricts your creativity and we provide completely free canvas to you to paint and create your best picture!',
+	card2Para: 'We ensure standing side by side with you with our team in all moments of Happiness and sorrow. We believe in woking togehter as a Family :)',
+	card3Para : "We've built this business with the passion for innovation and a flexible approach in what we do. That's why we keep our eyes and ears open for smart people who get things done."
+}
 // ======== blogs ========
 const blogs = {
 	//navbar active
@@ -951,7 +1055,8 @@ const blogs = {
 	activeWhatWeDo : ' ',
 	activeBlogs : 'active',
 	activeOurWork : '',
-	activeCareers : ' ',	
+	activeCareers : ' ',
+	activeWorkshops : '',	
 }
 //======================================== Email Configurations ==================================
 const transporter = nodemailer.createTransport({

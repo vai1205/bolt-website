@@ -1,3 +1,6 @@
+.card-body{
+  text-align: center !important;
+}
 .nav-logo-light{
   display: none;
 }
