@@ -89,9 +89,9 @@ h4 > span {
         margin-bottom: 61%;
     }
     .mission {
-        width: 80%;
-        position: absolute;
-        top: 70%;
+        width: 80% !important;
+        position: absolute !important;
+        top: 68% !important;
     } 
     .banner-text > h1 {
         line-height: 1.2 !important;
