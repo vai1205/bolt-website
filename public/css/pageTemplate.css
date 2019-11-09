@@ -90,6 +90,7 @@ h4 > span {
 }
 .client-logo-img:hover{
 transform: scale(1.2);
+z-index: 10;
 }
 .client-logo-img-1::after{
     content: "Bye Plastik Indonesia";
