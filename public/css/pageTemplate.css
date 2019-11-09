@@ -87,6 +87,7 @@ h4 > span {
 }
 .client-logo-img{
     transition: all .5s;
+    margin-bottom: 3%;
 }
 .client-logo-img:hover{
 transform: scale(1.2);
