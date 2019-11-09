@@ -147,6 +147,20 @@ button:focus {
 span > a {
   color: red !important;
 }
+
+.logo-slider{
+  border: solid 4px #999;
+  padding: 10px;
+}
+.logo-slider .logo{
+  height: 40px;
+  width: 100%;
+  text-align: center;
+}
+.logo img{
+  height: 100%;
+}
+
 /* media queries */
 /* mobile */
 @media (max-width:500px){

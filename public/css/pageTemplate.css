@@ -82,6 +82,12 @@ h4 > span {
 .card-body > p {
     text-align: center !important;
 }
+.client-logo-img{
+    transition: all .5s;
+  }
+  .client-logo-img:hover{
+    transform: scale(1.2);
+  } 
 /* media queries */
 /* mobile only */
 @media (max-width:500px){

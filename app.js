@@ -213,7 +213,7 @@ const mobileDevelopment = {
 	iosHeadOne: 'iOS Apps Development',
 	iosImgMobile: 'images/ios-apps-mobile.jpg',
 	iosHeadTwo: 'iOS Apps Development',
-	iosPara: "Our iPhone app developers are well equipped with the latest iOS technologies and versions and have a strong platform experience too. Our team of experts will put your concept into the real app to meet consumer'sdemand or your business objectives..Our focus is on iOS app development, launch and deployment – we are responsible for your success.",
+	iosPara: "Our iPhone app developers are well equipped with the latest iOS technologies and versions and have a strong platform experience too. Our team of experts will put your concept into the real app to meet consumer's demand or your business objectives..Our focus is on iOS app development, launch and deployment – we are responsible for your success.",
 	liIosOne: 'iPhone App Development',
 	liIosTwo:'iPad App Development',
 	liIosThree:'Apple Watch Development',
