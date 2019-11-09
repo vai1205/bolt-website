@@ -82,12 +82,117 @@ h4 > span {
 .card-body > p {
     text-align: center !important;
 }
+.client-logo-row{
+    position: relative;
+}
 .client-logo-img{
     transition: all .5s;
-  }
-  .client-logo-img:hover{
-    transform: scale(1.2);
-  } 
+}
+.client-logo-img:hover{
+transform: scale(1.2);
+}
+.client-logo-img-1::after{
+    content: "Bye Plastik Indonesia";
+    position: absolute;
+    top: 7rem;
+    left: 4rem;
+    background: rgba(255, 0, 0, 0.486);
+    border-radius: .4rem;
+    padding: 1%;
+    border: 2px solid rgba(0, 0, 0, 0.13);
+    box-shadow: 5px 5px 30px rgba(255, 0, 0, 0.925);
+    opacity: 0;
+    transition: all .5s;
+    color: #fff;
+}
+.client-logo-img-1:hover::after{
+    opacity: 1;
+} 
+.client-logo-img-2::after{
+    content: "Cozy Indonesia";
+    position: absolute;
+    top: 7rem;
+    left: 4rem;
+    background: rgba(255, 0, 0, 0.486);
+    border-radius: .4rem;
+    padding: 1%;
+    border: 2px solid rgba(0, 0, 0, 0.13);
+    box-shadow: 5px 5px 30px rgba(255, 0, 0, 0.925);
+    opacity: 0;
+    transition: all .5s;
+    color: #fff;
+}
+.client-logo-img-2:hover::after{
+    opacity: 1;
+} 
+.client-logo-img-3::after{
+    content: "Guru Kota";
+    position: absolute;
+    top: 7rem;
+    left: 4rem;
+    background: rgba(255, 0, 0, 0.486);
+    border-radius: .4rem;
+    padding: 1%;
+    border: 2px solid rgba(0, 0, 0, 0.13);
+    box-shadow: 5px 5px 30px rgba(255, 0, 0, 0.925);
+    opacity: 0;
+    transition: all .5s;
+    color: #fff;
+}
+.client-logo-img-3:hover::after{
+    opacity: 1;
+} 
+.client-logo-img-4::after{
+    content: "Help Indonesia";
+    position: absolute;
+    top: 7rem;
+    left: 4rem;
+    background: rgba(255, 0, 0, 0.486);
+    border-radius: .4rem;
+    padding: 1%;
+    border: 2px solid rgba(0, 0, 0, 0.13);
+    box-shadow: 5px 5px 30px rgba(255, 0, 0, 0.925);
+    opacity: 0;
+    transition: all .5s;
+    color: #fff;
+}
+.client-logo-img-4:hover::after{
+    opacity: 1;
+} 
+.client-logo-img-5::after{
+    content: "MTM SM Singapore";
+    position: absolute;
+    top: 7rem;
+    left: 4rem;
+    background: rgba(255, 0, 0, 0.486);
+    border-radius: .4rem;
+    padding: 1%;
+    border: 2px solid rgba(0, 0, 0, 0.13);
+    box-shadow: 5px 5px 30px rgba(255, 0, 0, 0.925);
+    opacity: 0;
+    transition: all .5s;
+    color: #fff;
+}
+.client-logo-img-5:hover::after{
+    opacity: 1;
+} 
+.client-logo-img-6::after{
+    content: "Anime USA";
+    position: absolute;
+    top: 7rem;
+    left: 4rem;
+    background: rgba(255, 0, 0, 0.486);
+    border-radius: .4rem;
+    padding: 1%;
+    border: 2px solid rgba(0, 0, 0, 0.13);
+    box-shadow: 5px 5px 30px rgba(255, 0, 0, 0.925);
+    opacity: 0;
+    transition: all .5s;
+    color: #fff;
+}
+.client-logo-img-6:hover::after{
+    opacity: 1;
+} 
 /* media queries */
 /* mobile only */
 @media (max-width:500px){
