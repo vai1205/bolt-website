@@ -96,6 +96,7 @@ z-index: 10;
 .client-logo-img-1::after{
     content: "Bye Plastik Indonesia";
     position: absolute;
+    font-size: 10px;
     top: 7rem;
     left: 4rem;
     background: rgba(255, 0, 0, 0.486);
@@ -113,6 +114,7 @@ z-index: 10;
 .client-logo-img-2::after{
     content: "Cozy Indonesia";
     position: absolute;
+    font-size: 10px;
     top: 7rem;
     left: 4rem;
     background: rgba(255, 0, 0, 0.486);
@@ -130,6 +132,7 @@ z-index: 10;
 .client-logo-img-3::after{
     content: "Guru Kota";
     position: absolute;
+    font-size: 10px;
     top: 7rem;
     left: 4rem;
     background: rgba(255, 0, 0, 0.486);
@@ -147,6 +150,7 @@ z-index: 10;
 .client-logo-img-4::after{
     content: "Help Indonesia";
     position: absolute;
+    font-size: 10px;
     top: 7rem;
     left: 4rem;
     background: rgba(255, 0, 0, 0.486);
@@ -164,6 +168,7 @@ z-index: 10;
 .client-logo-img-5::after{
     content: "Adarsh Inter College, Kothi Usmanpur , Barabanki";
     position: absolute;
+    font-size: 10px;
     top: 7rem;
     left: 4rem;
     background: rgba(255, 0, 0, 0.486);
@@ -181,6 +186,7 @@ z-index: 10;
 .client-logo-img-6::after{
     content: "Jhaber Baa Patel Balika Inter College, Barabanki";
     position: absolute;
+    font-size: 10px;
     top: 7rem;
     left: 4rem;
     background: rgba(255, 0, 0, 0.486);
