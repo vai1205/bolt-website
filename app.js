@@ -732,6 +732,7 @@ const about = {
 	activeOurWork : '',
 	activeCareers : '',
 	activeWorkshops : '',
+	activeSchoolManagementSystem: '',
 	//display data
 	bannerImg: 'images/about/banner.png',
 	bannerTextPart1 : 'Because we love',
@@ -793,6 +794,7 @@ const whatWeDo = {
 	activeOurWork : '',
 	activeCareers : '',
 	activeWorkshops : '',
+	activeSchoolManagementSystem: '',
 	//button route
 	btn1route : '/mobileDevelopment',
 	btn2route : '/webDevelopment',
@@ -869,6 +871,7 @@ const ourWork = {
 	activeOurWork : 'active',
 	activeCareers : '',
 	activeWorkshops : '',
+	activeSchoolManagementSystem: '',
 	//display data
 	bannerImg: 'images/ourWork/banner.png',
 	bannerTextPart1 : 'Whatever',
@@ -928,6 +931,7 @@ const careers = {
 	activeOurWork : '',
 	activeCareers : 'active',
 	activeWorkshops : '',
+	activeSchoolManagementSystem: '',
 	//button route
 	btn1route : ' ',
 	btn2route : ' ',
@@ -1004,6 +1008,7 @@ const workshops = {
 	activeOurWork : '',
 	activeCareers : '',
 	activeWorkshops : 'active',
+	activeSchoolManagementSystem: '',
 	//button route
 	btn1route : ' ',
 	btn2route : ' ',
@@ -1090,7 +1095,8 @@ const schoolManagementSystem = {
 	activeBlogs : '',
 	activeOurWork : '',
 	activeCareers : '',
-	activeWorkshops : 'active',
+	activeWorkshops : '',
+	activeSchoolManagementSystem: 'active',
 	//button route
 	btn1route : ' ',
 	btn2route : ' ',
