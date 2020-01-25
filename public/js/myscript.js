@@ -9,7 +9,9 @@
 $('.modal-btn').on('click',()=>{
   $('#hireModal').modal('show')
 })
-
+$('.modal-btn-demo-link').on('click',()=>{
+  window.open('http://boltcloud.co.in/sms/')
+})
 $('#bolt-logo-b').hide()
 var target = $('#navbar2').offset().top,
     timeout = null;
