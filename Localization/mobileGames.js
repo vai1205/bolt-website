@@ -64,7 +64,7 @@ module.exports = {
 	client1Img:'images/lady-img.jpg',
 	client2Img:'images/learnMore/man-img.jpg',
 	client1Name: 'Beverly, Illinois',
-	client2Name: 'Beverly, Illinois',
+	client2Name: 'James, USA',
 	client1Feedback: '“They listened to my ideas, made recommendation and helped me make the app that I wanted to make.”',
 	client2Feedback: '“They added life to my idea, Digitally!”'
 }
