@@ -769,7 +769,9 @@ const about = {
 	card3HeadPart2: 'Not Negotiable',
 	card1Para: 'The goal is simple : relentlessly commit to your clients; be hardworking and humble; stay unconflicted in your work and uncompromising in your values. The rest will take care of itself.',
 	card2Para: 'We believe that people are the key drivers of our success. Our HR Policies, therefore, focus on developing an environment that attracts and inspire excellence in people.',
-	card3Para : 'Quality is never an accident; it is always the result of high intention, sincere effort, intelligent direction and skillful execution; it represents the wise choice of many alternatives.'
+	card3Para : 'Quality is never an accident; it is always the result of high intention, sincere effort, intelligent direction and skillful execution; it represents the wise choice of many alternatives.',
+	belowCtah1:"Wanna Collaborate?",
+	belowCtah2:"It will be fun transforming your idea digitally.",
 }
 // ======== what we do ========
 const whatWeDo = {
@@ -846,7 +848,9 @@ const whatWeDo = {
 	card3HeadPart2: 'Customers',
 	card1Para: 'Seeing the clients passionate about their idea makes us excited. We always look for new ways to provide solutions and create a better product',
 	card2Para: 'Our expert team of advisors will identify and study the challenges, bringing solutions to ensure a smooth and efficient running of your business.',
-	card3Para : 'Consumers drive the business. That’s why we take an extra leap to produce stunning apps and websites for your end users, focused towards increasing sales and brand visibility.'
+	card3Para : 'Consumers drive the business. That’s why we take an extra leap to produce stunning apps and websites for your end users, focused towards increasing sales and brand visibility.',
+	belowCtah1:"Wanna Collaborate?",
+	belowCtah2:"It will be fun transforming your idea digitally.",
 }
 // ======== our work ========
 const ourWork = {
@@ -907,7 +911,9 @@ const ourWork = {
 	card3HeadPart2: 'Results',
 	card1Para: 'We are made up of bold and creative thinkers that from every walk of life. Our open culture drives success for our clients and our focus on company wide inclusion creates a great opportunity for our teams',
 	card2Para: 'We’re inspired by our clients and work to advance their business by innovating everything digital. We’re endless innovators, constantly looking for new ways to connect the dots and connect people.',
-	card3Para : 'Customer satisfaction, openness, innovation, teamwork and growth, are the core values behind our company, and continue to reflect who we are, how we work, and what we strive for.'
+	card3Para : 'Customer satisfaction, openness, innovation, teamwork and growth, are the core values behind our company, and continue to reflect who we are, how we work, and what we strive for.',
+	belowCtah1:"Wanna Collaborate?",
+	belowCtah2:"It will be fun transforming your idea digitally.",
 }
 // ======== careers ========
 const careers = {
@@ -1083,7 +1089,7 @@ const schoolManagementSystem = {
 	//section or element hide data
 	btnHide : 'display:none;',
 	modalBtnAction: 'modal-btn-demo-link',
-	sectionHide : 'display:none;',
+	sectionHide : ' ',
 	feature1Hide : ' ',
 	feature2Hide : ' ',
 	feature3Hide : ' ',
@@ -1104,14 +1110,14 @@ const schoolManagementSystem = {
 	btn4route : ' ',
 	btn5route : ' ',
 	//button text
-	btn1text : 'Software DEMO',
-	btn2text : 'Software DEMO',
-	btn3text : 'Software DEMO',
-	btn4text : 'Software DEMO',
-	btn5text : 'Software DEMO',
-	btn6text : 'Software DEMO',
-	btn7text : 'Software DEMO',
-	btn8text : 'Software DEMO',
+	btn1text : 'Get DEMO',
+	btn2text : 'Get DEMO',
+	btn3text : 'Get DEMO',
+	btn4text : 'Get DEMO',
+	btn5text : 'Get DEMO',
+	btn6text : 'Get DEMO',
+	btn7text : 'Get DEMO',
+	btn8text : 'Get DEMO',
 	//display data
 	bannerImg: 'images/workshops/banner.png',
 	bannerTextPart1 : 'School',
@@ -1144,14 +1150,16 @@ const schoolManagementSystem = {
 	card2Img: 'images/workshops/7.png',
 	card3Img: 'images/workshops/8.png',
 	card1HeadPart1: 'Multiple ',
-	card1HeadPart2: 'Administrator Control',
+	card1HeadPart2: 'User Control',
 	card2HeadPart1: 'Multiple ',
 	card2HeadPart2 : 'Board/Stream Support',
-	card3HeadPart1: 'Deleted ',
-	card3HeadPart2: 'Reciept/Vouchers Audit Logging',
+	card3HeadPart1: 'Vouchers ',
+	card3HeadPart2: 'Audit Logging',
 	card1Para: 'Allow more than one admin to manage the records in the software. Even we can have options to prevent controls over specific module(s) depending upon type of admin.',
 	card2Para: 'The software is designed with generic features that can always be customized according to the set of rules of administration defined by your Affiliating Body.',
-	card3Para : "Software keeps complete log with date/time for any data entry done and edits/deletes made for any record, so as to ensure no unwanted record variation is made."
+	card3Para : "Software keeps complete log with date/time for any data entry done and edits/deletes made for any record, so as to ensure no unwanted record variation is made.",
+	belowCtah1:"Interested in the Product?",
+	belowCtah2:"Contact us for demo login credentials"
 }
 //======================================== Email Configurations ==================================
 const transporter = nodemailer.createTransport({
