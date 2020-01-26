@@ -45,7 +45,7 @@ module.exports = {
 	feature2Img : 'images/sms/2.png',
 	feature3Img : 'images/sms/3.png',
 	feature4Img : 'images/sms/4.png',
-	feature5Img : 'images/whatWeDo/5.png',
+	feature5Img : 'images/sms/5.png',
 	feature1HeadPart1 : 'Fee',
 	feature1HeadPart2 : 'Management',
 	feature2HeadPart1 : 'Customized',
