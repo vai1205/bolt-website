@@ -1,0 +1,20 @@
+module.exports = {
+    topBannerImage : 'images/learnMoreCloud/cloud--banner.jpg',
+	topHead : 'Cloud-based solutions that best suit clients requirements',
+	topPara : 'We can help you know the basic features of cloud computing and the advantages of migrating to cloud with a positive impact on the entire business. Our deep commitment to our customers defines the way we do business and it forms the basis of our customer satisfaction.',
+	hireImg: 'images/learnMoreCloud/middle-upper.png',
+	hireHead : 'Hire our Back-End developers',
+	hirePara: 'We have trusted expert for designing & building scalable & robust Cloud based applications for startups and enterprises across the globe.Build large-scale solutions and server-side applications that take full advantage of the hardware & location abstraction provided by modern cloud providers, giving your users a consistent and reliable experience across the globe. Net Solutions has the experience and expertise to design, build, maintain, and help you grow your cloud-based business.We take special care to sensitise our cloud application developers to industry-leading application security practices. We have very flexible terms of engagement that are designed for maximum client benefit.',
+	liImg1 :'images/learnMore/1.png',
+	liImg2 :'images/learnMore/2.png',
+	liImg3 :'images/learnMore/3.png',
+	liImg4 :'images/learnMore/4.png',
+	liHead1 : 'Cloud App Development',
+	liHead2 : 'Migration Services',
+	liHead3 : 'Cloud App Containerization',
+	liHead4 : 'Multi-Cloud Programming',
+	liPara1 : 'We combine mobile-first design techniques with inscrutable server-side programming and rich database functionality to create high-performance enterprise cloud apps',
+	liPara2 : "We'll work closely with your IT team and managed service providers to migrate apps, workflows and whole enterprise infrastructures to the cloud",
+	liPara3 : 'We provide app containerization services, abstracting operation system kernels so multiple cloud applications can perform consistently.',
+	liPara4 : 'To guard against disastrous system outages or data losses, we can construct community-based, distributed, inter-cloud and multi-cloud solutions.'
+}

@@ -1,0 +1,20 @@
+module.exports = {
+    topBannerImage : 'images/learnMoreGames/banner.jpg',
+	topHead : 'Highly Engaging Game Design and Development',
+	topPara : 'We offer comprehensive solutions to help you design, develop and market your game from start to finish. We specialize in providing comprehensive end-to-end solutions for affordable game development company.We provide comprehensive development services for pre-production, production and post-production.',
+	hireImg: 'images/learnMoreGames/middle-upper.png',
+	hireHead : 'Hire our Game Developers',
+	hirePara: 'Do you need game developers for your next mobile or online project? Then, you are at the right place! Made up of expert mobile developers, game designers, UI designers and project managers, Panacea can help you to build a highly engaging and interactive gaming application that offer a seamless gaming experience. Our end-to-end game development services help you at every stage from game design to usability testing and final release to support and maintenance.By leveraging the power of HTML5 and Flash, we develop games that run smoothly on mobile and desktop. We can build fully customized games across iOS, Android and Window platforms with our mobile game development services.',
+	liImg1 :'images/learnMore/1.png',
+	liImg2 :'images/learnMore/2.png',
+	liImg3 :'images/learnMore/3.png',
+	liImg4 :'images/learnMore/4.png',
+	liHead1 : 'Concept Art',
+	liHead2 : 'Asset Production',
+	liHead3 : 'Testing',
+	liHead4 : 'Support',
+	liPara1 : 'A full-fledged art & design team including artists, level designers and UI specialists to make your games as engaging and user-friendly as possible.',
+	liPara2 : 'End to end 2D & 3D asset production services to bring your ideas to life, including illustration, modeling, texturing, animation, rigging and lighting.',
+	liPara3 : 'Rigorous QA and performance testing for device compatibility and superior user experience.',
+	liPara4 : 'Content updates, bug fixes, maintenance and game release support along with support for marketing, launches, ad creation, app store optimization etc.'
+}

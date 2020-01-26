@@ -1,0 +1,20 @@
+module.exports = {
+    topBannerImage : 'images/learnMoreAndroid/android-banner.jpg',
+	topHead : 'Smart and scalable Adnroid App Development Solutions',
+	topPara : 'The key to making a great Android app is to find programmers with both technical and artistic skills. This means your preferred programmer should know all aspects of using the Android OS but still be able to render artistic design for the app. Build apps fast and easy with us.',
+	hireImg: 'images/learnMoreAndroid/middle-upper.png',
+	hireHead : 'Hire our Android developers',
+	hirePara: 'As the stellar android mobile app development company, we analyze and deliver intelligent solutions to help bring startups and enterprises vision to life. With a team of premier android app developers having strong command on Java, HTML, C, C++, Kotlin and other technologies, receive high-end apps for all smart devices powered with Android.So whether you want an app for health enthusiasts, photo & video sharing, education & learning, food delivery, or a child-friendly social media app, rest assured, we got you covered. Phenomenal android app development services at your request all-time, every time! Shall we begin?',
+	liImg1 :'images/learnMore/1.png',
+	liImg2 :'images/learnMore/2.png',
+	liImg3 :'images/learnMore/3.png',
+	liImg4 :'images/learnMore/4.png',
+	liHead1 : 'Core Developers',
+	liHead3 : 'Deployment on Google Play',
+	liHead2 : 'In-House Coding',
+	liHead4 : 'Agile Dev Process',
+	liPara1 : 'We only assign core Android app developers for your business projects. They hold extensive experience in building applications for all Android smart devices.',
+	liPara2 : 'All project-related codes are built, tested, and delivered from our advanced development center. We never outsource the codes to any third party developers, ever.',
+	liPara3 : 'Our dedicated team handles the custom application submission to the Google Play Store. Our services include app listing, icons, descriptions, and more.',
+	liPara4 : 'To minimize project risks & uncertainty and maximize performance efficiency, we incorporate & follow a custom agile process.'
+}
