@@ -5,6 +5,7 @@ module.exports = {
 	hireImg: 'images/learnMoreCloud/middle-upper.png',
 	hireHead : 'Hire our Back-End developers',
 	hirePara: 'We have trusted expert for designing & building scalable & robust Cloud based applications for startups and enterprises across the globe.Build large-scale solutions and server-side applications that take full advantage of the hardware & location abstraction provided by modern cloud providers, giving your users a consistent and reliable experience across the globe. Net Solutions has the experience and expertise to design, build, maintain, and help you grow your cloud-based business.We take special care to sensitise our cloud application developers to industry-leading application security practices. We have very flexible terms of engagement that are designed for maximum client benefit.',
+	displaySection : 'display:none;',
 	liImg1 :'images/learnMore/1.png',
 	liImg2 :'images/learnMore/2.png',
 	liImg3 :'images/learnMore/3.png',

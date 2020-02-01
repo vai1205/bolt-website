@@ -5,6 +5,7 @@ module.exports = {
     hireImg: 'images/learnMore/middle-upper.png',
     hireHead : 'Hire our iOS developers',
     hirePara: 'Our iPhone app developers are well equipped with the latest iOS technologies and versions and have a strong platform experience too. We deliver custom applications that are tailored to fit the different requirements of the clients. Our developers are known for  innovation and creativity for apps developed on iOS that has transformed the commercial landscapes as enterprises over the world. The iPhone applications developed are extremely scalable and strong to enable global businesses for optimal productivity. We follow global iOS development processes to produce a broad range of iPhone, iWatch, iPad based mobile applications for diverse business verticals.',
+    displaySection : 'display:none;',
     liImg1 :'images/learnMore/1.png',
     liImg2 :'images/learnMore/2.png',
     liImg3 :'images/learnMore/3.png',

@@ -5,6 +5,7 @@ module.exports = {
 	hireImg: 'images/learnMoreAndroid/middle-upper.png',
 	hireHead : 'Hire our Android developers',
 	hirePara: 'As the stellar android mobile app development company, we analyze and deliver intelligent solutions to help bring startups and enterprises vision to life. With a team of premier android app developers having strong command on Java, HTML, C, C++, Kotlin and other technologies, receive high-end apps for all smart devices powered with Android.So whether you want an app for health enthusiasts, photo & video sharing, education & learning, food delivery, or a child-friendly social media app, rest assured, we got you covered. Phenomenal android app development services at your request all-time, every time! Shall we begin?',
+	displaySection : 'display:none;',
 	liImg1 :'images/learnMore/1.png',
 	liImg2 :'images/learnMore/2.png',
 	liImg3 :'images/learnMore/3.png',

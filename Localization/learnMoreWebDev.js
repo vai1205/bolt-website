@@ -5,6 +5,7 @@ module.exports = {
 	hireImg: 'images/learnMoreWebDev/middle-upper.png',
 	hireHead : 'Hire our Web developers',
 	hirePara: 'We design functional interfaces for an engaging and secure digital experience that helps to boost the brand’s performance. Each website and app relies on an instinctive UX/UI design which helps in increasing the user traffic. We are sensitive to the latest trends and as responsive as our design – helping you to engage the users in a digital landscape. We work with close-coordination with the customers, to ensure flexible & cost effective web development services. Our web designers after a thorough analysis of your business, will provide you with a customized web design and development solution which will meet your business requirements.',
+	displaySection : 'display:none;',
 	liImg1 :'images/learnMore/1.png',
 	liImg2 :'images/learnMore/2.png',
 	liImg3 :'images/learnMore/3.png',

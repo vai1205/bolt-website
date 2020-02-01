@@ -35,6 +35,7 @@ const whatWeDo = require ('./Localization/whatWeDo.js')
 const ourWork = require ('./Localization/ourWork.js')
 const careers = require ('./Localization/careers.js')
 const workshops = require ('./Localization/workshops.js')
+const products = require ('./Localization/products.js')
 const blogs = require ('./Localization/blogs.js')
 const schoolManagementSystem = require ('./Localization/schoolManagementSystem.js')
 
@@ -206,6 +207,13 @@ app.get('/workshops', (req,res)=>{
 app.get('/schoolManagementSystem', (req,res)=>{
 	pageTemplateData = schoolManagementSystem
 	res.render('pageTemplate', {
+		pageTemplateData:pageTemplateData
+	})
+})
+app.get('/products', (req,res)=>{
+	pageTemplateData = defaultPageTemplateData
+	res.render('learnMore',{
+		learnMoreData:products,
 		pageTemplateData:pageTemplateData
 	})
 })
