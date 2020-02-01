@@ -20,16 +20,16 @@
         <div class="col-lg-6 middle-upper-img-set">
             <img src="<%= learnMoreData.hireImg %>" class="middle-upper-img" alt="">
         </div>
-        <div class="col-lg-6 middle-upper-text-set">
+        <div class="col-lg-6 middle-upper-text-set" style = "text-align: center !important;">
             <h1>
                 <%= learnMoreData.hireHead %>
             </h1>
             <p>
                 <%= learnMoreData.hirePara %>
             </p>
-            <form action="/contactUs" method="GET">
+            <form action="/<%= learnMoreData.ctaLink %>" method="GET">
                 <button class="btn btn-lg btn-danger">
-                    Get in touch
+                    <%= learnMoreData.cta %>
                 </button>
             </form>
         </div>
@@ -37,16 +37,16 @@
 </div>
 <div class="middle-upper-section" style = "<%= learnMoreData.displaySection %>">
     <div class="row">
-        <div class="col-lg-6 middle-upper-text-set">
+        <div class="col-lg-6 middle-upper-text-set" style = "text-align: center !important;">
             <h1>
                 <%= learnMoreData.hireHead1 %>
             </h1>
             <p>
                 <%= learnMoreData.hirePara1 %>
             </p>
-            <form action="/contactUs" method="GET">
+            <form action="/<%= learnMoreData.ctaLink1 %>" method="GET">
                 <button class="btn btn-lg btn-danger">
-                    Get in touch
+                    <%= learnMoreData.cta %>
                 </button>
             </form>
         </div>
