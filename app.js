@@ -218,6 +218,12 @@ app.get('/products', (req,res)=>{
 	})
 })
 
+app.get('/easyDay',(req,res)=>{
+	res.render('appDownload',{
+		pageTemplateData:defaultPageTemplateData
+	})
+})
+
 //======================================== Email Configurations ==================================
 const transporter = nodemailer.createTransport({
 	service : 'gmail',
