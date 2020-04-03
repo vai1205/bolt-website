@@ -218,7 +218,7 @@ app.get('/products', (req,res)=>{
 	})
 })
 
-app.get('/easyDay',(req,res)=>{
+app.get('/eshop',(req,res)=>{
 	res.render('appDownload',{
 		pageTemplateData:defaultPageTemplateData
 	})

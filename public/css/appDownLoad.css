@@ -46,7 +46,8 @@
 @media (max-width:500px){
     .center-position {
         position: relative;
-        margin-left: 3rem;
+        margin-left: -2rem;
+        padding-left: 7rem;
         margin-bottom: 0rem;
     }
     .bg-img{
@@ -88,6 +89,9 @@
         margin-top: 21rem;
     }
     .center-position {
-        margin-left: 2rem;
+        margin-left: -3rem;
+    }
+    .button-margin{
+        margin: 2rem 3rem;
     }
 }
