@@ -25,6 +25,7 @@ const mobileGames = require ('./Localization/mobileGames.js')
 const customizedSoftware = require ('./Localization/customizedSoftware.js')
 const learnMoreIphone = require ('./Localization/learnMoreIphone.js')
 const learnMoreAndroid = require ('./Localization/learnMoreAndroid.js')
+const privacy = require ('./Localization/privacy.js')
 const learnMoreCloud = require ('./Localization/learnMoreCloud.js')
 const learnMoreWebDev = require ('./Localization/learnMoreWebDev.js')
 const learnMoreDesign = require ('./Localization/learnMoreDesign.js')
@@ -276,6 +277,14 @@ app.get('/eshop/:shopId',(req,res)=>{
 
 app.get('/eshop', (req,res)=>{
 	res.redirect('/eshop/default')
+})
+
+app.get('/privacy-policy',(req,res)=>{
+	pageTemplateData = defaultPageTemplateData
+	res.render('privacy',{
+		pageTemplateData,
+		learnMoreData:privacy
+	})
 })
 
 //======================================== Email Configurations ==================================
