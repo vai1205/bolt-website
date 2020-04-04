@@ -13,7 +13,7 @@ $('.modal-btn-demo-link').on('click',()=>{
   window.open('http://boltcloud.co.in/demo-sms/')
 })
 $('#appDemo').on('click',()=>{
-  window.open('http://boltcloud.co.in/shopping.apk')
+  window.open('http://boltcloud.co.in/apps/shopping.apk')
 })
 $('#bolt-logo-b').hide()
 var target = $('#navbar2').offset().top,
