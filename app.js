@@ -219,7 +219,7 @@ app.get('/products', (req,res)=>{
 })
 
 app.get('/eshop/:shopId',(req,res)=>{
-	let name = req.params.shopId
+	let name = req.params.shopId.toUpperCase()
 	let heading = ''
 	let qr = ''
 	let hideIt = ''
@@ -264,8 +264,8 @@ app.get('/eshop/:shopId',(req,res)=>{
 		heading = `Welcome to ${name}, Barabanki`
 		subheading = 'Get Item Deliver at your Doorstep'
 	} else {
-		heading = "Please Find your Shop Id"
-		subheading = "Contact Administrator at +91-9454714721"
+		heading = "Please Find your Store Code"
+		subheading = "Whatsapp us at +91-9140473141 or drop an Email to support@boltinfotech.com"
 		hideIt = "display:none"
 	}
 	res.render('appDownload',{
