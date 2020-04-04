@@ -1,22 +1,76 @@
-<%- include("partials/header") -%>
-<link rel="stylesheet" href="css/appDownLoad.css">
-<img src="images/easyDay/banner.jpg" alt="" class="bg-img">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!-- Author Information -->
+<meta
+name="Vaibhav Srivastava"
+content="Author Email"
+href="mailto:vaibhav.12may95@gmail.com?Subject=Got%20you%20from%Bolt%20Web%20App%20Code"
+/>
+<meta
+name="Vaibhav Srivastava"
+content="Author GitHub Portfolio"
+href="https://github.com/vai1205"
+/>
+<title>We Code your Ideas!</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<!-- font-awesome -->
+<link href="/css/fa-all.css" rel="stylesheet" />
+<!-- custom css -->
+<link rel="stylesheet" href="/css/styles.css">
+<!-- google fonts -->
+<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+<!-- bootstrap4.3.1 -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<!-- Navbar -->
+<nav id="menu" class="active navbar navbar-expand-lg navbar-light shadow-sm p-3 mb-5 bg-white rounded for-learn-more">
+    <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/">
+        <img src="/images/logo-nav.png" style="padding-left: 2rem;" alt="bolt-logo" class="nav-logo-dark">
+        <img src="/images/learnMore/logo-nav.png" style="padding-left: 2rem;" alt="bolt-logo" class="nav-logo-light">
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav for-learn-more-inner">
+                <a class="nav-item nav-link for-learn-more-text <%= pageTemplateData.activeAbout %>" href="/about">About Us </a>
+                <a class="nav-item nav-link for-learn-more-text <%= pageTemplateData.activeWhatWeDo %>" href="/whatWeDo">What we do</a>
+                <!-- <a class="nav-item nav-link for-learn-more-text <%= pageTemplateData.activeBlogs %>" href="/blogs">Blogs</a> -->
+                <a class="nav-item nav-link for-learn-more-text <%= pageTemplateData.activeOurWork %>" href="/ourWork">Our Work</a>
+                <a class="nav-item nav-link for-learn-more-text <%= pageTemplateData.activeCareers %>" href="/careers">Careers</a>
+                <a class="nav-item nav-link for-learn-more-text <%= pageTemplateData.activeWorkshops %>" href="/workshops">Workshops</a>
+                <a class="nav-item nav-link for-learn-more-text <%= pageTemplateData.activeSchoolManagementSystem %>" href="/products">Products</a>
+                <form action="/contactUs" method="GET">
+                    <button class="btn btn-danger my-2 my-sm-0" type="submit">Get Estimate</button>
+                </form>
+            </div>
+        </div>
+    </a>
+</nav>
+<link rel="stylesheet" href="/css/appDownLoad.css">
+<img src="/images/easyDay/banner.jpg" alt="" class="bg-img">
 <div class="container-custom bg-img">
-    <h1 class="big-head">Welcome to Easy Day, Barabanki</h1>
-    <h4 class="sub-head">Get Item Deliver at your Doorstep</h4>
+    <h1 class="big-head"><%= heading %></h1>
+    <h4 class="sub-head"><%= subheading %></h4>
     <div class="container row m-top">
         <div class="col-md-6">
-            <div class="center-position">
-                <img src="images/easyDay/qr.png" class="qr">
+            <div class="center-position light-text" style= "<%= hideIt %>" >
+                <img src=<%= qr %> class="qr">
+                <br/><br/>
+                <h5>Shop Id: <%= code %></h5>
             </div>
         </div>
         <div class="col-md-6 big-text">
-            <ul class="app-ul">
+            <ul class="app-ul" style="<%= hideIt %>">
                 <li>
                     1. Download our app
                 </li>
                 <li>
-                    2. Scan QR Code
+                    2. Scan QR Code/ Enter Shop Id
                 </li>
                 <li>
                     3. Register your Account
@@ -34,3 +88,5 @@
         </div>
     </div>
 </div>
+</body>
+</html>

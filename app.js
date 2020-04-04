@@ -218,10 +218,64 @@ app.get('/products', (req,res)=>{
 	})
 })
 
-app.get('/eshop',(req,res)=>{
+app.get('/eshop/:shopId',(req,res)=>{
+	let name = req.params.shopId
+	let heading = ''
+	let qr = ''
+	let hideIt = ''
+	let code = ''
+	let subheading = "Get Item Deliver at your Doorstep"
+	let shopFound = true
+	switch (name){
+		case 'VISHALBBK' :
+			name = "Vishal Mega Mart"
+			qr = "/images/vishal/VISHALBBK.png"
+			code = "VISHALBBK"
+			break
+		case 'EASYDAYBBK' :
+			name = "Easy Day"
+			qr = "/images/easyDay/EASYDAYBBK.png"
+			code = "EASYDAYBBK"
+			break
+		case 'SEVENBBK' :
+			name = "Seven Eleven Mart"
+			qr = "/images/seven/SEVENBBK.png"
+			code = "SEVENBBK"
+			break
+		case 'OJOYBBK' :
+			name = "O-Joy!"
+			qr = "/images/ojoy/OJOYBBK.png"
+			code = "OJOYBBK"
+			break
+		case 'VMARTBBK' :
+			name = "V-Mart"
+			qr = "/images/vmart/VMARTBBK.png"
+			code = "VMARTBBK"
+			break
+		case 'SAGARBBK' :
+			name = "Sagar Family Mart"
+			qr = "/images/sagar/SAGARBBK.png"
+			code = "SAGARBBK"
+			break
+		default:
+			shopFound = false
+	}
+	if (shopFound){
+		heading = `Welcome to ${name}, Barabanki`
+		subheading = 'Get Item Deliver at your Doorstep'
+	} else {
+		heading = "Please Find your Shop Id"
+		subheading = "Contact Administrator at +91-9454714721"
+		hideIt = "display:none"
+	}
 	res.render('appDownload',{
-		pageTemplateData:defaultPageTemplateData
+		pageTemplateData:defaultPageTemplateData,
+		heading, subheading, qr, hideIt, code
 	})
+})
+
+app.get('/eshop', (req,res)=>{
+	res.redirect('/eshop/default')
 })
 
 //======================================== Email Configurations ==================================

@@ -26,6 +26,10 @@
     font-size: large;
 }
 
+.light-text{
+    color: seashell;
+}
+
 .bg-img{
     position: fixed;
     width: 100%;
