@@ -26,7 +26,7 @@
     "dotenv": "^8.0.0",
     "ejs": "^2.6.2",
     "express": "^4.17.1",
-    "express-fileupload": "^1.1.5",
+    "express-fileupload": "^1.1.9",
     "live": "^0.1.25-beta.0",
     "nodemailer": "^6.3.0",
     "server": "^1.0.19"
