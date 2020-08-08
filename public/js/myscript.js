@@ -9,8 +9,15 @@
 $('.modal-btn').on('click',()=>{
   $('#hireModal').modal('show')
 })
-$('.modal-btn-demo-link').on('click',()=>{
-  window.open('http://boltcloud.co.in/demo-sms/')
+
+let smsBtn = document.querySelectorAll(".modal-btn-demo-link");
+debugger
+smsBtn.forEach((b,i)=>{
+  if(i===0){
+    b.addEventListener("click", ()=>{window.open('https://play.google.com/store/apps/details?id=com.bolt.smsstudent')})
+  }else{
+    b.addEventListener("click", ()=>{window.open('http://boltcloud.co.in/demo-sms/')})
+  }
 })
 $('#appDemo').on('click',()=>{
   window.open('http://boltcloud.co.in/apps/shopping.apk')
