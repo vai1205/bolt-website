@@ -39,7 +39,7 @@ module.exports = {
 	bannerImg: 'images/sms/banner.png',
 	bannerTextPart1 : 'School',
 	bannerTextPart2 : 'Management System',
-	bannerSideHead : 'School Data Management Solution',
+	bannerSideHead : 'School Management Solution',
 	bannerSidePara : "This is a Mobile Application with web based admin panel, designed to support Online Classes and School Management.It helps to maintain the complete records of various important data in the School; including Student Report, Fee Collection Report, Defaulter Report, Fee Deposit Report, Deleted Receipt Report, Expense Voucher Report, Deleted Expense Voucher Report, Salary Report, DayBook Report, Employee Report and Employee Attendance Report.",
 	feature1Img : 'images/sms/1.png',
 	feature2Img : 'images/sms/2.png',
